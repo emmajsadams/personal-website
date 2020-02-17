@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: ``,
-    author: `Cody Stebbins`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://codystebbins.com`,
+    author: `Emma Stebbins`,
+    description: `A mostly programming blog by a failed wannabe writer.`,
+    siteUrl: `https://emma.stebbins.dev`,
     social: {
-      twitter: `codystebbins`,
+      twitter: `EmmaStebbins`,
     },
   },
   pathPrefix: `/blog`,
