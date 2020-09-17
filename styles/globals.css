@@ -1,5 +1,18 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 * {
-  font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
 }
 
 h1, h3 {
@@ -20,13 +33,6 @@ h1, h3 {
 @media (min-width: 992px) {
   .container {
     width: 970px;
-  }
-
-  #grid {
-    display: grid;
-    width: 100%;
-    grid-template-columns: .3fr 1fr;
-    grid-column-gap: 2em;
   }
 }
 @media (min-width: 1200px) {
