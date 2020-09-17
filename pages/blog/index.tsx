@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
-import styles from '../styles/Home.module.css'
+//import styles from '../styles/Home.module.css'
 
 // todo: create app wide head element and page specific head element with different keys
 export default function Blogs() {
