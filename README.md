@@ -2,7 +2,7 @@ This is the repo for my personal website powered by typescript next.js
 
 TODO
 
-remove github environment
+remove github environment for github pages
 use ems instead of pixels in css
 update most recnet job description to include leads
 setup keybase for new identity, link to those keys in a standardized way on website (old keys in 1pass)
