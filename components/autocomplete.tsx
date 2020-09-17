@@ -4,6 +4,7 @@ class Props {
   options: string[];
 }
 
+// todo: conver this into the blog post component. does it need to be an api
 function Autocomplete({ options }: Props) {
   const [text, setText] = useState('');
   // TODO: Change matching algo to be fuzzy
