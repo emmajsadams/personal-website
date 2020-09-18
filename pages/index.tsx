@@ -8,7 +8,8 @@ import Row from 'react-bootstrap/Row';
 import styles from '../styles/Home.module.css'
 
 // todo: create app wide head element and page specific head element with different keys
-// todo: change name to resume or something besides home
+// todo: change name to resume or something besides home'
+// todo: change links to a list
 export default function Home() {
   return (
     <Container fluid="md">
