@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 
 // todo: refactor this page to use reactbootstrap
 import Col from "react-bootstrap/Col";
-import Row from 'react-bootstrap/Row';
+import Row from "react-bootstrap/Row";
 
 //import styles from '../styles/Home.module.css'
 
