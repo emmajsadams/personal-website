@@ -2,6 +2,8 @@ This is the repo for my personal website powered by typescript next.js
 
 TODO
 
+setup api and component tests (precommit and github hook)
+setup precommit hoook and github hook for running tests
 link to voice passing project
 add style for links to make it clear they are clickable
 remove github environment for github pages
@@ -14,9 +16,9 @@ Resetup google analytics on new emma domain
 remove link shortening url, create basic link shortneing service in next.js
 deal with dependabot https://github.com/EmmaJStebbins/emma.stebbins.dev/network/alerts
 
--------------
-Review of nextjs and vercel
----------
+---
+
+## Review of nextjs and vercel
 
 manages all domains and sets up easy redirects
 free for personal

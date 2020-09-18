@@ -7,9 +7,9 @@ This week I will be working on the Tables and Queues for the collections project
 
 The tables I chose to implement were HashBasedTable, and TreeBasedTable. [The tables are located here](https://github.com/codystebbins/dstruct/tree/master/lib/structures/tables).
 
-* HashBasedTable: This table is implemented using HashMaps. It provides O(1) amortized time for the primary operations. It provides no guarantees about the ordering of keys.
-* TreeBasedTable: This table is implemented using TreeMaps. It provides O(log N) time for the primary operations. It guarantees the keys are in sorted order based on the compareTo method for the keys.
+- HashBasedTable: This table is implemented using HashMaps. It provides O(1) amortized time for the primary operations. It provides no guarantees about the ordering of keys.
+- TreeBasedTable: This table is implemented using TreeMaps. It provides O(log N) time for the primary operations. It guarantees the keys are in sorted order based on the compareTo method for the keys.
 
-The queue I chose to implement was a DoublyLinkedListQueue. DoublyLinkedLists provide insertion and deletion at both ends in O(1) time so it is a natural choice for a queue. The elements are guaranteed to be in first in first our order. [The queues are located here]( https://github.com/codystebbins/dstruct/tree/master/lib/structures/queues).
+The queue I chose to implement was a DoublyLinkedListQueue. DoublyLinkedLists provide insertion and deletion at both ends in O(1) time so it is a natural choice for a queue. The elements are guaranteed to be in first in first our order. [The queues are located here](https://github.com/codystebbins/dstruct/tree/master/lib/structures/queues).
 
 This will be the last blog post as part of capstone, but I will be continuing on with the project post capstone in my spare time. Up until capstone I will be polishing the documentation, cleaning up the code in known low quality areas, and adding tests where necessary.

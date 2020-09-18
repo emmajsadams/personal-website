@@ -11,12 +11,12 @@ Estimate = |CurrentNode.X – TargetNode.X| + |CurrentNode.Y – TargetNode.Y|
 
 A node is an object that holds the following data.
 
-* Position: This can be represented by two integer values, x and y, that represent this node’s position in the overall map.
-* H: This is an integer given by the Manhattan heuristic defined above.
-* G: Total distance traveled from the starting node.
-* F: G + H, Total “cost” of travel
-* Parent Node: Node that precedes this node
-* Target Node: Node that the path must converge to
+- Position: This can be represented by two integer values, x and y, that represent this node’s position in the overall map.
+- H: This is an integer given by the Manhattan heuristic defined above.
+- G: Total distance traveled from the starting node.
+- F: G + H, Total “cost” of travel
+- Parent Node: Node that precedes this node
+- Target Node: Node that the path must converge to
 
 The C# implementation of a node object is as follows.
 
@@ -96,12 +96,11 @@ class Node : IComparable<Node>
 }
 ```
 
-
-Now time to explain the actual algorithm. The algorithm begins with a starting node, a target node, a open list, a closed list, and a collision map. The starting node contains the initial position the algorithm should begin searching from. It is added to the open list to start the algorithm. The target node contains the position of the destination of the algorithm.  The open list is a list of all of the nodes that represent a potential path to be taken and is sorted by F score of the node (lowest first). The closed list is a list of all nodes that have already been cast aside as potential paths. The map is just a simple representation of the overall world wherein a boolean value, true representing passable and false representing impassable, corresponds with each node location on the map.
+Now time to explain the actual algorithm. The algorithm begins with a starting node, a target node, a open list, a closed list, and a collision map. The starting node contains the initial position the algorithm should begin searching from. It is added to the open list to start the algorithm. The target node contains the position of the destination of the algorithm. The open list is a list of all of the nodes that represent a potential path to be taken and is sorted by F score of the node (lowest first). The closed list is a list of all nodes that have already been cast aside as potential paths. The map is just a simple representation of the overall world wherein a boolean value, true representing passable and false representing impassable, corresponds with each node location on the map.
 
 The real work of the algorithm comes in the while loop. The loop continues on the grounds that there are any nodes left in the open list. In every iteration of the loop the open list is sorted and the node with the lowest F value is selected as the current node. Then the nodes surrounding the current node that are passable are added to the open list. This loop continues until the current node is the target node or if all paths to the target node have been exhausted without reaching the target node. If successful the path is then reconstructed and returned.
 
-The C# implementation of A* is as follows.
+The C# implementation of A\* is as follows.
 
 ```csharp
 class AStar
