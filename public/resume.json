@@ -1,0 +1,225 @@
+{
+  "$schema": "https://json.schemastore.org/resume",
+  "basics": {
+    "name": "Emma Stebbins",
+    "label": "Full-stack software engineer experienced with C#, Python, JavaScript.",
+    "image": "",
+    "email": "emma@stebbins.dev",
+    "phone": "",
+    "url": "",
+    "summary": "Full-stack software engineer experienced with C#, Python, JavaScript. 6 years of full-time professional software engineering with additional years of internships while at the University of Washington.\n\nI have worked on recurring billing, e-commerce, user authentication, insurance claims, and in public research at the University of Washington. \n\nHappily trans (she/her)!",
+    "location": {
+      "address": "Seattle, Washington",
+      "postalCode": "",
+      "city": "",
+      "countryCode": "US",
+      "region": ""
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "emmajstebbins",
+        "url": "https://www.linkedin.com/in/emmajstebbins/"
+      },
+      {
+        "network": "Twitter",
+        "username": "CodyStebbins",
+        "url": "https://twitter.com/CodyStebbins"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Humble Bundle",
+      "endDate": "",
+      "highlights": [],
+      "position": "Senior Software Engineer II",
+      "startDate": "2018-07-31",
+      "summary": "* Planned a comprehensive internationalization project for a minimally internationalized web application\n* Worked with product to define a plan to optimize the user funnel for our monthly product\n* Integrated an OAuth login system for Facebook and Google into our existing user system\n* Planned a project to migrate all sessions to the newly required email or TOTP two-factor system\n* Helped define standards for representing DateTimes, Money, and Percents in Python and JavaScript",
+      "url": ""
+    },
+    {
+      "name": "Committee for Children",
+      "endDate": "2018-06-30",
+      "highlights": [],
+      "position": "Lead Full Stack Software Engineer",
+      "startDate": "2018-01-31",
+      "summary": "» Lead replacement of a legacy monolithic DNN platform over to using React and .NET Core\n» Migrated user authentication to an OpenID identity provider(IdentityServer4)\n» Incrementally rewrote a series of untested stored procedures into a modern C# WebAPI.",
+      "url": ""
+    },
+    {
+      "name": "Trov Inc.",
+      "endDate": "2017-09-30",
+      "highlights": [],
+      "position": "Full Stack Software Engineer",
+      "startDate": "2013-07-31",
+      "summary": "» Remote software development team where developers write unit and integration tests\n» Constructed an on demand insurance platform for consumer items with C# & SQL\n» Developed an app for managing claims and insuring items with React and Angular.js\n» Built a business intelligence system for sending information to partners while respecting legal PII concerns using Python\n» Crafted a continuous integration system for Trov’s apps using Docker & Jenkins",
+      "url": ""
+    },
+    {
+      "name": "University of Washington Information School",
+      "endDate": "2013-10-31",
+      "highlights": [],
+      "position": "Assistant Researcher",
+      "startDate": "2013-01-31",
+      "summary": "» Lead developer for a JavaScript library which abstracted cloud drive APIs like Dropbox and Google Drive\n» Taught various UW masters students to use and contribute to the library",
+      "url": ""
+    },
+    {
+      "name": "PEAK6 Investments LP",
+      "endDate": "2013-05-31",
+      "highlights": [],
+      "position": "Software Engineer Intern",
+      "startDate": "2012-09-30",
+      "summary": "» Developed Java and Ruby on Rails stock trading apps which were acquired by http://etrade.com",
+      "url": ""
+    },
+    {
+      "name": "University of Washington",
+      "endDate": "2013-03-31",
+      "highlights": [],
+      "position": "Web Instructor and Engineer",
+      "startDate": "2012-02-28",
+      "summary": "» Taught modern web development standards to UW staff and students\n» Developed internal applications to manage courses and support tickets",
+      "url": ""
+    },
+    {
+      "name": "PopShops.com",
+      "endDate": "2012-08-31",
+      "highlights": [],
+      "position": "Software Engineering Intern",
+      "startDate": "2012-06-30",
+      "summary": "» Scraped and normalized product information using Ruby and Java",
+      "url": ""
+    },
+    {
+      "name": "SmiteWorks USA, LLC",
+      "endDate": "2011-09-30",
+      "highlights": [],
+      "position": "Software Engineering Intern",
+      "startDate": "2011-06-30",
+      "summary": "» Built a C# app to import character data from competitors apps",
+      "url": ""
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "University of Washington",
+      "area": "Informatics",
+      "studyType": "Bachelor of Science - BS",
+      "startDate": "2011-12-31",
+      "endDate": "2014-12-31",
+      "gpa": "",
+      "courses": [
+        "CSE 373 - Data Structures and Algorithms",
+        "CSE 143 - Computer Programming 2",
+        "CSE 142 - Computer Programming 1",
+        "INFO 360 - Design Thinking",
+        "INFO 340 - Database Management and Information Retrieval",
+        "AMATH 301 - Beginning Scientific Computing",
+        "MATH 126 - Calculus with Analytic Geometry III",
+        "MATH 125 - Calculus with Analytic Geometry II",
+        "MATH 124 - Calculus with Analytic Geometry I",
+        "STAT 311 - Elements of Statistical Methods"
+      ]
+    },
+    {
+      "institution": "Digipen Institute of Technology",
+      "area": "Computer Engineering",
+      "studyType": "",
+      "startDate": "2010-12-31",
+      "endDate": "2011-12-31",
+      "gpa": "",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "C#",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "JavaScript",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "React.js",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Object-Oriented Programming (OOP)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "ASP.NET",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "SQL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Amazon Web Services (AWS)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Functional Programming",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Model-view-viewmodel (MVVM)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Python",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Cascading Style Sheets (CSS)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "TypeScript",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Representational State Transfer (REST)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Automated Software Testing",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "HTML",
+      "level": "",
+      "keywords": []
+    }
+  ],
+  "languages": [
+    {
+      "language": "en",
+      "fluency": "Native Speaker"
+    }
+  ],
+  "interests": [],
+  "references": [],
+  "projects": []
+}
