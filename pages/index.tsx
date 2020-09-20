@@ -61,7 +61,7 @@ export default function Home() {
           <h3>Links</h3>
           <a href="Emma_Stebbins_Resume.pdf">PDF Resume</a>,
           <a href="mailto:emma@stebbins.dev">Email</a>,
-          <a href="/blog">Blog TODO UPDATE AND ADD PGP BACK</a>,
+          <a href="/blog">Blog</a>,
           <a href="https://github.com/EmmaJStebbins">GitHub</a>,
           <a href="https://www.linkedin.com/in/EmmaJStebbins">LinkedIn</a>,
           <a href="https://twitter.com/EmmaJStebbins">Twitter</a>,
