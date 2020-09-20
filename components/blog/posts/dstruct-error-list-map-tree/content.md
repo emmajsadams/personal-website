@@ -1,8 +1,3 @@
----
-title: Error Handling, Lists, Maps, and Trees for dstruct
-date: "2014-04-29"
----
-
 This post is the first of many documenting my progress on a [TypeScript data structures & algorithms library named dstruct](https://github.com/codystebbins/dstruct). It aims to provide some of the popular data structures and algorithms available in languages like Java, C#, and Scala which enable programmers to efficiently solve problems with less code.
 
 The first step to building a library like this is to establish a standard for error handling. Error handling is necessary to prevent errors created by programmers and to create logic to recover from errors while the program is running. There are many error patterns in JavaScript ranging from errors passed as parameters in callbacks, error codes, and throwing errors to be caught within a try/catch statement. I decided that throwing errors was the best approach for modern JavaScript given that new developments in the language like generators enable a synchronous syntax for asynchronous programming that previously was unavailable. Another reason is that this library will have no network programming given that the data structures and algorithms do not need networked resources. When JavaScript was restricted to an asynchronous callback style of programming this pattern was less valuable. The benefit to this approach is that much less boilerplate error handling is necessary for the programmer. [The error handling code is located here](https://github.com/codystebbins/dstruct/blob/master/lib/Error.ts).
