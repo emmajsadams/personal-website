@@ -23,7 +23,7 @@ export default function Blog({ post }) {
     </>
   );
 
-  return ;
+  return;
 }
 
 export async function getStaticProps({ params }) {

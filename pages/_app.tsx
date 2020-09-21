@@ -27,12 +27,14 @@ function MyApp({ Component, pageProps }: AppProps) {
     };
   }, []);
 
-  return (<>
-    <Head>
-      <link href="/emma.jpg" rel="icon" type="image/jpg"></link>
-    </Head>
-    <Component {...pageProps} />
-  </>)
+  return (
+    <>
+      <Head>
+        <link href="/emma.jpg" rel="icon" type="image/jpg"></link>
+      </Head>
+      <Component {...pageProps} />
+    </>
+  );
 }
 
 export default MyApp;

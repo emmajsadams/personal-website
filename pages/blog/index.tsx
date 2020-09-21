@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import Link from "next/link"
+import Link from "next/link";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
@@ -16,14 +16,22 @@ export default function Blogs({ posts }) {
         <title>Emma Stebbins' Blog</title>
       </Head>
       <Container>
-        <Col><Row><ul>
-          {posts.map((post) => {
-            const title = post.metadata.title;
-            const folderPath = path.join('blog', post.folderName);
+        <Col>
+          <Row>
+            <ul>
+              {posts.map((post) => {
+                const title = post.metadata.title;
+                const folderPath = path.join("blog", post.folderName);
 
-            return <li key={title}><Link href={folderPath}>{title}</Link></li>;
-          })}
-        </ul></Row></Col>
+                return (
+                  <li key={title}>
+                    <Link href={folderPath}>{title}</Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </Row>
+        </Col>
       </Container>
     </>
   );

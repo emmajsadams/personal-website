@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Link from "next/link"
+import Link from "next/link";
 import Container from "react-bootstrap/Container";
 import styles from "../styles/Home.module.css";
 
@@ -50,12 +50,24 @@ export default function Home() {
           </p>
           <h3>Links</h3>
           <ul>
-            <li><a href="/Emma_Stebbins_Resume.pdf">PDF Resume</a></li>
-            <li><a href="mailto:emma@stebbins.dev">Email</a></li>
-            <li><Link href="/blog">Blog</Link></li>
-            <li><a href="https://github.com/EmmaJStebbins">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/EmmaJStebbins">LinkedIn</a></li>
-            <li><a href="https://twitter.com/EmmaJStebbins">Twitter</a></li>
+            <li>
+              <a href="/Emma_Stebbins_Resume.pdf">PDF Resume</a>
+            </li>
+            <li>
+              <a href="mailto:emma@stebbins.dev">Email</a>
+            </li>
+            <li>
+              <Link href="/blog">Blog</Link>
+            </li>
+            <li>
+              <a href="https://github.com/EmmaJStebbins">GitHub</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/EmmaJStebbins">LinkedIn</a>
+            </li>
+            <li>
+              <a href="https://twitter.com/EmmaJStebbins">Twitter</a>
+            </li>
           </ul>
         </section>
 
@@ -64,13 +76,13 @@ export default function Home() {
 
           <h4 className="section-subheader">
             Senior Software Engineer II,
-            <a href="https://www.humblebundle.com">Humble Bundle</a> &mdash; Remote
-            &mdash; March 2019 - Present
+            <a href="https://www.humblebundle.com">Humble Bundle</a> &mdash;
+            Remote &mdash; March 2019 - Present
           </h4>
           <h4 className="section-subheader">
             Senior Software Engineer,
-            <a href="https://www.humblebundle.com">Humble Bundle</a> &mdash; Remote
-            &mdash; July 2018 - March 2019
+            <a href="https://www.humblebundle.com">Humble Bundle</a> &mdash;
+            Remote &mdash; July 2018 - March 2019
           </h4>
           <ul>
             <li>
@@ -97,8 +109,8 @@ export default function Home() {
 
           <h4 className="section-subheader">
             Lead Full Stack Software Engineer,
-            <a href="https://www.cfchildren.org">Committee for Children</a> &mdash;
-            Seattle &mdash; Jan 2018 - June 2018
+            <a href="https://www.cfchildren.org">Committee for Children</a>{" "}
+            &mdash; Seattle &mdash; Jan 2018 - June 2018
           </h4>
           <ul>
             <li>
