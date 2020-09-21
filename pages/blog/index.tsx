@@ -6,8 +6,6 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Head from "next/head";
 
-const POSTS_PATH = "public/posts";
-
 // todo: create app wide head element and page specific head element with different keys
 export default function Blogs({ posts }) {
   return (
@@ -39,7 +37,7 @@ export default function Blogs({ posts }) {
 
 // todo rename variables in this file
 export async function getStaticProps() {
-  const postsDirectory = path.join(process.cwd(), POSTS_PATH);
+  const postsDirectory = path.join(process.cwd(), "public/posts");
   const folderNames = fs.readdirSync(postsDirectory);
 
   const posts = folderNames.map((folderName) => {
