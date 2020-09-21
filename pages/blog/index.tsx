@@ -22,7 +22,7 @@ export default function Blogs({ posts }) {
 }
 
 export async function getStaticProps() {
-  const postsDirectory = path.join(process.cwd(), "components/blog/posts");
+  const postsDirectory = path.join(process.cwd(), "public/posts"); // TODO move to environment variable or common variable
   const folderNames = fs.readdirSync(postsDirectory);
 
   const posts = folderNames.map((filename) => {

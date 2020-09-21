@@ -5,7 +5,7 @@ import ReactMarkdown from "react-markdown";
 export default function Blog({ post }) {
   const router = useRouter();
 
-  // remove this once fallback is turned off
+  // TODO: remove this once fallback is turned off
   if (router.isFallback) {
     return <div>Loading...</div>;
   }
@@ -15,10 +15,8 @@ export default function Blog({ post }) {
 
 export async function getStaticProps({ params }) {
   const { id } = params;
-  const post = { content: id };
+  const post = { content: id }; // TODO read the actual post using same logic from blog
 
-  // By returning { props: posts }, the Blog component
-  // will receive `posts` as a prop at build time
   return {
     props: {
       post,
