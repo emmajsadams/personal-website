@@ -14,10 +14,6 @@ export default function Home() {
   return (
     <Container fluid="md">
       <Head>
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=UA-149669160-1"
-        ></script>
         <title>Emma Stebbins</title>
         <meta charSet="utf-8"></meta>
         <meta
@@ -25,7 +21,6 @@ export default function Home() {
           content="O_dhy7q1Kfwrvh4v9kyyHmHVZWJqzCegjrgNteyU65k"
         />
         <link href="/images/emma.jpg" rel="icon" type="image/jpg"></link>
-        <link rel="stylesheet" type="text/css" href="/index.css"></link>
       </Head>
       <h1>Emma Stebbins</h1>
       <p>
