@@ -1,5 +1,7 @@
 import { useRouter } from "next/router";
 import ReactMarkdown from "react-markdown";
+import Container from "react-bootstrap/Container";
+import Head from "next/head";
 
 // todo: create app wide head element and page specific head element with different keys
 export default function Blog({ post }) {
@@ -10,7 +12,18 @@ export default function Blog({ post }) {
     return <div>Loading...</div>;
   }
 
-  return <ReactMarkdown source={post.content} />;
+  return (
+    <>
+      <Head>
+        <title>Emma Stebbins' Blog</title>
+      </Head>
+      <Container>
+        <ReactMarkdown source={post.content} />
+      </Container>
+    </>
+  );
+
+  return ;
 }
 
 export async function getStaticProps({ params }) {

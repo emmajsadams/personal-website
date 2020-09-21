@@ -1,7 +1,7 @@
 import ReactGA from "react-ga";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
-
+import Head from "next/head";
 import type { AppProps } from "next/app";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -18,19 +18,21 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   useEffect(() => {
     const handleRouteChange = (url) => {
-      console.log("App is changing to: ", url); // todo remove this logging statement
       ReactGA.pageview(url);
     };
 
     router.events.on("routeChangeComplete", handleRouteChange);
-
-    // TODO: investigate if this off handler is even needed???
     return () => {
       router.events.off("routeChangeComplete", handleRouteChange);
     };
   }, []);
 
-  return <Component {...pageProps} />;
+  return (<>
+    <Head>
+      <link href="/emma.jpg" rel="icon" type="image/jpg"></link>
+    </Head>
+    <Component {...pageProps} />
+  </>)
 }
 
 export default MyApp;

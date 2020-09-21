@@ -4,22 +4,28 @@ import Link from "next/link"
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+import Head from "next/head";
 
-const POSTS_PATH = "posts";
+const POSTS_PATH = "public/posts";
 
 // todo: create app wide head element and page specific head element with different keys
 export default function Blogs({ posts }) {
   return (
-    <Container>
-      <Col><Row><ul>
-        {posts.map((post) => {
-          const title = post.metadata.title;
-          const folderPath = path.join('blog', post.folderName);
+    <>
+      <Head>
+        <title>Emma Stebbins' Blog</title>
+      </Head>
+      <Container>
+        <Col><Row><ul>
+          {posts.map((post) => {
+            const title = post.metadata.title;
+            const folderPath = path.join('blog', post.folderName);
 
-          return <li key={title}><Link href={folderPath}>{title}</Link></li>;
-        })}
-      </ul></Row></Col>
-    </Container>
+            return <li key={title}><Link href={folderPath}>{title}</Link></li>;
+          })}
+        </ul></Row></Col>
+      </Container>
+    </>
   );
 }
 
