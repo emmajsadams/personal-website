@@ -20,6 +20,18 @@ This is the repo for my personal website powered by typescript next.js. It is ho
 - implmement resume.json https://resumake.io/ https://themes.jsonresume.org/theme/kendall https://github.com/jsonresume/resume-schema
 - implement amp https://nextjs.org/docs/advanced-features/amp-support/introduction
 - update pdf resume and other job hunting sites using resume.json
+- figure out how to have an app wide head tags
+
+// todo: refactor this page to use reactbootstrap
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+
+<Container>
+  <Row>
+    <Col sm={8}>sm=8</Col>
+    <Col sm={4}>sm=4</Col>
+  </Row>
+</Container>
 
 ## General review eview of nextjs and vercel
 

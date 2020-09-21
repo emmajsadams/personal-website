@@ -1,10 +1,6 @@
 import Head from "next/head";
+import Link from "next/link"
 import Container from "react-bootstrap/Container";
-
-// todo: refactor this page to use reactbootstrap
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
-
 import styles from "../styles/Home.module.css";
 
 // todo: create app wide head element and page specific head element with different keys
@@ -15,12 +11,11 @@ export default function Home() {
     <Container fluid="md">
       <Head>
         <title>Emma Stebbins</title>
-        <meta charSet="utf-8"></meta>
         <meta
           name="google-site-verification"
           content="O_dhy7q1Kfwrvh4v9kyyHmHVZWJqzCegjrgNteyU65k"
         />
-        <link href="/images/emma.jpg" rel="icon" type="image/jpg"></link>
+        <link href="/emma.jpg" rel="icon" type="image/jpg"></link>
       </Head>
       <h1>Emma Stebbins</h1>
       <p>
@@ -54,11 +49,14 @@ export default function Home() {
             Store inventory manager using C# and WebAPI
           </p>
           <h3>Links</h3>
-          <a href="Emma_Stebbins_Resume.pdf">PDF Resume</a>,
-          <a href="mailto:emma@stebbins.dev">Email</a>,<a href="/blog">Blog</a>,
-          <a href="https://github.com/EmmaJStebbins">GitHub</a>,
-          <a href="https://www.linkedin.com/in/EmmaJStebbins">LinkedIn</a>,
-          <a href="https://twitter.com/EmmaJStebbins">Twitter</a>,
+          <ul>
+            <li><a href="/Emma_Stebbins_Resume.pdf">PDF Resume</a></li>
+            <li><a href="mailto:emma@stebbins.dev">Email</a></li>
+            <li><Link href="/blog">Blog</Link></li>
+            <li><a href="https://github.com/EmmaJStebbins">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/EmmaJStebbins">LinkedIn</a></li>
+            <li><a href="https://twitter.com/EmmaJStebbins">Twitter</a></li>
+          </ul>
         </section>
 
         <section>
@@ -66,12 +64,12 @@ export default function Home() {
 
           <h4 className="section-subheader">
             Senior Software Engineer II,
-            <a href="//www.humblebundle.com">Humble Bundle</a> &mdash; Remote
+            <a href="https://www.humblebundle.com">Humble Bundle</a> &mdash; Remote
             &mdash; March 2019 - Present
           </h4>
           <h4 className="section-subheader">
             Senior Software Engineer,
-            <a href="//www.humblebundle.com">Humble Bundle</a> &mdash; Remote
+            <a href="https://www.humblebundle.com">Humble Bundle</a> &mdash; Remote
             &mdash; July 2018 - March 2019
           </h4>
           <ul>
@@ -99,7 +97,7 @@ export default function Home() {
 
           <h4 className="section-subheader">
             Lead Full Stack Software Engineer,
-            <a href="//www.cfchildren.org">Committee for Children</a> &mdash;
+            <a href="https://www.cfchildren.org">Committee for Children</a> &mdash;
             Seattle &mdash; Jan 2018 - June 2018
           </h4>
           <ul>
@@ -188,7 +186,7 @@ export default function Home() {
           </h4>
           <ul>
             <li>
-              Scraped and normalized product information using Ruby and Java{" "}
+              Scraped and normalized product information using Ruby and Java
             </li>
           </ul>
 
