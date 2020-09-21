@@ -6,7 +6,6 @@ This is the repo for my personal website powered by typescript next.js. It is ho
 - setup tests
 - setup precommit hoook and github hook for running tests
 - link to voice passing project
-- add style for links to make it clear they are clickable
 - remove github environment for github pages
 - use ems instead of pixels in css
 - update most recnet job description to include leads
