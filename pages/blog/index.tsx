@@ -1,32 +1,35 @@
-import Head from "next/head";
 import fs from "fs";
 import path from "path";
-
+import Link from "next/link"
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+
+const POSTS_PATH = "posts";
 
 // todo: create app wide head element and page specific head element with different keys
 export default function Blogs({ posts }) {
   return (
     <Container>
-      <Col>
+      <Col><Row><ul>
         {posts.map((post) => {
           const title = post.metadata.title;
+          const folderPath = path.join('blog', post.folderName);
 
-          return <Row key={title}>{title}</Row>;
+          return <li key={title}><Link href={folderPath}>{title}</Link></li>;
         })}
-      </Col>
+      </ul></Row></Col>
     </Container>
   );
 }
 
+// todo rename variables in this file
 export async function getStaticProps() {
-  const postsDirectory = path.join(process.cwd(), "public/posts"); // TODO move to environment variable or common variable
+  const postsDirectory = path.join(process.cwd(), POSTS_PATH);
   const folderNames = fs.readdirSync(postsDirectory);
 
-  const posts = folderNames.map((filename) => {
-    const folderPath = path.join(postsDirectory, filename);
+  const posts = folderNames.map((folderName) => {
+    const folderPath = path.join(postsDirectory, folderName);
     const content = fs.readFileSync(
       path.join(folderPath, "content.md"),
       "utf8"
@@ -35,11 +38,9 @@ export async function getStaticProps() {
       fs.readFileSync(path.join(folderPath, "metadata.json"), "utf8")
     );
 
-    return { content, metadata };
+    return { content, metadata, folderName };
   });
 
-  // By returning { props: posts }, the Blog component
-  // will receive `posts` as a prop at build time
   return {
     props: {
       posts,
