@@ -21,7 +21,7 @@ This is the repo for my personal website powered by typescript next.js. It is ho
 
 # Overview
 
-CSS is using postcss modules, with a BEM naming convention
+CSS is using postcss and css modules, with a BEM naming convention
 
 - http://getbem.com/
 - https://jahed.dev/2018/02/09/using-css-modules-with-bem/
