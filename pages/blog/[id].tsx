@@ -4,7 +4,6 @@ import Container from "react-bootstrap/Container";
 import Head from "next/head";
 import fs from "fs";
 import path from "path";
-import { fips } from "crypto";
 
 // todo: create app wide head element and page specific head element with different keys
 export default function Blog({ metadata, content }) {

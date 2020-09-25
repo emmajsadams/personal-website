@@ -2,6 +2,7 @@ This is the repo for my personal website powered by typescript next.js. It is ho
 
 # TODO
 
+- setup linters
 - Fully implement react-ga https://github.com/react-ga/react-ga
 - setup google analytics web vitals tracking
 - setup tests
