@@ -1,12 +1,11 @@
 import Head from "next/head";
 import Link from "next/link";
 import Container from "react-bootstrap/Container";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
 import styles from "../styles/Home.module.css";
 
-// todo: create app wide head element and page specific head element with different keys
-// todo: change name to resume or something besides home'
-// todo: change links to a list
-export default function Home() {
+export default function Resume() {
   return (
     <Container fluid="md">
       <Head>
@@ -17,69 +16,68 @@ export default function Home() {
         />
         <link href="/emma.jpg" rel="icon" type="image/jpg"></link>
       </Head>
-      <h1>Emma Stebbins</h1>
+      <h1 className={styles.header}>Emma Stebbins</h1>
       <p>
         Full-stack software engineer experienced with C#, Python, JavaScript.
         Seattle, WA or Remote.
       </p>
-      <main className={styles.grid}>
-        <section>
-          <h3>Education</h3>
-          <p>University of Washington — B.S, Informatics, 2014</p>
-          <p>DigiPen Institute of Technology — Computer Engineering, 2011</p>
-          <h3>Languages</h3>
-          <p>JavaScript, CSS, HTML, C#, Python, SQL</p>
-          <h3>Architecture</h3>
-          <p>
-            Object oriented design, functional programming, REST API design,
-            Unit & integration Testing, MVC & MVVM
-          </p>
-          <h3>Open Source Portfolio</h3>
-          <p>
-            <a href="https://github.com/emmastebbins/blocktube">sharetube</a> -
-            Sharing a redundantly uploaded video using TypeScript, React, Redux,
-            Browserify, ESLint
-          </p>
-          <p>
-            <a href="https://github.com/emmastebbins/dstruct">dstruct</a> - Data
-            structures library for TypeScript
-          </p>
-          <p>
-            <a href="https://github.com/emmastebbins/CheckOut">CheckOut</a> -
-            Store inventory manager using C# and WebAPI
-          </p>
-          <h3>Links</h3>
-          <ul>
-            <li>
-              <a href="/Emma_Stebbins_Resume.pdf">PDF Resume</a>
-            </li>
-            <li>
-              <a href="mailto:emma@stebbins.dev">Email</a>
-            </li>
-            <li>
-              <Link href="/blog">Blog</Link>
-            </li>
-            <li>
-              <a href="https://github.com/EmmaJStebbins">GitHub</a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/EmmaJStebbins">LinkedIn</a>
-            </li>
-            <li>
-              <a href="https://twitter.com/EmmaJStebbins">Twitter</a>
-            </li>
-          </ul>
-        </section>
+      <Row>
+        <Col md={4}>
+          <h3 className={styles.header}>Education</h3>
+            <p>University of Washington — B.S, Informatics, 2014</p>
+            <p>DigiPen Institute of Technology — Computer Engineering, 2011</p>
+            <h3 className={styles.header}>Languages</h3>
+            <p>JavaScript, CSS, HTML, C#, Python, SQL</p>
+            <h3 className={styles.header}>Architecture</h3>
+            <p>
+              Object oriented design, functional programming, REST API design,
+              Unit & integration Testing, MVC & MVVM
+            </p>
+            <h3 className={styles.header}>Open Source Portfolio</h3>
+            <p>
+              <a href="https://github.com/emmastebbins/blocktube">sharetube</a> -
+              Sharing a redundantly uploaded video using TypeScript, React, Redux,
+              Browserify, ESLint
+            </p>
+            <p>
+              <a href="https://github.com/emmastebbins/dstruct">dstruct</a> - Data
+              structures library for TypeScript
+            </p>
+            <p>
+              <a href="https://github.com/emmastebbins/CheckOut">CheckOut</a> -
+              Store inventory manager using C# and WebAPI
+            </p>
+            <h3 className={styles.header}>Links</h3>
+            <ul>
+              <li>
+                <a href="/Emma_Stebbins_Resume.pdf">PDF Resume</a>
+              </li>
+              <li>
+                <a href="mailto:emma@stebbins.dev">Email</a>
+              </li>
+              <li>
+                <Link href="/blog">Blog</Link>
+              </li>
+              <li>
+                <a href="https://github.com/EmmaJStebbins">GitHub</a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/EmmaJStebbins">LinkedIn</a>
+              </li>
+              <li>
+                <a href="https://twitter.com/EmmaJStebbins">Twitter</a>
+              </li>
+            </ul>
+        </Col>
+        <Col md={8}>
+          <h3 className={styles.header}>Experience</h3>
 
-        <section>
-          <h3 className="section-header">Experience</h3>
-
-          <h4 className="section-subheader">
+          <h4>
             Senior Software Engineer II,
             <a href="https://www.humblebundle.com">Humble Bundle</a> &mdash;
             Remote &mdash; March 2019 - Present
           </h4>
-          <h4 className="section-subheader">
+          <h4>
             Senior Software Engineer,
             <a href="https://www.humblebundle.com">Humble Bundle</a> &mdash;
             Remote &mdash; July 2018 - March 2019
@@ -107,7 +105,7 @@ export default function Home() {
             </li>
           </ul>
 
-          <h4 className="section-subheader">
+          <h4>
             Lead Full Stack Software Engineer,
             <a href="https://www.cfchildren.org">Committee for Children</a>{" "}
             &mdash; Seattle &mdash; Jan 2018 - June 2018
@@ -127,7 +125,7 @@ export default function Home() {
             </li>
           </ul>
 
-          <h4 className="section-subheader">
+          <h4>
             Full Stack Software Engineer,
             <a href="https://www.trov.com/">Trov</a> &mdash; Remote &mdash; July
             2013 – Sept 2017
@@ -151,7 +149,7 @@ export default function Home() {
             </li>
           </ul>
 
-          <h4 className="section-subheader">
+          <h4>
             Assistant Researcher,
             <a href="https://ischool.uw.edu">UW Information School</a> &mdash;
             Jan 2013 – Oct 2013
@@ -167,7 +165,7 @@ export default function Home() {
             </li>
           </ul>
 
-          <h4 className="section-subheader">
+          <h4>
             Software Engineer Intern,
             <a href="//www.optionshouse.com/">PEAK6 Investments LP</a> &mdash;
             Sept 2012 – May 2013
@@ -176,7 +174,7 @@ export default function Home() {
             <li>Maintained legacy Java and Ruby on Rails stock trading apps</li>
           </ul>
 
-          <h4 className="section-subheader">
+          <h4>
             Web Instructor and Engineer,
             <a href="//www.washington.edu/lst/workshops/">UW IT</a> &mdash; Feb
             2012 – Mar 2013
@@ -191,7 +189,7 @@ export default function Home() {
             </li>
           </ul>
 
-          <h4 className="section-subheader">
+          <h4>
             Software Engineer Intern,
             <a href="//www.popshops.com/">PopShops.com</a> &mdash; June 2012 –
             Aug 2012
@@ -202,7 +200,7 @@ export default function Home() {
             </li>
           </ul>
 
-          <h4 className="section-subheader">
+          <h4>
             Software Engineer Intern,
             <a href="//www.smiteworks.com/">SmiteWorks</a> &mdash; June 2011 –
             Aug 2011
@@ -212,8 +210,8 @@ export default function Home() {
               Built a C# app to import character data from competitors apps
             </li>
           </ul>
-        </section>
-      </main>
+        </Col>
+      </Row>
     </Container>
   );
 }
