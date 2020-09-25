@@ -43,7 +43,7 @@ export async function getStaticProps({ params }) {
   return {
     props: {
       metadata,
-      content
+      content,
     },
   };
 }
@@ -51,7 +51,11 @@ export async function getStaticProps({ params }) {
 export async function getStaticPaths() {
   const postsDirectory = path.join(process.cwd(), "public/posts");
   const folderNames = fs.readdirSync(postsDirectory);
-  const paths = folderNames.map((folderName) => { params: { id: folderName }})
+  const paths = folderNames.map((folderName) => {
+    params: {
+      id: folderName;
+    }
+  });
 
   return {
     // TODO actually use prerendered paths and turn off fallback for max performance
