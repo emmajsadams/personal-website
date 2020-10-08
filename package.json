@@ -7,9 +7,13 @@
     "build": "yarn test && next build",
     "start": "next start",
     "test": "prettier --check .",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "build:base-css": "tailwindcss build ./styles/tailwind.base.css -o ./styles/base.css"
   },
   "dependencies": {
+    "@emotion/css": "^11.0.0-next.12",
+    "@emotion/react": "^11.0.0-next.12",
+    "@emotion/styled": "^11.0.0-next.12",
     "bootstrap": "4.5.2",
     "install": "0.13.0",
     "next": "9.5.3",
@@ -20,9 +24,16 @@
     "react-markdown": "4.3.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@emotion/babel-plugin": "^11.0.0-next.12",
+    "@emotion/server": "^11.0.0-next.12",
+    "@tailwindcss/ui": "^0.2.2",
+    "@tailwindcssinjs/macro": "^0.3.1",
     "@types/node": "14.6.4",
     "@types/react": "16.9.49",
+    "babel-plugin-macros": "2.8.0",
     "prettier": "2.1.2",
+    "tailwindcss": "^1.6.0",
     "typescript": "4.0.2"
   }
 }
