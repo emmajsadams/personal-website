@@ -2,6 +2,7 @@ This is the repo for my personal website powered by typescript next.js. It is ho
 
 # TODO
 
+- fix \_document.tsx emotion setup (file on desktop)
 - use mdx https://mdxjs.com/ https://blog.tailwindcss.com/building-the-tailwind-blog for blog format
 - Use tailwindcss and emotionjs to manage colors and reponsive design
   - https://tailwindcss.com/
