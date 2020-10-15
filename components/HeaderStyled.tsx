@@ -1,5 +1,5 @@
-import styled from '@emotion/styled'
-import tw from '@tailwindcssinjs/macro'
+import styled from "@emotion/styled";
+import tw from "@tailwindcssinjs/macro";
 
 const HeaderStyled = styled.button(tw`
   relative
@@ -15,6 +15,6 @@ const HeaderStyled = styled.button(tw`
   focus[outline-none border-indigo-700 shadow-outline-indigo]
   active:bg-indigo-700
   transition duration-150 ease-in-out
-`)
+`);
 
-export default HeaderStyled
+export default HeaderStyled;
