@@ -73,9 +73,12 @@ export default function Resume() {
           <h3 className={styles.header}>Experience</h3>
 
           <h4>
-            Senior Software Engineer II,
+            Freelance Software Engineer, Remote &mdash; June 2020 - Present
+          </h4>
+          <h4>
+            Lead Senior Software Engineer II,
             <a href="https://www.humblebundle.com">Humble Bundle</a> &mdash;
-            Remote &mdash; March 2019 - Present
+            Remote &mdash; March 2019 - June 2020
           </h4>
           <h4>
             Senior Software Engineer,
