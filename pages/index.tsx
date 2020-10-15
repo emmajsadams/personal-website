@@ -82,7 +82,7 @@ export default function Resume() {
             </li>
           </ul>
           <h4>
-            Lead Senior Software Engineer II,
+            Lead Senior Software Engineer II,&nbsp;
             <a href="https://www.humblebundle.com">Humble Bundle</a> &mdash;
             Remote &mdash; March 2019 - June 2020
           </h4>
@@ -115,7 +115,7 @@ export default function Resume() {
           </ul>
 
           <h4>
-            Lead Full Stack Software Engineer,
+            Lead Full Stack Software Engineer,&nbsp;
             <a href="https://www.cfchildren.org">Committee for Children</a>
             &mdash; Seattle &mdash; Jan 2018 - June 2018
           </h4>
@@ -135,7 +135,7 @@ export default function Resume() {
           </ul>
 
           <h4>
-            Full Stack Software Engineer,
+            Full Stack Software Engineer,&nbsp;
             <a href="https://www.trov.com/">Trov</a> &mdash; Remote &mdash; July
             2013 – Sept 2017
           </h4>
@@ -159,7 +159,7 @@ export default function Resume() {
           </ul>
 
           <h4>
-            Assistant Researcher,
+            Assistant Researcher,&nbsp;
             <a href="https://ischool.uw.edu">UW Information School</a> &mdash;
             Jan 2013 – Oct 2013
           </h4>
@@ -175,7 +175,7 @@ export default function Resume() {
           </ul>
 
           <h4>
-            Software Engineer Intern,
+            Software Engineer Intern,&nbsp;
             <a href="//www.optionshouse.com/">PEAK6 Investments LP</a> &mdash;
             Sept 2012 – May 2013
           </h4>
@@ -184,7 +184,7 @@ export default function Resume() {
           </ul>
 
           <h4>
-            Web Instructor and Engineer,
+            Web Instructor and Engineer,&nbsp;
             <a href="//www.washington.edu/lst/workshops/">UW IT</a> &mdash; Feb
             2012 – Mar 2013
           </h4>
@@ -199,7 +199,7 @@ export default function Resume() {
           </ul>
 
           <h4>
-            Software Engineer Intern,
+            Software Engineer Intern,&nbsp;
             <a href="//www.popshops.com/">PopShops.com</a> &mdash; June 2012 –
             Aug 2012
           </h4>
@@ -210,7 +210,7 @@ export default function Resume() {
           </ul>
 
           <h4>
-            Software Engineer Intern,
+            Software Engineer Intern,&nbsp;
             <a href="//www.smiteworks.com/">SmiteWorks</a> &mdash; June 2011 –
             Aug 2011
           </h4>
