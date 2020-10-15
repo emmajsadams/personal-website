@@ -22,7 +22,7 @@ export default function Resume() {
         Seattle, WA or Remote.
       </p>
       <Row>
-        <Col md={4}>
+        <Col md={3}>
           <h3 className={styles.header}>Education</h3>
           <p>University of Washington — B.S, Informatics, 2014</p>
           <p>DigiPen Institute of Technology — Computer Engineering, 2011</p>
@@ -69,23 +69,29 @@ export default function Resume() {
             </li>
           </ul>
         </Col>
-        <Col md={8}>
+        <Col md={9}>
           <h3 className={styles.header}>Experience</h3>
 
           <h4>
             Freelance Software Engineer, Remote &mdash; June 2020 - Present
           </h4>
+          <ul>
+            <li>
+              A variety of contract positions focused on full stack web
+              development
+            </li>
+          </ul>
           <h4>
             Lead Senior Software Engineer II,
             <a href="https://www.humblebundle.com">Humble Bundle</a> &mdash;
             Remote &mdash; March 2019 - June 2020
           </h4>
-          <h4>
-            Senior Software Engineer,
-            <a href="https://www.humblebundle.com">Humble Bundle</a> &mdash;
-            Remote &mdash; July 2018 - March 2019
-          </h4>
           <ul>
+            <li>
+              Promoted from Senior Software Engineer to Lead Senior Software
+              Engineer II over the course of my employment. Lead the platform
+              team focused on site reliability engineering.
+            </li>
             <li>
               Leading the internationalization project for an 8-year-old
               application with minimal prior internationalization efforts
