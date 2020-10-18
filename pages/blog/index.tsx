@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Head from 'next/head'
 
-// TODO: figure out why there is a missing module error and if I can import glob these
+// TODO: import glob these
 import { frontMatter as astarData } from './astar-csharp.mdx'
 import { frontMatter as dstructErrorData } from './dstruct-error-list-map-tree.mdx'
 import { frontMatter as dstructPosterData } from './dstruct-poster.mdx'
