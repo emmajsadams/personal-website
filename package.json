@@ -3,9 +3,8 @@
   "version": "0.1.0",
   "scripts": {
     "dev": "next dev",
-    "build": "yarn test && next build",
+    "build": "next build",
     "start": "next start",
-    "test": "prettier --check .",
     "format": "prettier --write ."
   },
   "dependencies": {
