@@ -1,61 +1,42 @@
-import fs from "fs";
-import path from "path";
 import Link from "next/link";
-import Container from "react-bootstrap/Container";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
 import Head from "next/head";
 
-// todo: create app wide head element and page specific head element with different keys
-export default function Blogs({ posts }) {
+// TODO: figure out why there is a missing module error and if I can import glob these
+import { frontMatter as astarData } from "./astar-csharp.mdx";
+import { frontMatter as dstructErrorData } from "./dstruct-error-list-map-tree.mdx";
+import { frontMatter as dstructPosterData } from "./dstruct-poster.mdx";
+import { frontMatter as dstructSetData } from "./dstruct-set-multiset-stack.mdx";
+import { frontMatter as dstructTablesData } from "./dstruct-tables-queues.mdx";
+const BLOG_POSTS = [
+  astarData,
+  dstructErrorData,
+  dstructPosterData,
+  dstructSetData,
+  dstructTablesData,
+];
+
+// TODO: read mdx files in the blog folder rather than manually creating links
+export default function Blogs() {
   return (
     <>
       <Head>
         <title>Emma Stebbins' Blog</title>
       </Head>
-      <Container>
-        <Col>
-          <Row>
-            <ul>
-              {posts.map((post) => {
-                const title = post.metadata.title;
-                const folderPath = path.join("blog", post.folderName);
-
-                return (
-                  <li key={title}>
-                    <Link href={folderPath}>{title}</Link>
-                  </li>
-                );
-              })}
-            </ul>
-          </Row>
-        </Col>
-      </Container>
+      <div className="container">
+        <h1>Blog Posts</h1>
+        <hr />
+        <ul>
+          {BLOG_POSTS.map((post) => (
+            <li key={post.title}>
+              <Link href={post.__resourcePath.replace(".mdx", "")}>
+                {post.title}
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <hr />
+        <Link href="/">Back to Resume</Link>
+      </div>
     </>
   );
-}
-
-// todo rename variables in this file
-export async function getStaticProps() {
-  const postsDirectory = path.join(process.cwd(), "public/posts");
-  const folderNames = fs.readdirSync(postsDirectory);
-
-  const posts = folderNames.map((folderName) => {
-    const folderPath = path.join(postsDirectory, folderName);
-    const content = fs.readFileSync(
-      path.join(folderPath, "content.md"),
-      "utf8"
-    );
-    const metadata = JSON.parse(
-      fs.readFileSync(path.join(folderPath, "metadata.json"), "utf8")
-    );
-
-    return { content, metadata, folderName };
-  });
-
-  return {
-    props: {
-      posts,
-    },
-  };
 }
