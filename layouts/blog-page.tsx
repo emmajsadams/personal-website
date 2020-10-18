@@ -1,19 +1,19 @@
-import { useRouter } from "next/router";
-import Link from "next/link";
-import Head from "next/head";
-import { MDXProvider } from "@mdx-js/react";
-import CodeBlock from "../components/CodeBlock";
+import { useRouter } from 'next/router'
+import Link from 'next/link'
+import Head from 'next/head'
+import { MDXProvider } from '@mdx-js/react'
+import CodeBlock from '../components/CodeBlock'
 
 const components = {
   code: CodeBlock,
-};
+}
 
 export default function BlogPage({ children, frontMatter }) {
-  const router = useRouter();
+  const router = useRouter()
 
   // TODO: remove this once fallback is turned off
   if (router.isFallback) {
-    return <p>Loading...</p>;
+    return <p>Loading...</p>
   }
 
   return (
@@ -32,5 +32,5 @@ export default function BlogPage({ children, frontMatter }) {
         <Link href="/">Back to Resume</Link>
       </div>
     </MDXProvider>
-  );
+  )
 }

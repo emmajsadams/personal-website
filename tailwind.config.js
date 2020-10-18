@@ -3,11 +3,11 @@ module.exports = {
   purge: [],
   theme: {
     container: {
-      padding: "4em",
+      padding: '4em',
       center: true,
     },
     extend: {},
   },
   variants: {},
   plugins: [],
-};
+}

@@ -1,31 +1,30 @@
-import ReactGA from "react-ga";
-import { useEffect } from "react";
-import { useRouter } from "next/router";
-import Head from "next/head";
-import type { AppProps } from "next/app";
+import ReactGA from 'react-ga'
+import { useEffect } from 'react'
+import { useRouter } from 'next/router'
+import Head from 'next/head'
+import type { AppProps } from 'next/app'
 
-
-import "../styles/globals.css";
+import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const router = useRouter(); // TODO: move this into use effect?
+  const router = useRouter() // TODO: move this into use effect?
 
   // todo ensure I am not initializing too much
-  ReactGA.initialize(process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_TRACKING_ID);
+  ReactGA.initialize(process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_TRACKING_ID)
 
   //todo: determine if this even needed
   //ReactGA.pageview(window.location.pathname + window.location.search);
 
   useEffect(() => {
     const handleRouteChange = (url) => {
-      ReactGA.pageview(url);
-    };
+      ReactGA.pageview(url)
+    }
 
-    router.events.on("routeChangeComplete", handleRouteChange);
+    router.events.on('routeChangeComplete', handleRouteChange)
     return () => {
-      router.events.off("routeChangeComplete", handleRouteChange);
-    };
-  }, []);
+      router.events.off('routeChangeComplete', handleRouteChange)
+    }
+  }, [])
 
   return (
     <>
@@ -38,7 +37,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <Component {...pageProps} />
     </>
-  );
+  )
 }
 
-export default MyApp;
+export default MyApp
