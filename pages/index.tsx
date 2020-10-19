@@ -58,6 +58,12 @@ export default function Resume() {
             <li>
               <a href="https://twitter.com/EmmaJStebbins">Twitter</a>
             </li>
+            <li>
+              <a href="/pgp.txt">PGP</a>
+            </li>
+            <li>
+              <a href="https://keybase.io/emmastebbins">Keybase</a>
+            </li>
           </ul>
         </div>
         <div className="md:w-2/3">
