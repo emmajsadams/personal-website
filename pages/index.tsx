@@ -5,7 +5,7 @@ export default function Resume() {
   return (
     <div className="container">
       <Head>
-        <title>Emma Cline Resume</title>
+        <title>Emma Cline Résumé</title>
       </Head>
       <h1>Emma Cline</h1>
       <p>

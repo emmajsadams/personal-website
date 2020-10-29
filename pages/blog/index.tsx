@@ -20,7 +20,7 @@ export default function Blogs() {
   return (
     <>
       <Head>
-        <title>Emma Stebbins' Blog</title>
+        <title>Emma Cline's Blog</title>
       </Head>
       <div className="container">
         <h1>Blog Posts</h1>
@@ -35,7 +35,7 @@ export default function Blogs() {
           ))}
         </ul>
         <hr />
-        <Link href="/">Back to Resume</Link>
+        <Link href="/">Back to Résumé</Link>
       </div>
     </>
   )

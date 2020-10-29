@@ -2,6 +2,9 @@ This is the repo for my personal website powered by typescript next.js. It is ho
 
 # TODO
 
+- Expand on freelance role (mention discord bot, work with peter, other stuff)
+- Expand on past positions maybe?
+- Do more leetcode problems and refrence on resume
 - Rewrite author history to anon gitlab email "7471922-EmmaJCline@users.noreply.gitlab.com" and
 - Deal with "warn - Tailwind is not purging unused styles because no template paths have been provided."
 - Move all config into package.json like discord-mgmt-bot.
@@ -10,7 +13,7 @@ This is the repo for my personal website powered by typescript next.js. It is ho
 - Figure out some way to list email? Or recommend contact on LinkedIn instead to avoid spam?
 - Setup Google Analytics using https://nextjs.org/docs/advanced-features/measuring-performance instead of react-ga
 - Review all gitlab projects and link them with nice descriptions
-- Link pgp key for latest email and maybe setup keybasE?
+- Link pgp key for latest email and maybe setup keybase?
 - revisit style (check todos in css, think about more spacing in blog posts, code formatting not working for some reason)
 - audit package.json (figure out what should be dev vs prod, remove unused packages)
 - Expand on overview for clear documentation
