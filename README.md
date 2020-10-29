@@ -2,6 +2,7 @@ This is the repo for my personal website powered by typescript next.js. It is ho
 
 # TODO
 
+- Deal with "warn - Tailwind is not purging unused styles because no template paths have been provided."
 - Move all config into package.json like discord-mgmt-bot.
 - Copy any build tools/config over from discord-mgmt-bot (like husky, and latest typescript config)
 - Add PDF resume (yeeted my old one since out of date)

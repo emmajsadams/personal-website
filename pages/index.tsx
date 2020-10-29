@@ -10,7 +10,10 @@ export default function Resume() {
       <h1>Emma Cline</h1>
       <p>
         Full-stack software engineer experienced with C#, Python, JavaScript.
-        Seattle, WA or Remote.
+      </p>
+      <p>
+        Currently looking for remote Senior Software Engineer positions or
+        positions based in Salt Lake City or Draper, Utah.
       </p>
       <div className="md:flex">
         <div className="md:w-1/3">
