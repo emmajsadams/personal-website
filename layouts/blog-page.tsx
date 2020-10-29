@@ -19,7 +19,7 @@ export default function BlogPage({ children, frontMatter }) {
   return (
     <MDXProvider components={components}>
       <Head>
-        <title>{frontMatter.title}</title>
+        <title>Emma Cline - {frontMatter.title}</title>
       </Head>
       <div className="container">
         <h1>{frontMatter.title}</h1>

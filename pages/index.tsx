@@ -5,9 +5,9 @@ export default function Resume() {
   return (
     <div className="container">
       <Head>
-        <title>Emma Stebbins</title>
+        <title>Emma Cline Resume</title>
       </Head>
-      <h1>Emma Stebbins</h1>
+      <h1>Emma Cline</h1>
       <p>
         Full-stack software engineer experienced with C#, Python, JavaScript.
         Seattle, WA or Remote.
@@ -26,43 +26,38 @@ export default function Resume() {
           </p>
           <h2>Open Source Portfolio</h2>
           <p>
-            <a href="https://github.com/emmastebbins/blocktube">sharetube</a> -
+            <a href="https://gitlab.com/EmmaJCline/discord-mgmt-bot">
+              Discord Management Bot
+            </a>
+            - Discord bots written in TypeScript for a Node.js environment. The
+            bots are focused on specific functions that have focused permissions
+            and are configured with JSON rather than monolithic web interface
+            configured bots that require admin. It is comprised of a set of
+            reusable mostly pure functions that are distributed as a library.
+          </p>
+          <p>
+            <a href="https://gitlab.com/EmmaJCline/sharetube">sharetube</a> -
             Sharing a redundantly uploaded video using TypeScript, React, Redux,
             Browserify, ESLint
           </p>
+
           <p>
-            <a href="https://github.com/emmastebbins/dstruct">dstruct</a> - Data
+            <a href="https://gitlab.com/EmmaJCline/dstruct">dstruct</a> - Data
             structures library for TypeScript
-          </p>
-          <p>
-            <a href="https://github.com/emmastebbins/CheckOut">CheckOut</a> -
-            Store inventory manager using C# and WebAPI
           </p>
           <h2>Links</h2>
           <ul>
             <li>
-              <a href="/Emma_Stebbins_Resume.pdf">PDF Resume</a>
+              <a href="https://gitlab.com/EmmaJCline">GitLab</a>
             </li>
             <li>
-              <a href="mailto:emma@stebbins.dev">Email</a>
+              <a href="https://www.linkedin.com/in/EmmaJCline">LinkedIn</a>
+            </li>
+            <li>
+              <a href="https://twitter.com/EmmaJCline">Twitter</a>
             </li>
             <li>
               <Link href="/blog">Blog</Link>
-            </li>
-            <li>
-              <a href="https://github.com/EmmaJStebbins">GitHub</a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/EmmaJStebbins">LinkedIn</a>
-            </li>
-            <li>
-              <a href="https://twitter.com/EmmaJStebbins">Twitter</a>
-            </li>
-            <li>
-              <a href="/pgp.txt">PGP</a>
-            </li>
-            <li>
-              <a href="https://keybase.io/emmastebbins">Keybase</a>
             </li>
           </ul>
         </div>
