@@ -9,7 +9,8 @@ export default function Resume() {
       </Head>
       <h1>Emma Cline</h1>
       <p>
-        Full-stack software engineer experienced with C#, Python, JavaScript.
+        Full-stack Senior Software Engineer experienced with TypeScript,
+        JavaScript, C#, Python.
       </p>
       <p>
         Currently looking for remote Senior Software Engineer positions or
@@ -21,11 +22,28 @@ export default function Resume() {
           <p>University of Washington — B.S, Informatics, 2014</p>
           <p>DigiPen Institute of Technology — Computer Engineering, 2011</p>
           <h2>Languages</h2>
-          <p>JavaScript, CSS, HTML, C#, Python, SQL</p>
+          <p>TypeScript, JavaScript, C#, Python, HTML5/CSS3, Bash, SQL, C</p>
+          <h2>Libraries & Frameworks</h2>
+          <p>
+            Next.JS, React, Vue.js, TailwindCSS, PostCSS, Flask, ASP.NET MVC,
+            Nancy (C# Flask)
+          </p>
+          <h2>Tools</h2>
+          <p>
+            VSCode, Git, ESLint, Prettier, Docker, Kubernetes, Yarn, npm, cmake,
+            gcc
+          </p>
+          <h2>Databases</h2>
+          <p>PostgreSQL, MSSQL, MySQL, Elasticsearch</p>
+          <h2>Cloud Providers</h2>
+          <p>
+            AWS, GCE, Azure, Vercel, DigtalOcean, Cloudflare (workers & CDN),
+            Akamai
+          </p>
           <h2>Architecture</h2>
           <p>
             Object oriented design, functional programming, REST API design,
-            Unit & integration Testing, MVC & MVVM
+            Unit & integration Testing, MVC
           </p>
           <h2>Open Source Portfolio</h2>
           <p>

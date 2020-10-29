@@ -2,10 +2,11 @@ This is the repo for my personal website powered by typescript next.js. It is ho
 
 # TODO
 
+- Rewrite author history to anon gitlab email "7471922-EmmaJCline@users.noreply.gitlab.com" and
 - Deal with "warn - Tailwind is not purging unused styles because no template paths have been provided."
 - Move all config into package.json like discord-mgmt-bot.
 - Copy any build tools/config over from discord-mgmt-bot (like husky, and latest typescript config)
-- Add PDF resume (yeeted my old one since out of date)
+- Add PDF resume (yeeted my old one since out of date). create extended and one page resume
 - Figure out some way to list email? Or recommend contact on LinkedIn instead to avoid spam?
 - Setup Google Analytics using https://nextjs.org/docs/advanced-features/measuring-performance instead of react-ga
 - Review all gitlab projects and link them with nice descriptions
