@@ -61,7 +61,6 @@ export default function Resume() {
             Sharing a redundantly uploaded video using TypeScript, React, Redux,
             Browserify, ESLint
           </p>
-
           <p>
             <a href="https://gitlab.com/EmmaJCline/dstruct">dstruct</a> - Data
             structures library for TypeScript
@@ -79,6 +78,9 @@ export default function Resume() {
             </li>
             <li>
               <Link href="/blog">Blog</Link>
+            </li>
+            <li>
+              <a href="/keys/publickey.asc">Primary Email Public Key</a>
             </li>
           </ul>
         </div>

@@ -13,7 +13,6 @@ This is the repo for my personal website powered by typescript next.js. It is ho
 - Figure out some way to list email? Or recommend contact on LinkedIn instead to avoid spam?
 - Setup Google Analytics using https://nextjs.org/docs/advanced-features/measuring-performance instead of react-ga
 - Review all gitlab projects and link them with nice descriptions
-- Link pgp key for latest email and maybe setup keybase?
 - revisit style (check todos in css, think about more spacing in blog posts, code formatting not working for some reason)
 - audit package.json (figure out what should be dev vs prod, remove unused packages)
 - Expand on overview for clear documentation
