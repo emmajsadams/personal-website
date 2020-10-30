@@ -1,3 +1,5 @@
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://gitlab.com/EmmaJCline/personal-website)
+
 This is the repo for my personal website powered by typescript next.js. It is hosted at emma.cline.engineer using vercel
 
 # TODO
