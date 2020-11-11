@@ -2,23 +2,23 @@ This is the repo for my personal website powered by TypeScript next.js. It is ho
 
 # TODO
 
-* look into https://asciidoc.org/ for blog posts instead of mdx. Likely using https://www.npmjs.com/package/react-asciidoc
 * write resume in asciidoc. render that in react using react-asciidoc, and render pdf by converting to latex
-* convert blog to asciidoc
-* Expand on freelance role (mention discord bot, work with peter, other stuff)
-* fully review past resume contents
-* Deal with "warn - Tailwind is not purging unused styles because no template paths have been provided."
+* convert blog to asciidoc using react-asciidoc
 * Move all config into package.json like discord-mgmt-bot.
-* Setup Google Analytics using https://nextjs.org/docs/advanced-features/measuring-performance instead of react-ga
-* Review all gitlab projects and link them with nice descriptions
-* audit package.json (figure out what should be dev vs prod, remove unused packages)
+* Setup webvitals mointoring with google analytics https://nextjs.org/docs/advanced-features/measuring-performance
 * Expand on overview for clear documentation
-* Setup eslint (see discord bot as example)
 * configure typescript config correctly (see discord bot as example)
-* setup precommit hoook and github hook for running test (see discord bot as a example)
+
+# TODO resume content cleanup
+
+* update resume picture and consider displaying on page?
+* Review all gitlab projects and link them with nice descriptions
+* fully review past resume contents
+* Expand on freelance role (mention discord bot, work with peter, other stuff)
 
 # Low priority TODO
 
+* consider package.json config vs separate js config files. One problem is most config files don't support package.json config?
 * setup base docker image that includes all gpg/git setup https://gitlab.com/-/snippets/2038690
 * revisit style (check todos in css, think about more spacing in blog posts, code formatting not working for some reason)
 * investigate this stack https://twitter.com/ryanflorence/status/1217875244674797569
@@ -36,3 +36,7 @@ Header sizes
 https://www.smashingmagazine.com/2009/08/typographic-design-survey-best-practices-from-the-best-blogs/
 
 https://www.smashingmagazine.com/2010/02/the-definitive-guide-to-styling-web-links/
+
+Google Analytics config
+
+using this blog post aas a reference https://medium.com/frontend-digest/using-nextjs-with-google-analytics-and-typescript-620ba2359dea
