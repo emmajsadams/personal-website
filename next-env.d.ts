@@ -12,9 +12,3 @@ declare module '*.mdx' {
 		__resourcePath: string,
 	}
 }
-
-declare global {
-	interface Window {
-		gtag: any // TODO better type here
-	}
-}
