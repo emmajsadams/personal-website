@@ -81,7 +81,10 @@ export default function Resume(): ReactElement {
 							<Link href="/blog">Blog</Link>
 						</li>
 						<li>
-							<a href="/keys/publickey.asc">Primary Email Public Key</a>
+							<a href="mailto:emma@cline.engineer">Email</a>
+						</li>
+						<li>
+							<a href="/keys/publickey.emma@cline.engineer.asc">PGP key</a>
 						</li>
 					</ul>
 				</div>
