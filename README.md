@@ -21,6 +21,7 @@ This is the repo for my personal website powered by TypeScript next.js. It is ho
 
 # Low priority TODO
 
+- Create docker image with gpg keys in for discord bot (include export GPG_TTY=\$(tty) to fix signing error)
 - revisit style (check todos in css, think about more spacing in blog posts, code formatting not working for some reason)
 - investigate this stack https://twitter.com/ryanflorence/status/1217875244674797569
 - create link shortening api to replace rbrandly
