@@ -1,43 +1,23 @@
-import ReactGA from 'react-ga'
-import { useEffect } from 'react'
+import { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
-import Head from 'next/head'
-import type { AppProps } from 'next/app'
-
+import { useEffect } from 'react'
 import '../styles/globals.css'
+import * as gtag from '../utils/gtag'
 
-function MyApp({ Component, pageProps }: AppProps) {
-  const router = useRouter() // TODO: move this into use effect?
+const App = ({ Component, pageProps }: AppProps) => {
+	const router = useRouter()
 
-  // todo ensure I am not initializing too much
-  ReactGA.initialize(process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_TRACKING_ID)
+	useEffect(() => {
+		const handleRouteChange = (url: URL) => {
+			gtag.pageview(url)
+		}
+		router.events.on('routeChangeComplete', handleRouteChange)
+		return () => {
+			router.events.off('routeChangeComplete', handleRouteChange)
+		}
+	}, [router.events])
 
-  //todo: determine if this even needed
-  //ReactGA.pageview(window.location.pathname + window.location.search);
-
-  useEffect(() => {
-    const handleRouteChange = (url) => {
-      ReactGA.pageview(url)
-    }
-
-    router.events.on('routeChangeComplete', handleRouteChange)
-    return () => {
-      router.events.off('routeChangeComplete', handleRouteChange)
-    }
-  }, [])
-
-  return (
-    <>
-      <Head>
-        <meta
-          name="google-site-verification"
-          content="O_dhy7q1Kfwrvh4v9kyyHmHVZWJqzCegjrgNteyU65k"
-        />
-        <link href="/emma.jpg" rel="icon" type="image/jpg"></link>
-      </Head>
-      <Component {...pageProps} />
-    </>
-  )
+	return <Component {...pageProps} />
 }
 
-export default MyApp
+export default App
