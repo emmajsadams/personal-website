@@ -4,13 +4,11 @@ This is the repo for my personal website powered by TypeScript next.js. It is ho
 
 # TODO
 
-- Setup captcha protected message me page that also links to linked in as a backup to protect email from leaking
-- implmement resume.json https://resumake.io/ https://themes.jsonresume.org/theme/kendall https://github.com/jsonresume/resume-schema (theme https://themes.jsonresume.org/theme/onepage)
+- implmement resume.json in website and latex/pdf resume https://resumake.io/ https://themes.jsonresume.org/theme/kendall https://github.com/jsonresume/resume-schema (theme https://themes.jsonresume.org/theme/onepage)
 - Expand on freelance role (mention discord bot, work with peter, other stuff)
 - fully review past resume contents
 - Deal with "warn - Tailwind is not purging unused styles because no template paths have been provided."
 - Move all config into package.json like discord-mgmt-bot.
-- Add PDF resume (yeeted my old one since out of date). create extended and one page resume
 - Setup Google Analytics using https://nextjs.org/docs/advanced-features/measuring-performance instead of react-ga
 - Review all gitlab projects and link them with nice descriptions
 - audit package.json (figure out what should be dev vs prod, remove unused packages)
@@ -21,6 +19,7 @@ This is the repo for my personal website powered by TypeScript next.js. It is ho
 
 # Low priority TODO
 
+- look into https://asciidoc.org/
 - Create docker image with gpg keys in for discord bot (include export GPG_TTY=\$(tty) to fix signing error)
 - revisit style (check todos in css, think about more spacing in blog posts, code formatting not working for some reason)
 - investigate this stack https://twitter.com/ryanflorence/status/1217875244674797569
