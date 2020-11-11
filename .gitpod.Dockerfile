@@ -1,7 +1,5 @@
-FROM gitpod/workspace-full
+FROM node:14.10.1-alpine
 
-# Install custom tools, runtimes, etc.
-# For example "bastet", a command-line tetris clone:
-# RUN brew install bastet
-#
-# More information: https://www.gitpod.io/docs/config-docker/
+RUN apk add --no-cache --virtual .build-deps g++ python3-dev libffi-dev openssl-dev python3 make asciidoctor texlive-full
+RUN pip3 install --upgrade pip setuptools
+RUN gem install asciidoctor-latex --pre
