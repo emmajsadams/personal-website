@@ -4,6 +4,8 @@ This is the repo for my personal website powered by TypeScript next.js. It is ho
 
 # TODO
 
+- setup gpg signing for gitpod environment and link that to keybase
+- link keybase on this website and upload all gpg keys
 - Setup captcha protected message me page that also links to linked in as a backup to protect email from leaking
 - implmement resume.json https://resumake.io/ https://themes.jsonresume.org/theme/kendall https://github.com/jsonresume/resume-schema (theme https://themes.jsonresume.org/theme/onepage)
 - Expand on freelance role (mention discord bot, work with peter, other stuff)
