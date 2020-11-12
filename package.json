@@ -7,8 +7,12 @@
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"format": "prettier --write .",
-		"lint": "eslint **.ts --fix && prettier --check **.ts"
+		"format": "prettier --write **.ts",
+		"lint": "eslint **.ts --fix && prettier --check **.ts",
+		"resume": "yarn run resume-latex && yarn run resume-pdf && yarn run resume-html",
+		"resume-latex": "asciidoctor-latex ./public/resume/emmacline-resume.adoc",
+		"resume-pdf": "asciidoctor-pdf ./public/resume/emmacline-resume.adoc",
+		"resume-html": "asciidoctor ./public/resume/emmacline-resume.adoc"
 	},
 	"dependencies": {
 		"@mdx-js/loader": "1.6.21",
