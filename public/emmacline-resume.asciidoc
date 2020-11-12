@@ -1,0 +1,146 @@
+# Emma Cline Résumé
+
+Full-stack Senior Software Engineer experienced with TypeScript, JavaScript, C#, Python.
+
+Currently looking for remote Senior Software Engineer positions or positions based in Salt Lake City or Draper, Utah.
+
+## Links
+
+* https://gitlab.com/EmmaJCline[GitLab]
+* https://www.linkedin.com/in/EmmaJCline[LinkedIn]
+* https://twitter.com/EmmaJCline[Twitter]
+// TODO: figure out how to replace this with a vercel link in html. Maybe use a css class??
+* https://emma.cline.engineer/blog[Blog]
+* mailto:emma@cline.engineer[Email]
+* https://emma.cline.engineer/keys/publickey.emma@cline.engineer.asc[PGP Key]
+
+## Education
+
+* University of Washington — B.S, Informatics, 2014
+* DigiPen Institute of Technology — Computer Engineering, 2011
+
+## Open Source Portfolio
+
+### https://gitlab.com/EmmaJCline/discord-mgmt-bot[Discord Management Bot]
+
+Discord bots written in TypeScript for a Node.js environment. The bots are focused on specific functions that have focused permissions and are configured with JSON rather than monolithic web interface configured bots that require admin. It is comprised of a set of reusable mostly pure functions that are distributed as a library.
+
+### https://gitlab.com/EmmaJCline/sharetube[ShareTube]
+
+Sharing a redundantly uploaded video using TypeScript, React, Redux, Browserify, ESLint
+
+### https://gitlab.com/EmmaJCline/dstruct[dstruct]
+
+Data structures library for TypeScript
+
+## Experience
+
+### Freelance Software Engineer -- Remote -- June 2020 - Present
+
+* A variety of contract positions focused on full stack web development
+
+### Lead Senior Software Engineer II -- https://www.humblebundle.com[Humble Bundle] -- Remote --  March 2019 - June 2020
+
+* Promoted from Senior Software Engineer to Lead Senior Software Engineer II over the course of my employment. Lead the platform team focused on site reliability engineering.
+* Leading the internationalization project for an 8-year-old application with minimal prior internationalization efforts
+* Worked with product to define a plan to optimize the user funnel for our monthly product
+* Integrated an OAuth login system for Facebook and Google into our existing user system
+* Planned a project to migrate all sessions to the newly required email or TOTP two-factor system
+* Helped define standards for representing DateTimes, Money, and Percents in Python and JavaScript
+
+### Lead Full Stack Software Engineer, https://www.cfchildren.org[Committee for Children] -- Seattle -- Jan 2018 - June 2018
+
+* Lead replacement of a legacy monolithic DNN platform over to using React and .NET Core
+* Migrated user authentication to an OpenID identity provider(IdentityServer4)
+* Incrementally rewrote a series of untested stored procedures into a modern C# WebAPI.
+
+### Full Stack Software Engineer, https://www.trov.com/[Trov] -- Remote -- July 2013 – Sept 2017
+
+* Remote software development team where developers write unit and integration tests
+* Constructed an on demand insurance platform for consumer items with C# & SQL
+* Developed an app for managing claims and insuring items with React and Angular.js
+* Built a business intelligence system for sending information to partners while respecting legal PII concerns using Python
+
+### Assistant Researcher, https://ischool.uw.edu[UW Information School] -- Remote -- Jan 2013 – Oct 2013
+					
+* Lead developer for a JavaScript library which abstracted cloud drive APIs like Dropbox and Google Drive
+* Taught various UW masters students to use and contribute to the library
+
+### Software Engineer Intern, https://www.optionshouse.com/[PEAK6 Investments LP] -- Remote -- Sept 2012 – May 2013
+
+* Maintained legacy Java and Ruby on Rails stock trading apps
+
+### Web Instructor and Engineer, https://www.washington.edu/lst/workshops/[UW IT] -- Remote -- Feb 2012 – Mar 2013
+
+* Taught modern web development standards to UW staff and students
+* Developed internal applications to manage courses and support tickets
+
+### Software Engineer Intern, https://www.popshops.com/[PopShops.com] -- Remote -- June 2012 – Aug 2012
+
+* Scraped and normalized product information using Ruby and Java
+
+### Software Engineer Intern, https://www.smiteworks.com/[SmiteWorks] -- Remote -- June 2011 – Aug 2011
+
+* Built a C# app to import character data from competitors apps
+
+## Languages
+
+* TypeScript
+* JavaScript
+* C#
+* Python
+* HTML5/CSS3
+* Bash
+* SQL
+* C
+
+## Libraries & Frameworks
+
+* Next.JS
+* React
+* Vue.js
+* TailwindCSS
+* PostCSS
+* Flask
+* ASP.NET MVC,
+* Nancy (C# Flask)
+
+## Tools
+
+* VSCode
+* Git
+* ESLint
+* Prettier
+* Docker
+* Kubernetes
+* Yarn
+* npm
+* cmake
+* gcc
+
+## Database
+
+* PostgreSQL
+* Google Cloud Store
+* Firebase
+* MySQL
+* MSSQL
+* Elasticsearch
+
+## Cloud Providers
+
+* AWS
+* GCE
+* Azure
+* Vercel
+* DigtalOcean
+* Cloudflare (workers & CDN)
+* Akamai
+
+## Architecture
+
+* Object oriented design
+* Functional programming
+* REST API design
+* Unit & integration Testing
+* MVC
