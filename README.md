@@ -3,6 +3,7 @@ This is the repo for my personal website powered by TypeScript next.js. It is ho
 # TODO
 
 - Finish writing latex resume and upload to here https://www.overleaf.com/project/5faddf1c6266afb6d45fa0f3
+- fix code styling on blogs
 - setup working example of sharetube and other mentioned projects (I deleted the github video gist it may have relied on)
 - figure out tailwindcss purging
 - Move all config into package.json like discord-mgmt-bot.
@@ -15,6 +16,7 @@ This is the repo for my personal website powered by TypeScript next.js. It is ho
 
 # Low priority TODO
 
+- add estimated reading time for blog
 - setup base docker image that includes all gpg/git setup using protonmail gpg keys https://gitlab.com/-/snippets/2038690
 - revisit style (check todos in css, think about more spacing in blog posts, code formatting not working for some reason)
 - investigate this stack https://twitter.com/ryanflorence/status/1217875244674797569
