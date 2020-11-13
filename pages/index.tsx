@@ -195,13 +195,13 @@ export default function Resume(): ReactElement {
 
 					<h3>
 						Software Engineer Intern,&nbsp;
-						<a href="//www.optionshouse.com/">PEAK6 Investments LP</a> &mdash;
+						<a href="https://us.etrade.com/home">E*TRADE</a> &mdash;
 						Sept 2012 – May 2013
 					</h3>
 					<ul>
-						<li>Maintained legacy Java and Ruby on Rails stock trading apps</li>
+						<li>Developed Java and Ruby on Rails stock trading apps with an international team</li>
+						<li>Worked on features focused on high-frequency trading and options</li>
 					</ul>
-
 					<h3>
 						Web Instructor and Engineer,&nbsp;
 						<a href="https://www.washington.edu">University of Washington</a> &mdash; Feb
