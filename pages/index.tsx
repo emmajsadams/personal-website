@@ -173,8 +173,8 @@ export default function Resume(): ReactElement {
 							and Angular.js
 						</li>
 						<li>
-							Built a business intelligence system for sending information to
-							partners while respecting legal PII concerns using Python
+							Built a business intelligence system for sending information to 
+							our partners using Python
 						</li>
 					</ul>
 
