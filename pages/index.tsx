@@ -230,12 +230,17 @@ export default function Resume(): ReactElement {
 
 					<h3>
 						Software Engineer Intern,&nbsp;
-						<a href="//www.smiteworks.com/">SmiteWorks</a> &mdash; June 2011 –
-						Aug 2011
+						<a href="//www.smiteworks.com/">SmiteWorks</a> &mdash; May 2011 –
+						Oct 2011
 					</h3>
 					<ul>
 						<li>
-							Built a C# app to import character data from competitors apps
+							Lead the development of a C app to import character data 
+							from competitors apps
+						</li>
+						<li>
+							Implemented rich text chat features for the Fantasy Grounds 
+							game written in C
 						</li>
 					</ul>
 				</div>
