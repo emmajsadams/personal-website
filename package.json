@@ -3,11 +3,7 @@
 	"version": "0.1.0",
 	"repository": "https://gitlab.com/EmmaJCline/personal-website",
 	"author": "Emma Cline <emma@cline.engineer>",
-	"engineStrict": true,
 	"private": false,
-	"engines": {
-		"node": "14.10.1"
-	},
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
