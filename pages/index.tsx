@@ -107,11 +107,13 @@ export default function Resume(): ReactElement {
 					<ul>
 						<li>
 							Promoted from Senior Software Engineer to Lead Senior Software
-							Engineer II over the course of my employment. Lead the platform
-							team focused on site reliability engineering.
+							Engineer II over the course of my employment.
 						</li>
 						<li>
-							Leading the internationalization project for an 8-year-old
+							Lead the platform team focused on site reliability engineering.
+						</li>
+						<li>
+							Lead the internationalization project for an 8-year-old
 							application with minimal prior internationalization efforts
 						</li>
 						<li>
