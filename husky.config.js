@@ -1,5 +1,5 @@
 module.exports = {
 	hooks: {
-		'pre-push': 'yarn run lint && yarn run resume',
+		'pre-push': 'yarn run lint',
 	},
 }
