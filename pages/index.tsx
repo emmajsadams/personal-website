@@ -189,8 +189,7 @@ export default function Resume(): ReactElement {
 							drive APIs like Dropbox and Google Drive
 						</li>
 						<li>
-							Taught various UW masters students to use and contribute to the
-							library
+							Taught staff and students to use and contribute to the library
 						</li>
 					</ul>
 
