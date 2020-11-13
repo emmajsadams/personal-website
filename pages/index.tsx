@@ -150,7 +150,7 @@ export default function Resume(): ReactElement {
 						</li>
 						<li>
 							Incrementally rewrote a series of untested stored procedures into
-							a modern C# WebAPI.
+							a modern C# WebAPI
 						</li>
 					</ul>
 
