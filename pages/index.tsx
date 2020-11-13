@@ -180,7 +180,7 @@ export default function Resume(): ReactElement {
 
 					<h3>
 						Assistant Researcher,&nbsp;
-						<a href="https://ischool.uw.edu">UW Information School</a> &mdash;
+						<a href="https://www.washington.edu">University of Washington</a> &mdash;
 						Jan 2013 – Oct 2013
 					</h3>
 					<ul>
@@ -205,12 +205,12 @@ export default function Resume(): ReactElement {
 
 					<h3>
 						Web Instructor and Engineer,&nbsp;
-						<a href="//www.washington.edu/lst/workshops/">UW IT</a> &mdash; Feb
+						<a href="https://www.washington.edu">University of Washington</a> &mdash; Feb
 						2012 – Mar 2013
 					</h3>
 					<ul>
 						<li>
-							Taught modern web development standards to UW staff and students
+							Taught modern web development standards to staff and students
 						</li>
 						<li>
 							Developed internal applications to manage courses and support
