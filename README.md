@@ -3,6 +3,7 @@ This is the repo for my personal website powered by TypeScript next.js. It is ho
 # TODO
 
 - Finish writing latex resume and upload to here https://www.overleaf.com/project/5faddf1c6266afb6d45fa0f3
+- setup working example of sharetube and other mentioned projects (I deleted the github video gist it may have relied on)
 - figure out tailwindcss purging
 - Move all config into package.json like discord-mgmt-bot.
 - Setup webvitals mointoring with google analytics https://nextjs.org/docs/advanced-features/measuring-performance
