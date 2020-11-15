@@ -89,7 +89,7 @@ export default function Resume(): ReactElement {
 				<div className="md:w-2/3">
 					<h2>Experience</h2>
 					<h3>
-						Freelance Software Engineer, Remote &mdash; June 2020 - Present
+						Freelance Software Engineer, Remote &mdash; Aug 2020 - Present
 					</h3>
 					<ul>
 						<li>
@@ -100,7 +100,7 @@ export default function Resume(): ReactElement {
 					<h3>
 						Lead Senior Software Engineer II,&nbsp;
 						<a href="https://www.humblebundle.com">Humble Bundle</a> &mdash;
-						Remote &mdash; March 2019 - June 2020
+						Remote &mdash; Jul 2018 - Jul 2020
 					</h3>
 					<ul>
 						<li>
@@ -135,7 +135,7 @@ export default function Resume(): ReactElement {
 					<h3>
 						Lead Full Stack Software Engineer,&nbsp;
 						<a href="https://www.cfchildren.org">Committee for Children</a>
-						&mdash; Seattle &mdash; Jan 2018 - June 2018
+						&mdash; Seattle &mdash; Jan 2018 - Aug 2018
 					</h3>
 					<ul>
 						<li>
@@ -154,8 +154,8 @@ export default function Resume(): ReactElement {
 
 					<h3>
 						Full Stack Software Engineer,&nbsp;
-						<a href="https://www.trov.com/">Trov</a> &mdash; Remote &mdash; July
-						2013 – Sept 2017
+						<a href="https://www.trov.com/">Trov</a> &mdash; Remote &mdash; Jul
+						2013 – Dec 2017
 					</h3>
 					<ul>
 						<li>
@@ -179,7 +179,7 @@ export default function Resume(): ReactElement {
 					<h3>
 						Assistant Researcher,&nbsp;
 						<a href="https://www.washington.edu">University of Washington</a> &mdash;
-						Jan 2013 – Oct 2013
+						Jan 2013 – Nov 2013
 					</h3>
 					<ul>
 						<li>
@@ -194,7 +194,7 @@ export default function Resume(): ReactElement {
 					<h3>
 						Software Engineer Intern,&nbsp;
 						<a href="https://us.etrade.com/home">E*TRADE</a> &mdash;
-						Sept 2012 – May 2013
+						Sep 2012 – May 2013
 					</h3>
 					<ul>
 						<li>Developed Java and Ruby on Rails stock trading apps with an international team</li>
@@ -202,8 +202,8 @@ export default function Resume(): ReactElement {
 					</ul>
 					<h3>
 						Web Instructor and Engineer,&nbsp;
-						<a href="https://www.washington.edu">University of Washington</a> &mdash; Feb
-						2012 – Mar 2013
+						<a href="https://www.washington.edu">University of Washington</a> &mdash; Jan
+						2012 – Jun 2013
 					</h3>
 					<ul>
 						<li>
@@ -217,8 +217,8 @@ export default function Resume(): ReactElement {
 
 					<h3>
 						Software Engineer Intern,&nbsp;
-						<a href="//www.popshops.com/">Rakuten</a> &mdash; June 2012 –
-						Aug 2012
+						<a href="https://www.rakuten.com/">Rakuten</a> &mdash; Apr 2012 –
+						Nov 2012
 					</h3>
 					<ul>
 						<li>
@@ -228,8 +228,8 @@ export default function Resume(): ReactElement {
 
 					<h3>
 						Software Engineer Intern,&nbsp;
-						<a href="//www.smiteworks.com/">SmiteWorks</a> &mdash; May 2011 –
-						Oct 2011
+						<a href="https://www.fantasygrounds.com">SmiteWorks</a> &mdash; Apr 2011 –
+						Nov 2011
 					</h3>
 					<ul>
 						<li>
