@@ -219,7 +219,7 @@ export default function Resume(): ReactElement {
 
 					<h3>
 						Software Engineer Intern,&nbsp;
-						<a href="//www.popshops.com/">PopShops.com</a> &mdash; June 2012 –
+						<a href="//www.popshops.com/">Rakuten</a> &mdash; June 2012 –
 						Aug 2012
 					</h3>
 					<ul>
