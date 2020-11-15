@@ -1,4 +1,4 @@
-import Head from 'next/head'
+ import Head from 'next/head'
 import Link from 'next/link'
 import React, { ReactElement } from 'react'
 
@@ -69,22 +69,20 @@ export default function Resume(): ReactElement {
 					<h2>Links</h2>
 					<ul>
 						<li>
-							<a href="https://gitlab.com/EmmaJCline">GitLab</a>
+							<a href="mailto:emma@cline.engineer">Email</a>nbsp;
+							<a href="/keys/publickey.emma@cline.engineer.asc">(PGP)</a>
 						</li>
 						<li>
 							<a href="https://www.linkedin.com/in/EmmaJCline">LinkedIn</a>
+						</li>
+						<li>
+							<a href="https://gitlab.com/EmmaJCline">GitLab</a>
 						</li>
 						<li>
 							<a href="https://twitter.com/EmmaJCline">Twitter</a>
 						</li>
 						<li>
 							<Link href="/blog">Blog</Link>
-						</li>
-						<li>
-							<a href="mailto:emma@cline.engineer">Email</a>
-						</li>
-						<li>
-							<a href="/keys/publickey.emma@cline.engineer.asc">PGP key</a>
 						</li>
 					</ul>
 				</div>
