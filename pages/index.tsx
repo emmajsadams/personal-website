@@ -10,10 +10,6 @@ export default function Resume(): ReactElement {
 			</Head>
 			<h1>Emma Cline</h1>
 			<p>
-				Full-stack Senior Software Engineer experienced with TypeScript,
-				JavaScript, C#, Python
-			</p>
-			<p>
 				Currently looking for remote Senior Software Engineer and 
 				Application Researcher positions
 			</p>
