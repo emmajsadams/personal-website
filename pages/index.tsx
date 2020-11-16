@@ -11,11 +11,11 @@ export default function Resume(): ReactElement {
 			<h1>Emma Cline</h1>
 			<p>
 				Full-stack Senior Software Engineer experienced with TypeScript,
-				JavaScript, C#, Python.
+				JavaScript, C#, Python
 			</p>
 			<p>
-				Currently looking for remote Senior Software Engineer positions or
-				positions based in Salt Lake City or Draper, Utah.
+				Currently looking for remote Senior Software Engineer and 
+				Application Researcher positions
 			</p>
 			<div className="md:flex">
 				<div className="md:w-1/3">
