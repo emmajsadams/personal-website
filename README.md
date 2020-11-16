@@ -4,6 +4,7 @@ This is the repo for my personal website powered by TypeScript next.js. It is ho
 
 - Finish writing latex resume and upload to here, LinkedIn, other job sites https://www.overleaf.com/project/5faddf1c6266afb6d45fa0f3
 - change resume page to be single column and roughly match latex layout
+- figure out what to do with this snippet "Full-stack software engineer experienced with C#, Python, Type. I have worked on recurring billing, e-commerce, user authentication, insurance claims, and in public research at the University of Washington."
 - fix code styling on blogs
 - setup working example of sharetube and other mentioned projects (I deleted the github video gist it may have relied on)
 - figure out tailwindcss purging
