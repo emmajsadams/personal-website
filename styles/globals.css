@@ -45,12 +45,6 @@ a {
 	@apply mx-auto;
 }
 
-/*
-TODO: consider a visited link color
-a:visited {
-  color: theme("colors.purple.400");
-}*/
-
 a:hover {
 	cursor: pointer;
 }
