@@ -1,3 +1,4 @@
+// TODO: figure out if I need postcss-normalize? I think tailwind does this
 module.exports = {
 	plugins: [
 		'tailwindcss',
@@ -14,7 +15,6 @@ module.exports = {
 				},
 			},
 		],
-		'postcss-normalize',
 		'autoprefixer',
 	],
 }
