@@ -33,9 +33,6 @@ export default function Header({
 						<a href="mailto:emma@cline.engineer">Email</a>&nbsp;
 					</li>
 					<li>
-						<a href="/keys/publickey.emma@cline.engineer.asc">PGP</a>
-					</li>
-					<li>
 						<a href="https://www.linkedin.com/in/EmmaJCline">LinkedIn</a>
 					</li>
 					<li>

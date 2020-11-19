@@ -7,6 +7,7 @@ interface CodeBlockProps {
 	className: string
 }
 
+// TODO: fix this so it respects the page width on mobile (right now it expands the width)
 export default function CodeBlock({
 	children,
 	className,

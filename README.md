@@ -8,6 +8,7 @@ This is the repo for my personal website powered by TypeScript next.js. It is ho
 
 # TODO
 
+- put pgp key in well known url path since it was removed from nav
 - add estimated read time for blog posts
 - create link shortening api to replace rbrandly and use in blogs
 - prettier format code in blog posts so that it does not exceed width
