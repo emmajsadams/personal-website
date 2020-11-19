@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import React, { ReactElement } from 'react'
-import styles from '../styles/pages/index.module.css'
+import Education from '../components/Education'
+import Header from '../components/Header'
 
 // TODO: refactor parts of this into components (project, experience, etc..) similar to latex resume
 // TODO: update content from latex resume
@@ -11,55 +11,26 @@ export default function Resume(): ReactElement {
 			<Head>
 				<title>Emma Cline Résumé</title>
 			</Head>
-			<div className="flex justify-center">
-				<h1>Emma Cline</h1>
-			</div>
-			<div className="flex justify-center">
-				<ul className={`inline-flex space-x-4 ${styles['resume-links']}`}>
-					{/* TODO consider adding phone? what about spam?*/}
-					<li>
-						<a href="mailto:emma@cline.engineer">Email</a>&nbsp;
-					</li>
-					<li>
-						<a href="/keys/publickey.emma@cline.engineer.asc">PGP</a>
-					</li>
-					<li>
-						<a href="https://www.linkedin.com/in/EmmaJCline">LinkedIn</a>
-					</li>
-					<li>
-						<a href="https://gitlab.com/EmmaJCline">GitLab</a>
-					</li>
-					<li>
-						<a href="https://twitter.com/EmmaJCline">Twitter</a>
-					</li>
-					<li>
-						<Link href="/blog">Blog</Link>
-					</li>
-				</ul>
-			</div>
-			<div className="flex justify-center">
-				<p>
-					Happily transgender 🏳️‍🌈 (she/her ♀️) sociable 🤗 senior software
-					engineer 👩🏻‍💻
-				</p>
-			</div>
-			<div className="flex justify-center">
-				<p>
-					Currently looking for remote Senior Software Engineer and Application
-					Researcher positions
-				</p>
-			</div>
+			<Header showBlog={true} showResume={false} />
 			<h1>Education</h1>
-			<p>University of Washington — B.S, Informatics, 2014</p>
-			<p>
-				DigiPen Institute of Technology — Towards overall degree at University
-				of Washington, 2009 - 2011
-			</p>
-			<p>
-				Bellevue College — Towards overall degree at University of Washington,
-				2008 - 2011
-			</p>
-
+			<Education
+				institution="University of Washington"
+				degree="Bachelor of Science in Informatics, Minor in Mathematics"
+				startYear={2011}
+				endYear={2013}
+			/>
+			<Education
+				institution="DigiPen Institute of Technology"
+				degree="Towards overall degree at University of Washington"
+				startYear={2009}
+				endYear={2011}
+			/>
+			<Education
+				institution="Bellevue College"
+				degree="Towards overall degree at University of Washington"
+				startYear={2008}
+				endYear={2011}
+			/>
 			<h1>Experience</h1>
 			<h3>Freelance Software Engineer, Remote &mdash; Aug 2020 - Present</h3>
 			<ul>
