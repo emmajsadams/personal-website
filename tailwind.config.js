@@ -1,11 +1,15 @@
 module.exports = {
+	future: {
+		removeDeprecatedGapUtilities: true,
+		purgeLayersByDefault: true,
+	},
+	purge: [
+		'./components/**/*.{js,ts,jsx,tsx}',
+		'./pages/**/*.{js,ts,jsx,tsx}',
+		'./layouts/**/*.{js,ts,jsx,tsx}',
+	],
 	theme: {
-		container: {
-			padding: '4em',
-			center: true,
-		},
 		extend: {},
 	},
-	variants: {},
 	plugins: [],
 }
