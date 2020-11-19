@@ -1,23 +1,23 @@
 This is the repo for my personal website powered by TypeScript next.js. It is hosted at emma.cline.engineer using vercel
 
-# TODO
+# TODO Resume content
 
 - Finish writing latex resume and upload to here, LinkedIn, other job sites https://www.overleaf.com/project/5faddf1c6266afb6d45fa0f3
-- change resume page to be single column and roughly match latex layout
 - figure out what to do with this snippet "Full-stack software engineer experienced with C#, Python, Type. I have worked on recurring billing, e-commerce, user authentication, insurance claims, and in public research at the University of Washington."
-- fix code styling on blogs
 - setup working example of sharetube and other mentioned projects (I deleted the github video gist it may have relied on)
-- figure out tailwindcss purging
+
+# TODO
+
+- add estimated read time for blog posts
+- create link shortening api to replace rbrandly and use in blogs
+- prettier format code in blog posts so that it does not exceed width
 - Setup webvitals mointoring with google analytics https://nextjs.org/docs/advanced-features/measuring-performance
 - Expand on overview for clear documentation
-- configure typescript config correctly (see discord bot as example)
-- Review all gitlab projects and link them with nice descriptions
+- configure typescript config similar to discord bot
 - fully review past resume contents
 - Expand on freelance role (mention discord bot, work with peter, other stuff)
 - add estimated reading time for blog
 - setup base docker image that includes all gpg/git setup using protonmail gpg keys https://gitlab.com/-/snippets/2038690
-- revisit style (check todos in css, think about more spacing in blog posts, code formatting not working for some reason)
-- create link shortening api to replace rbrandly and use in blogs
 - generate sitemap.xml dnyamically
 - implement amp https://nextjs.org/docs/advanced-features/amp-support/introduction
 - setup unit tests
