@@ -142,7 +142,13 @@ class AStar
         return surroundingNodes;
     }
 
-    public static List<Node> FindPath(int startX, int startY, int targetX, int targetY, bool[,] map)
+    public static List<Node> FindPath(
+			int startX,
+			int startY,
+			int targetX,
+			int targetY,
+			bool[,] map
+		)
     {
         Node targetNode = new Node(targetX, targetY, null, null);
         Node startNode = new Node(startX, startY, null, targetNode);
