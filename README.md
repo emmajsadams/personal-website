@@ -1,38 +1,13 @@
 This is the repo for my personal website powered by TypeScript next.js. It is hosted at emma.cline.engineer using vercel
 
-# TODO Resume content
+# CSS overview
 
-- Finish writing latex resume and upload to here, LinkedIn, other job sites https://www.overleaf.com/project/5faddf1c6266afb6d45fa0f3
-- figure out what to do with this snippet "Full-stack software engineer experienced with C#, Python, Type. I have worked on recurring billing, e-commerce, user authentication, insurance claims, and in public research at the University of Washington."
-- setup working example of sharetube and other mentioned projects (I deleted the github video gist it may have relied on)
+This project uses tailwindcss, postcss, and cssmodules
 
-# TODO
+Header sizes research: https://www.smashingmagazine.com/2009/08/typographic-design-survey-best-practices-from-the-best-blogs/
 
-- put pgp key in well known url path since it was removed from nav
-- add estimated read time for blog posts
-- create link shortening api to replace rbrandly and use in blogs
-- prettier format code in blog posts so that it does not exceed width
-- Setup webvitals mointoring with google analytics https://nextjs.org/docs/advanced-features/measuring-performance
-- Expand on overview for clear documentation
-- configure typescript config similar to discord bot
-- fully review past resume contents
-- Expand on freelance role (mention discord bot, work with peter, other stuff)
-- add estimated reading time for blog
-- setup base docker image that includes all gpg/git setup using protonmail gpg keys https://gitlab.com/-/snippets/2038690
-- generate sitemap.xml dnyamically
-- implement amp https://nextjs.org/docs/advanced-features/amp-support/introduction
-- setup unit tests
-- Use next 10 features like i18n and image tag
+Link styling research: https://www.smashingmagazine.com/2010/02/the-definitive-guide-to-styling-web-links/
 
-# Overview
-
-CSS: tailwindcss, postcss, and cssmodules
-
-Header sizes
-https://www.smashingmagazine.com/2009/08/typographic-design-survey-best-practices-from-the-best-blogs/
-
-https://www.smashingmagazine.com/2010/02/the-definitive-guide-to-styling-web-links/
-
-Google Analytics config
+# Google Analytics config
 
 using this blog post aas a reference https://medium.com/frontend-digest/using-nextjs-with-google-analytics-and-typescript-620ba2359dea
