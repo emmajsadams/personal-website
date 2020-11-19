@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import React, { ReactElement } from 'react'
+import Header from '../../components/Header'
 // TODO: import glob these
 import { frontMatter as astarData } from './astar-csharp.mdx'
 import { frontMatter as dstructErrorData } from './dstruct-error-list-map-tree.mdx'
@@ -21,11 +22,10 @@ export default function Blogs(): ReactElement {
 	return (
 		<>
 			<Head>
-				<title>Emma Cline's Blog</title>
+				<title>Emma Cline&lsquo;s Blog</title>
 			</Head>
 			<div className="content">
-				<h1>Blog Posts</h1>
-				<hr />
+				<Header showBlog={false} showResume={true} />
 				<ul>
 					{BLOG_POSTS.map((post) => (
 						<li key={post.title}>
@@ -35,8 +35,6 @@ export default function Blogs(): ReactElement {
 						</li>
 					))}
 				</ul>
-				<hr />
-				<Link href="/">Back to Résumé</Link>
 			</div>
 		</>
 	)
