@@ -10,7 +10,8 @@
 		"start": "next start",
 		"format": "prettier --write **.ts",
 		"lint": "eslint **.ts --fix && prettier --check **.ts",
-		"latex": "rm -f ./public/EmmaJCline-resume.tex && ts-node utils/latexResume > ./public/EmmaJCline-resume.tex && xelatex ./public/EmmaJCline-resume.tex && mv EmmaJCline-resume.pdf ./public/EmmaJCline-resume.pdf && rm -f EmmaJCline-resume.log && rm -f texput.log && rm -f EmmaJCline-resume.out && rm -f EmmaJCline-resume.aux"
+		"generate-latex": "ts-node utils/latexResume > ./public/files/EmmaJCline-resume.tex",
+		"latex": "bash ./scripts/latex.sh"
 	},
 	"dependencies": {
 		"@mdx-js/loader": "1.6.21",
