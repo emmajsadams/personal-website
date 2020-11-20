@@ -10,7 +10,7 @@
 		"start": "next start",
 		"format": "prettier --write **.ts",
 		"lint": "eslint **.ts --fix && prettier --check **.ts",
-		"latex": "ts-node utils/latexResume"
+		"latex": "ts-node utils/latexResume > ./public/EmmaJCline-resume.tex"
 	},
 	"dependencies": {
 		"@mdx-js/loader": "1.6.21",
