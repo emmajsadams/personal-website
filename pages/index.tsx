@@ -62,8 +62,8 @@ export default function Resume(): ReactElement {
 				Elasticsearch
 			</p>
 			<p>
-				<span className="font-bold">Databases:</span> PostgreSQL, MSSQL, MySQL,
-				Elasticsearch
+				<span className="font-bold">Cloud Providers:</span> AWS, GCE, Azure,
+				Vercel, DigtalOcean, Cloudflare (workers, CDN, DNS), Akamai
 			</p>
 		</div>
 	)
