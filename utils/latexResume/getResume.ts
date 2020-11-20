@@ -5,8 +5,7 @@ import getExperience from './getExperience'
 import getProject from './getProject'
 import getSchool from './getSchool'
 
-const DOCUMENT_HEADER = `
-%-------------------------
+const DOCUMENT_HEADER = `%-------------------------
 % Resume
 % Author: Emma Jane Cline
 % License : MIT
@@ -25,7 +24,6 @@ const DOCUMENT_HEADER = `
 \\usepackage{fancyhdr}
 \\usepackage[english]{babel}
 \\usepackage{tabularx}
-\\input{glyphtounicode}
 
 \\pagestyle{fancy}
 \\fancyhf{}
@@ -48,9 +46,6 @@ const DOCUMENT_HEADER = `
 \\titleformat{\\section}{
   \\vspace{-4pt}\\scshape\\raggedright\\large
 }{}{0em}{}[\\color{black}\\titlerule \\vspace{-5pt}]
-
-% Ensure that generate pdf is machine readable/ATS parsable
-\\pdfgentounicode=1
 
 \\newcommand{\\resumeItem}[1]{
   \\item\\small{
@@ -118,12 +113,15 @@ function createSection<T>(
 	return output
 }
 
+// TODO: get rid of unnecessary spacing since indentation does not matter
 export default function getResume(): string {
 	let resume = DOCUMENT_HEADER
 	resume += createSection<School>(getSchool, SCHOOLS, 'Education')
 	resume += createSection<Experience>(getExperience, EXPERIENCES, 'Experience')
 	resume += createSection<Project>(getProject, PROJECTS, 'Projects')
 	resume += '\n \\end{document}'
+
+	resume = resume.replace(/C#/g, 'C\\#')
 
 	return resume
 }

@@ -6,19 +6,15 @@ export default function getProject({
 	technologies,
 	description,
 }: Project): string {
-	// Log latex resume syntax for easy updating of resume
 	const latexTechnologies = technologies.join(', ')
 	const latexDescription = description
 		.map(
-			(descriptionBulletPoint) =>
-				`        \\resumeItem{${descriptionBulletPoint}}\n`,
+			(descriptionBulletPoint) => `\\resumeItem{${descriptionBulletPoint}}\n`,
 		)
 		.join('')
-	return (
-		`    \\resumeSubheading\n` +
-		`      {\\textbf{\href{${url}}{\\underline{${title}}}} $|$ \\emph{${latexTechnologies}}}\n ` +
-		`      \\resumeItemListStart\n` +
-		latexDescription +
-		`      \\resumeItemListEnd`
-	)
+	return `\\resumeProjectHeading
+{\\textbf{\\href{${url}}{\\underline{${title}}}} $|$ \\emph{${latexTechnologies}}}
+\\resumeItemListStart
+${latexDescription}
+\\resumeItemListEnd`
 }

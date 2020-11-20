@@ -7,9 +7,7 @@ export default function getSchool({
 	startYear,
 	endYear,
 }: School): string {
-	return (
-		`    \\resumeSubheading\n` +
-		`      {${institution}}{${location}}\n` +
-		`      {${degree}}{${startYear} -- ${endYear}}`
-	)
+	return `\\resumeSubheading
+{${institution}}{${location}}
+{${degree}}{${startYear} -- ${endYear}}`
 }
