@@ -64,7 +64,7 @@ export const TrovFullStack: Experience = {
 	end: 'Dec 2017',
 	description: [
 		'Remote software development team where developers write unit and integration tests',
-		'Constructed an on demand insurance platform for consumer items with C# & SQL',
+		'Constructed an on demand insurance platform for consumer items with C# and SQL',
 		'Developed an app for managing claims and insuring items with React and Angular.js',
 		'Built a business intelligence system for sending information to our partners using Python',
 	],
