@@ -17,10 +17,10 @@ export default function Header({
 }: HeaderProps): ReactElement {
 	return (
 		<>
-			<div className="flex justify-center content-center">
+			<div className="flex justify-center content-center text-center">
 				<h1>Emma Cline</h1>
 			</div>
-			<div className="flex justify-center content-center">
+			<div className="flex justify-center content-center text-center">
 				<ul className={`inline-flex space-x-4 ${styles['nav-links']}`}>
 					{!showResume ? (
 						<></>
@@ -50,13 +50,13 @@ export default function Header({
 					)}
 				</ul>
 			</div>
-			<div className="flex justify-center content-center">
+			<div className="flex justify-center content-center text-center">
 				<p>
 					Happily transgender 🏳️‍🌈 (she/her ♀️) sociable 🤗 senior software
 					engineer 👩🏻‍💻
 				</p>
 			</div>
-			<div className="flex justify-center content-center">
+			<div className="flex justify-center content-center text-center">
 				<p>
 					Currently looking for remote Senior Software Engineer and Application
 					Researcher positions
