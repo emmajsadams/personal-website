@@ -2,6 +2,7 @@
 layout: 'blog-page'
 title: 'Sets, MultiSets, and Stacks for dstruct'
 date: '2019-05-16'
+url: 'dsset'
 ---
 
 Before I talk about the next set of updates for the [TypeScript data structures & algorithms library](https://github.com/codystebbins/dstruct) I am working on I wanted to discuss some of the setbacks I faced. The first was that I ran into a huge problem with the internal module system as described by [this codeplex issue](https://typescript.codeplex.com/workitem/913). Essentially the dependency resolution only uses file references which can result in in single file output not ordering the TypeScript files by dependencies. This means the single file output will immediately throw an undefined error when loaded into the browser making internal modules useless and the library broken. Other than maintaining a separate list of correct dependency order per build, I would need to switch to external modules. This made me reconsider the use of internal modules and I decided external modules would be more useful for the following reasons.

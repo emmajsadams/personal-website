@@ -9,6 +9,7 @@ declare module '*.mdx' {
 	export const frontMatter = {
 		title: string,
 		date: string,
+		url: string, // short url id
 		__resourcePath: string,
 	}
 }

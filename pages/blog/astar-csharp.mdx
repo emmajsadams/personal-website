@@ -2,6 +2,7 @@
 layout: 'blog-page'
 title: 'A* for C#'
 date: '2019-02-25'
+url: 'astar'
 ---
 
 In this post I will be covering my C# implementation of the A* Pathfinding algorithm. A* is an algorithm used to efficiently plot the shortest traversable path between two points. This is commonly used in 2D grid based games such as Pacman. It uses a best first search and finds the least cost path using a heuristic formula. I decided to use the Manhattan heuristic for its efficiency and ease of implementation. The implementation works for any size grid and allows for horizontal and vertical movement. I am going to explain the implementation by separating it into three parts, the heuristic, the node object, and the algorithm.
