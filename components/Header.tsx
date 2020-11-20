@@ -69,7 +69,7 @@ export default function Header({
 			) : (
 				<div className="flex justify-center content-center text-center">
 					<p>
-						<a href="/EmmaJCline-resume.pdf">
+						<a href="/files/EmmaJCline-resume.pdf">
 							Download a PDF version of this resume
 						</a>
 					</p>

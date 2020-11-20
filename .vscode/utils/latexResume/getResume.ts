@@ -1,11 +1,9 @@
 import EXPERIENCES, { Experience } from '../../config/experiences'
 import PROJECTS, { Project } from '../../config/projects'
 import SCHOOLS, { School } from '../../config/schools'
-import TECHNOLOGIES, { Technology } from '../../config/technologies'
 import getExperience from './getExperience'
 import getProject from './getProject'
 import getSchool from './getSchool'
-import getTechnology from './getTechnology'
 
 const DOCUMENT_HEADER = `%-------------------------
 % Resume
@@ -103,9 +101,8 @@ function createSection<T>(
 	data: T[],
 	sectionTitle: string,
 ): string {
-	let output = `\\section{${sectionTitle}} 
-\\resumeSubHeadingListStart
-`
+	let output =
+		`\\section{${sectionTitle}}\n` + '  \\resumeSubHeadingListStart\n'
 
 	for (const datum of data) {
 		output += getLatexFunc(datum) + '\n'
@@ -116,39 +113,14 @@ function createSection<T>(
 	return output
 }
 
-function createItemizedSection<T>(
-	getLatexFunc: (datum: T) => string,
-	data: T[],
-	sectionTitle: string,
-): string {
-	let output = `\\section{${sectionTitle}}
-\\begin{itemize}[leftmargin=0.15in, label={}]
-\\small{\\item{
-`
-
-	for (const datum of data) {
-		output += getLatexFunc(datum) + '\n'
-	}
-
-	output += `}}
-\\end{itemize}
-`
-
-	return output
-}
-
 // TODO: get rid of unnecessary spacing since indentation does not matter
 export default function getResume(): string {
 	let resume = DOCUMENT_HEADER
 	resume += createSection<School>(getSchool, SCHOOLS, 'Education')
 	resume += createSection<Experience>(getExperience, EXPERIENCES, 'Experience')
 	resume += createSection<Project>(getProject, PROJECTS, 'Projects')
-	resume += createItemizedSection<Technology>(
-		getTechnology,
-		TECHNOLOGIES,
-		'Technical Skills',
-	)
 	resume += '\n \\end{document}'
+
 	resume = resume.replace(/C#/g, 'C\\#')
 
 	return resume

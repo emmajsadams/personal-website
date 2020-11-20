@@ -10,7 +10,7 @@ export default class MyDocument extends Document {
 						name="google-site-verification"
 						content="O_dhy7q1Kfwrvh4v9kyyHmHVZWJqzCegjrgNteyU65k"
 					/>
-					<link href="/emma.jpg" rel="icon" type="image/jpg"></link>
+					<link href="/files/emma.jpg" rel="icon" type="image/jpg"></link>
 					{/* Global Site Tag (gtag.js) - Google Analytics */}
 					<script
 						async
