@@ -16,7 +16,7 @@ export default function Resume(): ReactElement {
 				<title>Emma Cline Résumé</title>
 			</Head>
 
-			<Header showBlog={true} showResume={false} />
+			<Header showBlog={true} showResume={false} showPDFResume={true} />
 
 			<h1>Education</h1>
 			{SCHOOLS.map((school) => (

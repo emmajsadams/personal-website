@@ -36,7 +36,7 @@ export default function BlogPage({
 				<title>Emma Cline - {frontMatter.title}</title>
 			</Head>
 			<div className="content">
-				<Header showResume={true} showBlog={true} />
+				<Header showResume={true} showBlog={true} showPDFResume={false} />
 				<h1>{frontMatter.title}</h1>
 				<h2>{frontMatter.date}</h2>
 				{children}
