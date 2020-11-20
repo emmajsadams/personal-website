@@ -5,6 +5,7 @@ import styles from '../styles/Header.module.css'
 interface HeaderProps {
 	showBlog: boolean
 	showResume: boolean
+	showPDFResume: boolean
 }
 
 // TODO: Can I use one flex column to center all of this??
@@ -14,6 +15,7 @@ interface HeaderProps {
 export default function Header({
 	showBlog,
 	showResume,
+	showPDFResume,
 }: HeaderProps): ReactElement {
 	return (
 		<>
@@ -62,6 +64,18 @@ export default function Header({
 					Researcher positions
 				</p>
 			</div>
+			{!showPDFResume ? (
+				<></>
+			) : (
+				<div className="flex justify-center content-center text-center">
+					<p>
+						<a href="/EmmaJCline-resume.pdf">
+							Download PDF version of this resume
+						</a>
+					</p>
+				</div>
+			)}
+
 			<hr />
 		</>
 	)
