@@ -1,4 +1,12 @@
 import EXPERIENCES, { Experience } from '../../config/experiences'
+import {
+	EMAIL,
+	GITLAB,
+	LINKEDIN,
+	NAME,
+	PERSONAL_WEBSITE,
+	PHONE_NUMBER,
+} from '../../config/personalDetails'
 import PROJECTS, { Project } from '../../config/projects'
 import SCHOOLS, { School } from '../../config/schools'
 import TECHNOLOGIES, { Technology } from '../../config/technologies'
@@ -9,7 +17,7 @@ import getTechnology from './getTechnology'
 
 const DOCUMENT_HEADER = `%-------------------------
 % Resume
-% Author: Emma Jane Cline
+% Author: ${NAME}
 % License : MIT
 %------------------------
 
@@ -89,12 +97,12 @@ const DOCUMENT_HEADER = `%-------------------------
 \\begin{document}
 
 \\begin{center}
-    \\textbf{\\Huge \\scshape Emma Cline} \\\\ \\vspace{1pt}
-    \\href{tel:+1-669-666-4508}{\\underline{+1-669-666-4508}} $|$
-    \\href{mailto:emma@cline.engineer}{\\underline{emma@cline.engineer}} \\\\ \\vspace{1pt}
-    \\href{https://emma.cline.engineer}{\\underline{emma.cline.engineer}} $|$
-    \\href{https://www.linkedin.com/in/EmmaJCline}{\\underline{linkedin.com/in/EmmaJCline}} $|$
-    \\href{https://gitlab.com/EmmaJCline}{\\underline{gitlab.com/EmmaJCline}}
+    \\textbf{\\Huge \\scshape ${NAME}} \\\\ \\vspace{1pt}
+    \\href{tel:${PHONE_NUMBER}}{\\underline{${PHONE_NUMBER}}} $|$
+    \\href{mailto:${EMAIL}}{\\underline{${EMAIL}}} \\\\ \\vspace{1pt}
+    \\href{https://${PERSONAL_WEBSITE}}{\\underline{${PERSONAL_WEBSITE}}} $|$
+    \\href{https://${LINKEDIN}}{\\underline{${LINKEDIN}}} $|$
+    \\href{https://${GITLAB}}{\\underline{${GITLAB}}}
 \\end{center}
 `
 
