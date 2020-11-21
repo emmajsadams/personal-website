@@ -1,4 +1,3 @@
-// TODO: Use this in the latex and html resume
 export const NAME = 'Emma Cline'
 export const PHONE_NUMBER = '+1-669-666-4508'
 export const EMAIL = 'emma@cline.engineer'
