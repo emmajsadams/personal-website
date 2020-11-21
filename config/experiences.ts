@@ -122,17 +122,6 @@ export const RakutenSoftwareEngineer: Experience = {
 	],
 }
 
-/*
-    \resumeSubheading
-      {Software Engineer Intern}{ –- }
-      {SmiteWorks}{Seattle, WA}
-      \resumeItemListStart
-        \resumeItem{}
-        \resumeItem{}
-        \resumeItem{}
-      \resumeItemListEnd
-*/
-
 export const SmiteWorksSoftwareEngineer: Experience = {
 	title: 'Software Engineer Intern',
 	institution: 'SmiteWorks',
