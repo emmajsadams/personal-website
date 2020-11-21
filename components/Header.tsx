@@ -1,5 +1,12 @@
 import Link from 'next/link'
 import React, { ReactElement } from 'react'
+import {
+	EMAIL,
+	GITLAB,
+	LINKEDIN,
+	NAME,
+	TWITTER,
+} from '../config/personalDetails'
 import styles from '../styles/Header.module.css'
 
 interface HeaderProps {
@@ -20,7 +27,7 @@ export default function Header({
 	return (
 		<>
 			<div className="flex justify-center content-center text-center">
-				<h1>Emma Cline</h1>
+				<h1>{NAME}</h1>
 			</div>
 			<div className="flex justify-center content-center text-center">
 				<ul className={`inline-flex space-x-4 ${styles['nav-links']}`}>
@@ -32,16 +39,16 @@ export default function Header({
 						</li>
 					)}
 					<li>
-						<a href="mailto:emma@cline.engineer">Email</a>&nbsp;
+						<a href={`mailto:${EMAIL}`}>Email</a>&nbsp;
 					</li>
 					<li>
-						<a href="https://www.linkedin.com/in/EmmaJCline">LinkedIn</a>
+						<a href={`https://${LINKEDIN}`}>LinkedIn</a>
 					</li>
 					<li>
-						<a href="https://gitlab.com/EmmaJCline">GitLab</a>
+						<a href={`https://${GITLAB}`}>GitLab</a>
 					</li>
 					<li>
-						<a href="https://twitter.com/EmmaJCline">Twitter</a>
+						<a href={`https://${TWITTER}`}>Twitter</a>
 					</li>
 					{!showBlog ? (
 						<></>
@@ -75,7 +82,6 @@ export default function Header({
 					</p>
 				</div>
 			)}
-
 			<hr />
 		</>
 	)
