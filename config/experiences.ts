@@ -112,7 +112,7 @@ export const UniversityOfWashingtonInstructor: Experience = {
 export const RakutenSoftwareEngineer: Experience = {
 	title: 'Software Engineer Intern',
 	institution: 'Rakuten',
-	institutionUrl: 'https://www.washington.edu',
+	institutionUrl: 'https://www.rakuten.com/',
 	location: 'Seattle, WA',
 	start: 'Apr 2012',
 	end: 'Nov 2012',
