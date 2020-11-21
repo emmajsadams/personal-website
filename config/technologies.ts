@@ -31,19 +31,59 @@ export const Frameworks: Technology = {
 	],
 }
 
-export default [Languages, Frameworks]
+export const Libraries: Technology = {
+	category: 'Libraries',
+	technologies: [
+		'TailwindCSS',
+		'PostCSS',
+		'pandas',
+		'NumPy',
+		'TensorFlow',
+		'ASP.NET MVC',
+	],
+}
 
-/*
-% 
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: } \\
-      \textbf{Frameworks}{: } \\
-     \textbf{Libraries}{: TailwindCSS, PostCSS, pandas, NumPy, TensorFlow, GPT-2} \\
-     \textbf{Developer Tools}{: VSCode, Visual Studio Git, ESLint, Prettier, Docker, Kubernetes, Chef, Yarn, npm, cmake, gcc} \\
-     \textbf{Databases}{: PostgreSQL, MSSQL, MySQL, Elasticsearch} \\
-     \textbf{Cloud Providers}{: AWS, GCE, Azure, Vercel, DigtalOcean, Cloudflare (workers, CDN, DNS), Akamai} \\
-    }}
- \end{itemize}
-*/
+export const Databases: Technology = {
+	category: 'Databases',
+	technologies: ['PostgreSQL', 'MSSQL', 'MySQL', 'Elasticsearch'],
+}
+
+export const CloudProviders: Technology = {
+	category: 'Cloud Providers',
+	technologies: [
+		'AWS',
+		'GCE',
+		'Azure',
+		'Vercel',
+		'DigtalOcean',
+		'Cloudflare (workers, CDN, DNS)',
+		'Akamai',
+	],
+}
+
+export const DeveloperTools: Technology = {
+	category: 'Developer Tools',
+	technologies: [
+		'VSCode',
+		'Visual Studio',
+		'Git',
+		'Docker',
+		'Kubernetes',
+		'yarn',
+		'npm',
+		'webpack',
+		'ESLint',
+		'Prettier',
+		'cmake',
+		'gcc',
+	],
+}
+
+export default [
+	Languages,
+	Frameworks,
+	Libraries,
+	Databases,
+	CloudProviders,
+	DeveloperTools,
+]
