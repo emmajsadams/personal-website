@@ -62,45 +62,79 @@ export const ShareTube: Project = {
 	],
 }
 
-export default [PersonalWebsite, DiscordManagementBot, ShareTube]
+export const GPT2API: Project = {
+	title: 'GPT-2 API',
+	url: 'https://gitlab.com/EmmaJCline/gpt2-api',
+	technologies: [
+		'Python',
+		'Starlette',
+		'GPT-2',
+		'Tensorflow',
+		'Docker',
+		'Kubernetes',
+	],
+	description: ['API that allows requests against any GPT-2 model'],
+}
 
-/*
+export const Dstruct: Project = {
+	title: 'dstruct',
+	url: 'https://gitlab.com/EmmaJCline/dstruct',
+	technologies: ['TypeScript', 'Grunt', 'Docker', 'Bower', 'Karma'],
+	description: [
+		'Data Structures and Algorithms for TypeScript',
+		'Based on Java and C# Collections, and Google Guava',
+	],
+}
 
-      \resumeProjectHeading
-          {\textbf{\href{}{\underline{ShareTube}}} $|$ \emph{}}
-          \resumeItemListStart
-            \resumeItem{}
-            \resumeItem{}
-            \resumeItem{}
-          \resumeItemListEnd
+export const FlightSearcher: Project = {
+	title: 'FlightSearcher',
+	url: 'https://gitlab.com/EmmaJCline/FlightSearcher',
+	technologies: [
+		'C#',
+		'ASP.NET MVC',
+		'TypeScript',
+		'React',
+		'Redux',
+		'Webpack',
+	],
+	description: [
+		'An application to search for flights based on airports and datetimes',
+	],
+}
 
-      \resumeProjectHeading
-          {\textbf{\href{https://gitlab.com/EmmaJCline/gpt2-api}{\underline{GPT2}}} $|$ \emph{Python, Starlette, GPT-2 Tensorflow, Docker, Kubernetes }}
-          \resumeItemListStart
-            \resumeItem{API that allows requests against any GPT-2 model }
-          \resumeItemListEnd
+export const CheckOut: Project = {
+	title: 'CheckOut',
+	url: 'https://gitlab.com/EmmaJCline/CheckOut',
+	technologies: ['C#', 'ASP.NET MVC', 'Docker'],
+	description: [
+		'An API to manage a store inventory and allow customers to checkout items',
+	],
+}
 
-      \resumeProjectHeading
-          {\textbf{\href{https://gitlab.com/EmmaJCline/dstruct}{\underline{dstruct}}} $|$ \emph{TODO}}
-          \resumeItemListStart
-            \resumeItem{TODO}
-          \resumeItemListEnd
+export const AutocompleteComparison: Project = {
+	title: 'Autocomplete Comparison',
+	url: 'https://gitlab.com/EmmaJCline/autocomplete-compare-web',
+	technologies: [
+		'TypeScript',
+		'React',
+		'Redux',
+		'React Native',
+		'C#',
+		'Blazor',
+	],
+	description: [
+		'An implementation of a search autocomplete similar Google',
+		'Comparing React Native, React Redux, and Blazor',
+	],
+}
 
-      \resumeProjectHeading
-          {\textbf{\href{https://gitlab.com/EmmaJCline/FlightSearcher}{\underline{FlightSearcher}}} $|$ \emph{TODO}}
-          \resumeItemListStart
-            \resumeItem{TODO}
-          \resumeItemListEnd
-
-      \resumeProjectHeading
-          {\textbf{\href{https://gitlab.com/EmmaJCline/CheckOut}{\underline{CheckOut}}} $|$ \emph{TODO}}
-          \resumeItemListStart
-            \resumeItem{TODO}
-          \resumeItemListEnd
-
-      \resumeProjectHeading
-          {\textbf{\href{https://gitlab.com/EmmaJCline/autocomplete-compare-web}{\underline{Autocomplete Comparison}}} $|$ \emph{TODO}}
-          \resumeItemListStart
-            \resumeItem{TODO}
-					\resumeItemListEnd
-					*/
+export default [
+	PersonalWebsite,
+	DiscordManagementBot,
+	ShareTube,
+	GPT2API,
+	Dstruct,
+	FlightSearcher,
+	CheckOut,
+	AutocompleteComparison,
+]
