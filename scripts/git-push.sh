@@ -11,4 +11,5 @@ else
 	rm ./public/files/EmmaJCline-resume.pdf
 fi
 
+echo "Success"
 exit 0
