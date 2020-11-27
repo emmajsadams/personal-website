@@ -1,7 +1,7 @@
 This is the repo for my personal website powered by TypeScript next.js. It is hosted at emma.cline.engineer using vercel. This resume is replicated on several different resume websites.
 
 * https://www.linkedin.com/in/emmajcline/
-* https://stackoverflow.com/users/story/14635278
+* https://stackoverflow.com/story/emmajcline
 
 # CSS overview
 
