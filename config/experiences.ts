@@ -71,7 +71,7 @@ export const TrovFullStack: Experience = {
 }
 
 export const UniversityOfWashingtonResearcher: Experience = {
-	title: 'Assistant Researcher',
+	title: 'Application Researcher',
 	institution: 'University of Washington',
 	institutionUrl: 'https://www.washington.edu/',
 	location: 'Seattle, WA',
