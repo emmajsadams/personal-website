@@ -39,16 +39,25 @@ export default function Header({
 						</li>
 					)}
 					<li>
-						<a href={`mailto:${EMAIL}`}>Email</a>&nbsp;
+						<a href={`mailto:${EMAIL}`} target="_blank" rel="noreferrer">
+							Email
+						</a>
+						&nbsp;
 					</li>
 					<li>
-						<a href={`https://${LINKEDIN}`}>LinkedIn</a>
+						<a href={`https://${LINKEDIN}`} target="_blank" rel="noreferrer">
+							LinkedIn
+						</a>
 					</li>
 					<li>
-						<a href={`https://${GITLAB}`}>GitLab</a>
+						<a href={`https://${GITLAB}`} target="_blank" rel="noreferrer">
+							GitLab
+						</a>
 					</li>
 					<li>
-						<a href={`https://${TWITTER}`}>Twitter</a>
+						<a href={`https://${TWITTER}`} target="_blank" rel="noreferrer">
+							Twitter
+						</a>
 					</li>
 					{!showBlog ? (
 						<></>
@@ -73,7 +82,11 @@ export default function Header({
 			) : (
 				<div className="flex justify-center content-center text-center">
 					<p>
-						<a href="/files/EmmaJCline-resume.pdf">
+						<a
+							href="/files/EmmaJCline-resume.pdf"
+							target="_blank"
+							rel="noreferrer"
+						>
 							Download a PDF version of this resume
 						</a>
 					</p>
