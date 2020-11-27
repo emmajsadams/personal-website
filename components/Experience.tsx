@@ -21,8 +21,10 @@ export default function ExperienceElement({
 		<>
 			<h3>
 				{title},&nbsp;
-				<a href={institutionUrl}>{institution}</a> &mdash; {location} &mdash;{' '}
-				{start} - {end}
+				<a href={institutionUrl} target="_blank" rel="noreferrer">
+					{institution}
+				</a>{' '}
+				&mdash; {location} &mdash; {start} - {end}
 			</h3>
 			<ul>
 				{description.map((descriptionBulletPoint) => (
