@@ -10,3 +10,5 @@ else
 	# If the LaTeX file was not regenerated from the yarn run latex then remove the unchanged PDF
 	rm ./public/files/EmmaJCline-resume.pdf
 fi
+
+exit 0
