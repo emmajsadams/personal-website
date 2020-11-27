@@ -1,4 +1,5 @@
 #!/bin/bash
+
 rm -f public/files/EmmaJCline-resume.tex
 rm -f public/files/EmmaJCline-resume.pdf
 yarn run generate-latex
