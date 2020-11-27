@@ -6,8 +6,9 @@ export default function getSchool({
 	degree,
 	startYear,
 	endYear,
+	gpa,
 }: School): string {
 	return `\\resumeSubheading
 {${institution}}{${location}}
-{${degree}}{${startYear} -- ${endYear}}`
+{${degree}, ${gpa.toFixed(2)} GPA}{${startYear} -- ${endYear}}`
 }
