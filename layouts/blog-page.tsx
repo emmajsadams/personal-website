@@ -1,5 +1,6 @@
 import { MDXProvider } from '@mdx-js/react'
 import Head from 'next/head'
+import Image from 'next/image'
 import { useRouter } from 'next/router'
 import React, { ReactElement } from 'react'
 import CodeBlock from '../components/CodeBlock'
@@ -7,6 +8,7 @@ import Header from '../components/Header'
 
 const components = {
 	code: CodeBlock,
+	Image: Image,
 }
 
 interface FrontMatter {
