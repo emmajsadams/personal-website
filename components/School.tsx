@@ -5,15 +5,36 @@ interface SchoolProps {
 	school: School
 }
 
-// TODO: format this like the latex resume
 export default function SchoolElement({
-	school: { institution, location, degree, startYear, endYear },
+	school: {
+		institution,
+		gpa,
+		location,
+		degree,
+		startYear,
+		endYear,
+		description,
+	},
 }: SchoolProps): ReactElement {
 	return (
 		<>
-			<p>
-				{institution} — {degree}, {startYear} — {endYear}
-			</p>
+			<div className="flex flex-row">
+				<h3 className="flex-auto text-left">{institution}</h3>
+				<span className="flex-auto text-right">{location}</span>
+			</div>
+			<div className="flex flex-row">
+				<span className="flex-auto text-left">
+					{degree}, {gpa.toFixed(1)} GPA
+				</span>
+				<span className="flex-auto text-right">
+					{startYear} — {endYear}
+				</span>
+			</div>
+			<ul>
+				{description.map((descriptionBulletPoint) => (
+					<li key={descriptionBulletPoint}>{descriptionBulletPoint}</li>
+				))}
+			</ul>
 		</>
 	)
 }
