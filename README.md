@@ -5,7 +5,7 @@ This is the repo for my personal website powered by TypeScript next.js. It is ho
 - https://my.indeed.com/p/emmac-5gq2y3z
 - https://hired.com/profile
 
-TODO: vettery, careers.uw, amazon.jobs, anything else I can think of that was useful in the past
+TODO: vettery, informatics careers at UW, careers.uw, amazon.jobs, anything else I can think of that was useful in the past
 
 # CSS overview
 
