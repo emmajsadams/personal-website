@@ -1,13 +1,13 @@
 #!/bin/sh
 
-yarn run latex
+git diff --exit-code public/files/EmmaJCline-resume.tex
 
-if [ -f ./public/files/EmmaJCline-resume.tex ]; then
-	# If the LaTeX file was regenerated then prevent a push so the new pdf can be generated
-	exit 2
+if [ $? -eq 1 ]; then
+	echo "LaTex file has no changes, raising error for user to commit resume changes"
+	exit 125
 else
-	# If the LaTeX file was not regenerated from the yarn run latex then remove the unchanged PDF
-	rm ./public/files/EmmaJCline-resume.pdf
+	echo "LaTex file has no changes, removing PDF"
+	git checkout public/files/EmmaJCline-resume.pdf
 fi
 
 echo "Success"

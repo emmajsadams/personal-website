@@ -6,12 +6,12 @@
 	"private": false,
 	"scripts": {
 		"dev": "next dev",
-		"build": "next build",
+		"build": "yarn run lint && yarn run latex && yarn run check-latex && next build",
 		"start": "next start",
 		"format": "prettier --write **.ts",
 		"lint": "eslint **.ts --fix && prettier --check **.ts",
 		"generate-latex": "ts-node utils/latexResume > ./public/files/EmmaJCline-resume.tex",
-		"check-latex": "sh ./scripts/check-latex",
+		"check-latex": "sh ./scripts/check-latex.sh",
 		"latex": "sh ./scripts/latex.sh"
 	},
 	"dependencies": {
