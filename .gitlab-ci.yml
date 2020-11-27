@@ -5,4 +5,4 @@ default:
 build-job:
   stage: build
   script:
-    - bash ./scripts/
+    - yarn run lint && sh ./scripts/check-latex.sh

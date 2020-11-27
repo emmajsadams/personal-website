@@ -1,6 +1,5 @@
-#!/bin/bash
+#!/bin/sh
 
-yarn run lint
 yarn run latex
 
 if [ -f ./public/files/EmmaJCline-resume.tex ]; then

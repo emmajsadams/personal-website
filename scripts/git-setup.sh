@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 echo $PRIVATE_GPG_KEY > ~/.gnupg/private.key
 

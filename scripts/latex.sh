@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 rm -f public/files/EmmaJCline-resume.tex
 rm -f public/files/EmmaJCline-resume.pdf

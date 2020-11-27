@@ -1,5 +1,5 @@
 module.exports = {
 	hooks: {
-		'pre-push': 'sh ./scripts/git-push.sh',
+		'pre-push': 'yarn run lint && sh ./scripts/check-latex.sh',
 	},
 }
