@@ -1,5 +1,6 @@
 export interface School {
 	institution: string
+	url: string
 	gpa: number
 	location: string
 	degree: string
@@ -10,6 +11,7 @@ export interface School {
 
 export const UniversityOfWashington: School = {
 	institution: 'University of Washington',
+	url: 'https://www.washington.edu/',
 	gpa: 3.8,
 	location: 'Seattle, WA',
 	degree: 'Bachelor of Science in Informatics, Minor in Mathematics',
@@ -23,6 +25,7 @@ export const UniversityOfWashington: School = {
 
 export const DigiPen: School = {
 	institution: 'DigiPen Institute of Technology',
+	url: 'https://www.digipen.edu/',
 	gpa: 4.0,
 	location: 'Redmond, WA',
 	degree: 'Towards overall degree at University of Washington',
@@ -35,6 +38,7 @@ export const DigiPen: School = {
 
 export const BellevueCollege: School = {
 	institution: 'Bellevue College',
+	url: 'https://www.bellevuecollege.edu/',
 	gpa: 4.0,
 	location: 'Bellevue, WA',
 	degree: 'Towards overall degree at University of Washington',
