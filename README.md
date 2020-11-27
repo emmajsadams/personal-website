@@ -2,9 +2,10 @@ This is the repo for my personal website powered by TypeScript next.js. It is ho
 
 - https://www.linkedin.com/in/emmajcline/
 - https://stackoverflow.com/story/emmajcline (although I need to fine tune job search settings)
-- https://my.indeed.com/p/emmac-5gq2y3z (although I need to fine tune job search settings)
+- https://my.indeed.com/p/emmac-5gq2y3z
+* https://hired.com/profile
 
-TODO: create hired, working onmads, vettery, stackoverflow account, careers.uw, amazon.jobs, etc..
+TODO: vettery, careers.uw, amazon.jobs, anything else I can think of that was useful in the past
 
 # CSS overview
 
