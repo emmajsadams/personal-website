@@ -52,7 +52,7 @@ export const CloudProviders: Technology = {
 	category: 'Cloud Providers',
 	technologies: [
 		'AWS',
-		'GCE',
+		'GCP',
 		'Azure',
 		'Vercel',
 		'DigtalOcean',
