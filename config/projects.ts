@@ -133,8 +133,8 @@ export default [
 	DiscordManagementBot,
 	ShareTube,
 	GPT2API,
+	AutocompleteComparison,
 	Dstruct,
 	FlightSearcher,
 	CheckOut,
-	AutocompleteComparison,
 ]
