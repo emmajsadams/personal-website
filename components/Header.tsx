@@ -61,15 +61,12 @@ export default function Header({
 			</div>
 			<div className="flex justify-center content-center text-center">
 				<p>
-					Happily transgender 🏳️‍🌈 (she/her ♀️) sociable 🤗 senior software
-					engineer 👩🏻‍💻
-				</p>
-			</div>
-			<div className="flex justify-center content-center text-center">
-				<p>
 					Currently looking for remote Senior Software Engineer and Application
 					Researcher positions
 				</p>
+			</div>
+			<div className="flex justify-center content-center text-center">
+				<p>Happily transgender 🏳️‍🌈 (she/her ♀️)</p>
 			</div>
 			{!showPDFResume ? (
 				<></>

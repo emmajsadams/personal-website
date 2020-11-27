@@ -1,7 +1,10 @@
 This is the repo for my personal website powered by TypeScript next.js. It is hosted at emma.cline.engineer using vercel. This resume is replicated on several different resume websites.
 
-* https://www.linkedin.com/in/emmajcline/
-* https://stackoverflow.com/story/emmajcline (although I need to fine tune job search settings)
+- https://www.linkedin.com/in/emmajcline/
+- https://stackoverflow.com/story/emmajcline (although I need to fine tune job search settings)
+- https://my.indeed.com/p/emmac-5gq2y3z (although I need to fine tune job search settings)
+
+TODO: create hired, working onmads, vettery, stackoverflow account, careers.uw, amazon.jobs, etc..
 
 # CSS overview
 
