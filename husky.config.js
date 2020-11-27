@@ -1,5 +1,5 @@
 module.exports = {
 	hooks: {
-		'pre-push': 'bash ./scripts/git-push.sh',
+		'pre-push': 'sh ./scripts/git-push.sh',
 	},
 }

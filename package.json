@@ -11,7 +11,7 @@
 		"format": "prettier --write **.ts",
 		"lint": "eslint **.ts --fix && prettier --check **.ts",
 		"generate-latex": "ts-node utils/latexResume > ./public/files/EmmaJCline-resume.tex",
-		"latex": "bash ./scripts/latex.sh"
+		"latex": "sh ./scripts/latex.sh"
 	},
 	"dependencies": {
 		"@mdx-js/loader": "1.6.21",
