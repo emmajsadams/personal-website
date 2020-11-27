@@ -11,7 +11,9 @@ export default function ProjectElement({
 	return (
 		<>
 			<h3>
-				<a href={url}>{title}</a>
+				<a href={url} target="_blank" rel="noreferrer">
+					{title}
+				</a>
 			</h3>
 			<p>
 				<span className="font-bold">Technologies: </span>
