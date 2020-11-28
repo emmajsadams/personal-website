@@ -11,10 +11,10 @@ export default function Error(): ReactElement {
 			</div>
 			<div className="flex justify-center content-center text-center">
 				<p>
-					The content you are looking for could not be found likely due to an
-					invalid url. If you think is a bug&nbsp;
+					The robots working behind the scenes are unsure what has gone wrong.
+					Please email details of this error to&nbsp;
 					<a href="mailto:emma@cline.engineer" target="_blank" rel="noreferrer">
-						email me
+						emma@cline.engineer
 					</a>
 					.
 				</p>
