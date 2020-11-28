@@ -15,10 +15,6 @@ interface HeaderProps {
 	showPDFResume: boolean
 }
 
-// TODO: Can I use one flex column to center all of this??
-// At the very least use a helper class to avoid duplicating styles
-// TODO: Consider adding phone since it is in pdf resume? What about spam?
-// TODO: add link to pdf resume
 export default function Header({
 	showBlog,
 	showResume,
