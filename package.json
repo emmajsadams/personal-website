@@ -7,6 +7,7 @@
 	"scripts": {
 		"dev": "next dev",
 		"build": "yarn install && yarn run lint && yarn run latex && yarn run check-latex && next build",
+		"build-deploy": "yarn install && yarn run lint && next build",
 		"start": "next start",
 		"format": "eslint * --fix --no-error-on-unmatched-pattern && prettier --write *",
 		"lint": "eslint --no-error-on-unmatched-pattern * && prettier --check *",
