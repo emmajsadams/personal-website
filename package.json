@@ -1,12 +1,12 @@
 {
 	"name": "emma.cline.engineer",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"repository": "https://gitlab.com/EmmaJCline/personal-website",
 	"author": "Emma Cline <emma@cline.engineer>",
 	"private": false,
 	"scripts": {
 		"dev": "next dev",
-		"build": "yarn install && yarn run test && yarn run lint && yarn run latex && yarn run check-latex",
+		"build": "yarn run test && yarn run lint && yarn run latex && yarn run check-latex",
 		"build-deploy": "next build",
 		"start": "next start",
 		"format": "eslint * --fix --no-error-on-unmatched-pattern && prettier --write *",
