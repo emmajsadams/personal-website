@@ -6,14 +6,16 @@
 	"private": false,
 	"scripts": {
 		"dev": "next dev",
-		"build": "yarn install && yarn run lint && yarn run latex && yarn run check-latex && next build",
-		"build-deploy": "yarn install && yarn run lint && next build",
+		"build": "yarn run test && yarn install && yarn run lint && yarn run latex && yarn run check-latex && next build",
+		"build-deploy": "yarn run test && yarn install && yarn run lint && next build",
 		"start": "next start",
 		"format": "eslint * --fix --no-error-on-unmatched-pattern && prettier --write *",
 		"lint": "eslint --no-error-on-unmatched-pattern * && prettier --check *",
 		"generate-latex": "ts-node utils/latexResume > ./public/files/EmmaJCline-resume.tex",
 		"check-latex": "sh ./scripts/check-latex.sh",
-		"latex": "sh ./scripts/latex.sh"
+		"latex": "sh ./scripts/latex.sh",
+		"test": "jest",
+		"test:watch": "jest --watch"
 	},
 	"dependencies": {
 		"@mdx-js/loader": "1.6.21",
@@ -26,6 +28,9 @@
 	},
 	"devDependencies": {
 		"@babel/core": "7.9.0",
+		"@testing-library/jest-dom": "5.11.6",
+		"@testing-library/react": "11.2.2",
+		"@types/jest": "26.0.15",
 		"@types/json-schema": "7.0.6",
 		"@types/node": "14.6.4",
 		"@types/react": "16.9.49",
@@ -40,6 +45,7 @@
 		"eslint-plugin-prettier": "3.1.4",
 		"eslint-plugin-react": "7.21.5",
 		"husky": "4.3.0",
+		"jest": "26.6.3",
 		"postcss": "8.1.7",
 		"postcss-flexbugs-fixes": "5.0.1",
 		"postcss-preset-env": "6.7.0",
@@ -47,6 +53,7 @@
 		"prettier-plugin-organize-imports": "1.1.1",
 		"prettier-plugin-sh": "0.6.0",
 		"tailwindcss": "2.0.1",
+		"ts-jest": "26.4.4",
 		"ts-node": "9.0.0",
 		"typescript": "4.0.3"
 	}

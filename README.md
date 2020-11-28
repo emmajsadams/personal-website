@@ -18,3 +18,7 @@ Link styling research: https://www.smashingmagazine.com/2010/02/the-definitive-g
 # Google Analytics config
 
 using this blog post aas a reference https://medium.com/frontend-digest/using-nextjs-with-google-analytics-and-typescript-620ba2359dea
+
+# Testing
+
+Based off https://www.pluralsight.com/guides/how-to-test-react-components-in-typescript
