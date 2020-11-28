@@ -26,3 +26,7 @@ using this blog post aas a reference https://medium.com/frontend-digest/using-ne
 # Testing
 
 Based off https://www.pluralsight.com/guides/how-to-test-react-components-in-typescript
+
+# Sitemap
+
+Generating automatic sitemap based off https://leerob.io/blog/nextjs-sitemap-robots

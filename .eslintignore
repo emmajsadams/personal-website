@@ -20,3 +20,6 @@ README.md
 
 # I need to ignore next.config.js in all forms due to vercel's manipulation of the file
 next.config*
+
+# TODO: allow js files to be linted
+scripts/generateSitemap.js
