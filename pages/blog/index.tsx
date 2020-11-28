@@ -16,7 +16,7 @@ export default function Blogs(): ReactElement {
 					{BLOG_POSTS.map((post) => (
 						<li key={post.frontMatter.title}>
 							<Link href={post.frontMatter.__resourcePath.replace('.mdx', '')}>
-								{post.frontMatter}
+								{post.frontMatter.title}
 							</Link>
 						</li>
 					))}
