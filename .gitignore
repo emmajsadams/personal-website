@@ -61,3 +61,5 @@ typings/
 .next
 
 .mdx-data
+
+public/sitemap.xml
