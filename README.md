@@ -7,6 +7,10 @@ This is the repo for my personal website powered by TypeScript next.js. It is ho
 
 TODO: vettery, informatics careers at UW, careers.uw, amazon.jobs, anything else I can think of that was useful in the past
 
+# UX overview
+
+- Links: always underlined with hover cursor. New tab for external links, same tab for internal links
+
 # CSS overview
 
 This project uses tailwindcss, postcss, and cssmodules
