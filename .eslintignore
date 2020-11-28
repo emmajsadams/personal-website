@@ -15,6 +15,6 @@ pids
 node_modules
 .mdx-data
 .next
-next.config.js
+next.config*
 LICENSE.md
 README.md

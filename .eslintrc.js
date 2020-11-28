@@ -15,9 +15,9 @@ module.exports = {
 		'import/no-unresolved': 'off',
 		'react/prop-types': 'off',
 	},
-  settings: {
-    "react": {
-      "version": "detect",
-    },
-  }
+	settings: {
+		react: {
+			version: 'detect',
+		},
+	},
 }
