@@ -66,7 +66,7 @@ export default function Header({
 			</div>
 			<div className="flex justify-center content-center text-center">
 				<p>
-					Currently looking for remote Senior Software Engineer and Application
+					Currently looking for remote Senior Software Engineer or Application
 					Researcher positions
 				</p>
 			</div>
