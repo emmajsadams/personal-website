@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React, { ReactElement } from 'react'
 import Header from '../components/Header'
 
@@ -20,9 +21,17 @@ export default function Error(): ReactElement {
 			</div>
 			<div className="flex justify-center content-center text-center">
 				<p>
-					Navigate back to a valid page with the header or relax with this
-					picture of cherry blossoms.
+					Navigate to a valid page with the header or relax with this picture of
+					cherry blossoms.
 				</p>
+			</div>
+			<div className="flex justify-center content-center text-center">
+				<Image
+					src="/files/cherry-blossoms.png"
+					alt="Relaxing cherry blossoms"
+					width={675}
+					height={514}
+				/>
 			</div>
 		</>
 	)
