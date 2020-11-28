@@ -8,8 +8,8 @@
 		"dev": "next dev",
 		"build": "yarn install && yarn run lint && yarn run latex && yarn run check-latex && next build",
 		"start": "next start",
-		"format": "prettier --write **.ts",
-		"lint": "eslint **.ts --fix && prettier --check **.ts",
+		"format": "eslint * --fix --no-error-on-unmatched-pattern && prettier --write *",
+		"lint": "eslint --no-error-on-unmatched-pattern * && prettier --check *",
 		"generate-latex": "ts-node utils/latexResume > ./public/files/EmmaJCline-resume.tex",
 		"check-latex": "sh ./scripts/check-latex.sh",
 		"latex": "sh ./scripts/latex.sh"
@@ -42,8 +42,9 @@
 		"postcss": "8.1.7",
 		"postcss-flexbugs-fixes": "5.0.1",
 		"postcss-preset-env": "6.7.0",
-		"prettier": "2.1.2",
+		"prettier": "2.2.1",
 		"prettier-plugin-organize-imports": "1.1.1",
+		"prettier-plugin-sh": "0.6.0",
 		"tailwindcss": "2.0.1",
 		"ts-node": "9.0.0",
 		"typescript": "4.0.3"

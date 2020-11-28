@@ -4,6 +4,7 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+yarn.lock
 
 # Runtime data
 pids
@@ -14,4 +15,6 @@ pids
 node_modules
 .mdx-data
 .next
-yarn.lock
+next.config.js
+LICENSE.md
+README.md

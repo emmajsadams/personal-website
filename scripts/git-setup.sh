@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo $PRIVATE_GPG_KEY > ~/.gnupg/private.key
+echo $PRIVATE_GPG_KEY >~/.gnupg/private.key
 
 # Setup git config
 git config --global user.name "Emma Cline" && git config --global user.email "emma@cline.engineer"
@@ -11,8 +11,8 @@ export GPG_TTY=$(tty)
 git config --global commit.gpgsign true
 
 # cache gpg ttl to prevent asking for gpg every time. add to ~/.gnupg/gpg-agent.conf
-echo "default-cache-ttl 34560000" > ~/.gnupg/gpg-agent.conf
-echo "maximum-cache-ttl 34560000" > ~/.gnupg/gpg-agent.conf
+echo "default-cache-ttl 34560000" >~/.gnupg/gpg-agent.conf
+echo "maximum-cache-ttl 34560000" >~/.gnupg/gpg-agent.conf
 gpg-connect-agent reloadagent /bye
 
 # https://stackoverflow.com/questions/3042437/how-to-change-the-commit-author-for-one-specific-commit
@@ -32,4 +32,4 @@ then
     export GIT_AUTHOR_NAME="$CORRECT_NAME"
     export GIT_AUTHOR_EMAIL="$CORRECT_EMAIL"
 fi
-' --tag-name-filter cat -- --branches --tags && git push --force --tags origin 'refs/heads/*
+' --tag-name-filter cat -- --branches --tags && git push --force --tags origin 'refs/heads/*'
