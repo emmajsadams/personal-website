@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://emma.cline.engineer/blog</id>
+    <title>Emma Cline's Blog</title>
+    <updated>2020-11-28T05:13:35.751Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <author>
+        <name>Emma Cline</name>
+        <email>emma@cline.engineer</email>
+        <uri>https://emma.cline.engineer/</uri>
+    </author>
+    <link rel="alternate" href="https://emma.cline.engineer/blog"/>
+    <link rel="self" href="https://emma.cline.engineer/atom"/>
+    <subtitle>Blog feed for the Software Engineer and Application Researcher Emma Cline</subtitle>
+    <logo>https://emma.cline.engineer/android-chrome-192x192.png</logo>
+    <icon>https://emma.cline.engineer/favicon.ico</icon>
+    <rights>Copyright (c) 2020 Emma Cline</rights>
+    <category term="Technology"/>
+    <category term="Software Engineering"/>
+    <category term="Application Research"/>
+    <entry>
+        <title type="html"><![CDATA[A* for C#]]></title>
+        <id>https://emma.cline.engineer/blog/astar-csharp</id>
+        <link href="https://emma.cline.engineer/blog/astar-csharp"/>
+        <updated>2019-02-25T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Implementing the A* pathfinding algorithm in C# for my game development project at DigiPen]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Error Handling, Lists, Maps, and Trees for dstruct]]></title>
+        <id>https://emma.cline.engineer/blog/dstruct-error-list-map-tree</id>
+        <link href="https://emma.cline.engineer/blog/dstruct-error-list-map-tree"/>
+        <updated>2019-04-29T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A walkthrough of how errors, lists, maps, and trees were implemented for my capstone dstruct project]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Poster for dstruct]]></title>
+        <id>https://emma.cline.engineer/blog/dstruct-poster</id>
+        <link href="https://emma.cline.engineer/blog/dstruct-poster"/>
+        <updated>2019-05-27T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A walkthrough of how I created the poster for my capstone dstruct project]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Sets, MultiSets, and Stacks for dstruct]]></title>
+        <id>https://emma.cline.engineer/blog/dstruct-set-multiset-stack</id>
+        <link href="https://emma.cline.engineer/blog/dstruct-set-multiset-stack"/>
+        <updated>2019-05-16T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A walkthrough of how sets, multisets, and stacks were implemented for my capstone dstruct project]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Tables and Queues for dstruct]]></title>
+        <id>https://emma.cline.engineer/blog/dstruct-tables-queues</id>
+        <link href="https://emma.cline.engineer/blog/dstruct-tables-queues"/>
+        <updated>2019-06-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A walkthrough of how tables and queues were implemented for my capstone dstruct project]]></summary>
+    </entry>
+</feed>

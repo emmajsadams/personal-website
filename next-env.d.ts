@@ -8,8 +8,9 @@ declare module '*.mdx' {
 	export default MDXComponent
 	export const frontMatter = {
 		title: string,
+		description: string,
 		date: string,
-		url: string, // short url id
+		shortUrl: string,
 		__resourcePath: string,
 	}
 }
