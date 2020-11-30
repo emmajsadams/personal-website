@@ -19,5 +19,6 @@ module.exports = withMdxEnhanced({
     }
 
     return config;
-  }
+	},
+  reactStrictMode: true,
 })
