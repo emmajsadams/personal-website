@@ -1,6 +1,6 @@
-FROM node:14.10.1-alpine
+FROM ubuntu:20.04
 
-RUN apk add --no-cache --virtual .build-deps g++ python3-dev libffi-dev openssl-dev python3 make texlive-full gnupg texmf-dist
+RUN sudo apt install g++ python3-dev libffi-dev openssl-dev python3 make texlive-full gnupg
 RUN tlmgr init-usertree
 RUN sudo tlmgr update --all
 RUN tlmgr install XITS
