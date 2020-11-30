@@ -35,6 +35,21 @@ const DOCUMENT_HEADER = `%-------------------------
 \\usepackage[english]{babel}
 \\usepackage{tabularx}
 
+\\usepackage{fontspec}
+\\usepackage{unicode-math}
+
+\\setmainfont{XITS}
+[    Extension = .otf,
+   UprightFont = *-Regular,
+      BoldFont = *-Bold,
+    ItalicFont = *-Italic,
+BoldItalicFont = *-BoldItalic,
+]
+\\setmathfont{XITSMath-Regular}
+[    Extension = .otf,
+      BoldFont = XITSMath-Bold,
+]
+
 \\pagestyle{fancy}
 \\fancyhf{}
 \\fancyfoot{}
@@ -111,7 +126,7 @@ function createSection<T>(
 	data: T[],
 	sectionTitle: string,
 ): string {
-	let output = `\\section{${sectionTitle}} 
+	let output = `\\section{${sectionTitle}}
 \\resumeSubHeadingListStart
 `
 

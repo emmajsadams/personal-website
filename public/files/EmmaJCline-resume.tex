@@ -18,6 +18,21 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 
+\usepackage{fontspec}
+\usepackage{unicode-math}
+
+\setmainfont{XITS}
+[    Extension = .otf,
+   UprightFont = *-Regular,
+      BoldFont = *-Bold,
+    ItalicFont = *-Italic,
+BoldItalicFont = *-BoldItalic,
+]
+\setmathfont{XITSMath-Regular}
+[    Extension = .otf,
+      BoldFont = XITSMath-Bold,
+]
+
 \pagestyle{fancy}
 \fancyhf{}
 \fancyfoot{}
@@ -87,7 +102,7 @@
     \href{https://linkedin.com/in/EmmaJCline}{\underline{linkedin.com/in/EmmaJCline}} $|$
     \href{https://gitlab.com/EmmaJCline}{\underline{gitlab.com/EmmaJCline}}
 \end{center}
-\section{Education} 
+\section{Education}
 \resumeSubHeadingListStart
 \resumeSubheading
 {University of Washington Seattle}{Seattle, WA}
@@ -99,7 +114,7 @@
 {Bellevue College}{Bellevue, WA}
 {Towards overall degree at University of Washington, 4.00 GPA}{2008 -- 2011}
   \resumeSubHeadingListEnd
-\section{Experience} 
+\section{Experience}
 \resumeSubHeadingListStart
 \resumeSubheading
 {Freelance Software Engineer}{Aug 2020 -- Present}
@@ -185,7 +200,7 @@
 
 \resumeItemListEnd
   \resumeSubHeadingListEnd
-\section{Projects} 
+\section{Projects}
 \resumeSubHeadingListStart
 \resumeProjectHeading
 {\textbf{\href{https://gitlab.com/EmmaJCline/personal-website}{\underline{Personal Website}}} $|$ \emph{TypeScript, Next.JS, TailwindCSS, Docker, Node.js, MDX, React}}
