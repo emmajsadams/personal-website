@@ -10,7 +10,7 @@ export interface School {
 }
 
 export const UniversityOfWashington: School = {
-	institution: 'University of Washington',
+	institution: 'University of Washington Seattle',
 	url: 'https://www.washington.edu/',
 	gpa: 3.8,
 	location: 'Seattle, WA',
