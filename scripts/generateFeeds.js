@@ -35,7 +35,7 @@ const globby = require('globby')
 			.replace('.mdx', '')
 			.replace('pages/', '')}`
 		feed.addItem({
-			title: frontMatter.attributes.title,
+			title: frontMatter.attributes.name,
 			id: url,
 			link: url,
 			description: frontMatter.attributes.description,
