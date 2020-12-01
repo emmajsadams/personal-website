@@ -24,3 +24,7 @@ next.config*
 # TODO: allow js files to be linted
 scripts/generateSitemap.js
 scripts/generateFeeds.js
+public/feed.json
+public/rss.xml
+public/atom.xml
+public/sitemap.xml

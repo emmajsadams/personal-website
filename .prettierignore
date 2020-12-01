@@ -18,3 +18,7 @@ yarn.lock
 
 # I need to ignore next.config.js in all forms due to vercel's manipulation of the file
 next.config*
+public/feed.json
+public/rss.xml
+public/atom.xml
+public/sitemap.xml
