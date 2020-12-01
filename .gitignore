@@ -67,3 +67,6 @@ public/sitemap.xml
 public/feed.json
 public/rss.xml
 public/atom.xml
+
+# docz output
+.docz
