@@ -14,9 +14,9 @@ export default function Blogs(): ReactElement {
 				<Header showBlog={false} showResume={true} showPDFResume={false} />
 				<ul>
 					{BLOG_POSTS.map((post) => (
-						<li key={post.frontMatter.title}>
+						<li key={post.frontMatter.name}>
 							<Link href={post.frontMatter.__resourcePath.replace('.mdx', '')}>
-								{post.frontMatter.title}
+								{post.frontMatter.name}
 							</Link>
 						</li>
 					))}
