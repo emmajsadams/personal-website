@@ -1,16 +1,21 @@
 /// <reference types="next" />
 /// <reference types="next/types/global" />
 
+declare interface FrontMatter {
+	name: string
+	description: string
+	date: string
+	shortUrl: string
+	__resourcePath: string
+}
+
+declare interface MDXComponent {
+	(props: any): JSX.Element
+}
+
 // TODO: move this to separate file and fix typing
 // types/mdx.d.ts
 declare module '*.mdx' {
-	let MDXComponent: (props: any) => JSX.Element
 	export default MDXComponent
-	export const frontMatter = {
-		title: string,
-		description: string,
-		date: string,
-		shortUrl: string,
-		__resourcePath: string,
-	}
+	export const frontMatter: FrontMatter
 }
