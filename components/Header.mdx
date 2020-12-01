@@ -1,0 +1,61 @@
+---
+name: Header
+menu: Components
+---
+
+import { Playground, Props } from 'docz'
+import Header from './Header.tsx'
+
+# Header
+
+## Properties
+
+<Props of={Header} />
+
+## No extra links shown
+
+<Playground>
+	<Header showBlog={false} showResume={false} showPDFResume={false} />
+</Playground>
+
+## Showing only blog
+
+<Playground>
+	<Header showBlog={true} showResume={false} showPDFResume={false} />
+</Playground>
+
+## Showing only resume
+
+<Playground>
+	<Header showBlog={false} showResume={true} showPDFResume={false} />
+</Playground>
+
+## Showing only pdf resume
+
+<Playground>
+	<Header showBlog={false} showResume={false} showPDFResume={true} />
+</Playground>
+
+## Showing only blog and resume
+
+<Playground>
+	<Header showBlog={true} showResume={true} showPDFResume={false} />
+</Playground>
+
+## Showing only blog and pdf resume
+
+<Playground>
+	<Header showBlog={true} showResume={false} showPDFResume={true} />
+</Playground>
+
+## Showing only resume and pdf resume
+
+<Playground>
+	<Header showBlog={false} showResume={true} showPDFResume={true} />
+</Playground>
+
+## Showing blog, resume, and pdf resume
+
+<Playground>
+	<Header showBlog={true} showResume={true} showPDFResume={true} />
+</Playground>

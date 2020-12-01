@@ -1,0 +1,37 @@
+---
+name: Experience
+menu: Components
+---
+
+import { Playground, Props } from 'docz'
+import Experience from './Experience.tsx'
+
+# Experience
+
+## Properties
+
+<Props of={Experience} />
+
+## Basic usage
+
+<Playground>
+	<Experience
+		experience={{
+			title: 'Lead Senior Software Engineer II',
+			institution: 'Humble Bundle',
+			institutionUrl: 'https://www.humblebundle.com',
+			location: 'Remote',
+			start: 'Jul 2018',
+			end: 'Jul 2020',
+			description: [
+				'Promoted from Senior Software Engineer to Lead Senior Software Engineer II over the course of my employment',
+				'Lead the platform team focused on site reliability engineering',
+				'Worked with product to define a plan to optimize the user funnel for our monthly product',
+				'Lead the internationalization project for an 8-year-old application with minimal prior internationalization efforts',
+				'Integrated an OAuth login system for Facebook and Google into our existing user system',
+				'Planned a project to migrate all sessions to the newly required email or TOTP two-factor system',
+				'Helped define standards for representing DateTimes, Money, and Percents in Python and JavaScript',
+			],
+		}}
+	/>
+</Playground>

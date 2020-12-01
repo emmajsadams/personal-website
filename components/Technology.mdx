@@ -1,0 +1,34 @@
+---
+name: Technology
+menu: Components
+---
+
+import { Playground, Props } from 'docz'
+import Technology from './Technology.tsx'
+
+# Technology
+
+## Properties
+
+<Props of={Technology} />
+
+## Basic usage
+
+<Playground>
+	<Technology
+		technology={{
+			category: 'Languages',
+			technologies: [
+				'TypeScript',
+				'JavaScript',
+				'C#',
+				'Python',
+				'HTML',
+				'CSS',
+				'SQL',
+				'C',
+				'Bash',
+			],
+		}}
+	/>
+</Playground>
