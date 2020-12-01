@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Emma Cline's Blog</title>
+        <link>https://emma.cline.engineer/blog</link>
+        <description>Blog feed for the Software Engineer and Application Researcher Emma Cline</description>
+        <lastBuildDate>Tue, 01 Dec 2020 02:17:42 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <image>
+            <title>Emma Cline's Blog</title>
+            <url>https://emma.cline.engineer/android-chrome-192x192.png</url>
+            <link>https://emma.cline.engineer/blog</link>
+        </image>
+        <copyright>Copyright (c) 2020 Emma Cline</copyright>
+        <category>Technology</category>
+        <category>Software Engineering</category>
+        <category>Application Research</category>
+        <atom:link href="https://emma.cline.engineer/feed" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[A* for C#]]></title>
+            <link>https://emma.cline.engineer/blog/astar-csharp</link>
+            <guid>https://emma.cline.engineer/blog/astar-csharp</guid>
+            <pubDate>Mon, 25 Feb 2019 00:00:00 GMT</pubDate>
+            <description><![CDATA[Implementing the A* pathfinding algorithm in C# for my game development project at DigiPen]]></description>
+            <content:encoded><![CDATA[In this post I will be covering my C# implementation of the A* Pathfinding algorithm. A* is an algorithm used to efficiently plot the shortest traversable path between two points. This is commonly used in 2D grid based games such as Pacman. It uses a best first search and finds the least cost path using a heuristic formula. I decided to use the Manhattan heuristic for its efficiency and ease of implementation. The implementation works for any size grid and allows for horizontal and vertical movement. I am going to explain the implementation by separating it into three parts, the heuristic, the node object, and the algorithm.
+
+A heuristic, in this context, is simply an estimate of the distance from any given node to any other node. We will be using the Manhattan heuristic for this implementation which is given by the following formula.
+
+Estimate = |CurrentNode.X – TargetNode.X| + |CurrentNode.Y – TargetNode.Y|
+
+A node is an object that holds the following data.
+
+- Position: This can be represented by two integer values, x and y, that represent this node’s position in the overall map.
+- H: This is an integer given by the Manhattan heuristic defined above.
+- G: Total distance traveled from the starting node.
+- F: G + H, Total “cost” of travel
+- Parent Node: Node that precedes this node
+- Target Node: Node that the path must converge to
+
+The C# implementation of a node object is as follows.
+
+```csharp
+class Node : IComparable<Node>
+{
+    public int H
+    {
+        get
+        {
+            return Math.Abs(X - TargetNode.Position.X) +
+                   Math.Abs(Y - TargetNode.Position.Y);
+        }
+    }
+    public int G
+    {
+        get
+        {
+            if(ParentNode == null)
+                return 0;
+            return ParentNode.G + 1;
+        }
+    }
+    public int F
+    {
+        get { return G + H; }
+    }
+    public int X
+    {
+        get { return ((int) Position.X); }
+    }
+    public int Y
+    {
+        get { return ((int)Position.Y); }
+    }
+    public Node ParentNode;
+    public Node TargetNode;
+
+    public Node (int x, int y)
+    {
+        Position = new Vector2(x, y);
+    }
+
+    public Node(int x, int y, Node parentNode)
+    {
+        ParentNode = parentNode;
+        Position = new Vector2(x, y);
+    }
+
+    public int CompareTo(Node node)
+    {
+        if(F > node.F)
+            return 1;
+
+        if(F < node.F)
+            return -1;
+
+        return 0;
+    }
+
+    public bool Equals(Node node)
+    {
+        if (X == node.X && Y == node.Y)
+            return true;
+        return false;
+    }
+
+    public static bool operator ==(Node n1, Node n2)
+    {
+        return n1.Equals(n2);
+    }
+
+    public static bool operator !=(Node n1, Node n2)
+    {
+        return !n1.Equals(n2);
+    }
+}
+```
+
+Now time to explain the actual algorithm. The algorithm begins with a starting node, a target node, a open list, a closed list, and a collision map. The starting node contains the initial position the algorithm should begin searching from. It is added to the open list to start the algorithm. The target node contains the position of the destination of the algorithm. The open list is a list of all of the nodes that represent a potential path to be taken and is sorted by F score of the node (lowest first). The closed list is a list of all nodes that have already been cast aside as potential paths. The map is just a simple representation of the overall world wherein a boolean value, true representing passable and false representing impassable, corresponds with each node location on the map.
+
+The real work of the algorithm comes in the while loop. The loop continues on the grounds that there are any nodes left in the open list. In every iteration of the loop the open list is sorted and the node with the lowest F value is selected as the current node. Then the nodes surrounding the current node that are passable are added to the open list. This loop continues until the current node is the target node or if all paths to the target node have been exhausted without reaching the target node. If successful the path is then reconstructed and returned.
+
+The C# implementation of A\* is as follows.
+
+```csharp
+class AStar
+{
+    private static bool InBounds(int x, int y, bool[,] map)
+    {
+        if (x >= 0 && y >= 0 && y < map.GetLength(0) && x < map.GetLength(1))
+            return true;
+
+        return false;
+    }
+
+    private static List<Node> GetSurroundingNodes(Node node, bool[,] map)
+    {
+        List<Node> surroundingNodes = new List<Node>();
+
+        /* Adds all the nodes surrounding the parameter node to the
+         * surrounding nodes list (quite the mouthful)
+         */
+        surroundingNodes.Add(new Node(node.X + 1, node.Y, node, node.TargetNode));
+        surroundingNodes.Add(new Node(node.X - 1, node.Y, node, node.TargetNode));
+        surroundingNodes.Add(new Node(node.X, node.Y + 1, node, node.TargetNode));
+        surroundingNodes.Add(new Node(node.X, node.Y - 1, node, node.TargetNode));
+
+        List<Node> tempNodes = new List<Node>(surroundingNodes);
+        foreach (var surroundingNode in tempNodes)
+        {
+           /* Removes a node from the surrounding node list if it is
+            * out of bounds or if it is impassable on the collision map
+            */
+            if (map[surroundingNode.Y, surroundingNode.X]
+                && InBounds(surroundingNode.X, surroundingNode.Y, map))
+            {
+                surroundingNodes.Remove(surroundingNode);
+            }
+        }
+
+        return surroundingNodes;
+    }
+
+    public static List<Node> FindPath(
+			int startX,
+			int startY,
+			int targetX,
+			int targetY,
+			bool[,] map
+		)
+    {
+        Node targetNode = new Node(targetX, targetY, null, null);
+        Node startNode = new Node(startX, startY, null, targetNode);
+        List<Node> openList = new List<Node>();
+        List<Node> closedList = new List<Node>();
+
+        openList.Add(startNode);
+
+        while (openList.Any())
+        {
+            /* Sorts the open list of nodes according to the CompareTo method in the
+             * Node class. Creates a new node object from the first (lowest f value)
+             * node in the open list.
+             */
+            openList.Sort();
+            Node currentNode = openList[0];
+
+            if (currentNode == targetNode)
+                return ReconstructPath(openList[0]);
+
+            openList.Remove(currentNode);
+            closedList.Add(currentNode);
+
+            /* Adds all of the accessible surronding nodes to the open list if they
+             * are not currently in the closed list.
+             */
+            openList.AddRange(from neighborNode in GetSurroundingNodes(currentNode, map)
+                              let contained = closedList.Any(node => node == neighborNode)
+                              where !contained
+                              select neighborNode);
+        }
+
+        /* This function will only return null if there are no available paths from the
+         * start node to the end node.
+         */
+        return null;
+    }
+
+    private static List<Node> ReconstructPath(Node node)
+    {
+        List<Node> path = new List<Node>();
+
+        while (node.G != 0)
+        {
+            path.Add(node);
+            node = node.ParentNode;
+        }
+
+        path.Add(node);
+
+        return path;
+    }
+}
+```
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Error Handling, Lists, Maps, and Trees for dstruct]]></title>
+            <link>https://emma.cline.engineer/blog/dstruct-error-list-map-tree</link>
+            <guid>https://emma.cline.engineer/blog/dstruct-error-list-map-tree</guid>
+            <pubDate>Mon, 29 Apr 2019 00:00:00 GMT</pubDate>
+            <description><![CDATA[A walkthrough of how errors, lists, maps, and trees were implemented for my capstone dstruct project]]></description>
+            <content:encoded><![CDATA[This post is the first of many documenting my progress on a [TypeScript data structures & algorithms library named dstruct](https://gitlab.com/EmmaJCline/dstruct). It aims to provide some of the popular data structures and algorithms available in languages like Java, C#, and Scala which enable programmers to efficiently solve problems with less code.
+
+The first step to building a library like this is to establish a standard for error handling. Error handling is necessary to prevent errors created by programmers and to create logic to recover from errors while the program is running. There are many error patterns in JavaScript ranging from errors passed as parameters in callbacks, error codes, and throwing errors to be caught within a try/catch statement. I decided that throwing errors was the best approach for modern JavaScript given that new developments in the language like generators enable a synchronous syntax for asynchronous programming that previously was unavailable. Another reason is that this library will have no network programming given that the data structures and algorithms do not need networked resources. When JavaScript was restricted to an asynchronous callback style of programming this pattern was less valuable. The benefit to this approach is that much less boilerplate error handling is necessary for the programmer.
+
+Next steps was to determine the most popular data structures and algorithms. This was a bit of a challenge since there is no authoritative source and none are objectively the best for all problems. I looked across the standard libraries of Java(1), Scala(2), C#(3), as well as popular online learning resources (4) and textbooks (5). Eventually I decided on what I believe to be the most widely used and ubiquitous data structures and algorithms.
+
+The lists I chose to implement were ArrayList, and DoublyLinkedList.
+
+- ArrayList proves many of the benefits of normal arrays in that they are compact within memory, allow random access, and utilize the cpu data cache while being able to dynamically resize based on the number of elements added. It is by far one of the most used data structures and JavaScript even provides a simple form of an ArrayList as the default array. By creating a TypeScript class based on the JavaScript array I was able to provide a consistent API, generic interfaces, and functionality like equals and indexOf with custom comparators. ArrayList performs well when random access and low memory usage is needed.
+- DoublyLinkedList is a useful data structure for implementing several of the other data structures in this library like Queues, Stacks, Deque, and the linked version of common structures. It performs well when the use case is primarily insertion and deletion without the need for random access. One list I want to implement if I am ahead of schedule is the TreeList as it can outperform a LinkedList in most scenarios beyond small data sets and iterator positioned inserts (6, 7).
+
+The maps that I chose to implement were HashMap, WeakHashMap, LinkedHashMap, HashBiMap, TreeMap.
+
+- HashMap is a useful data structure to store key-value pairs that provides amortized constant average time per operation. The upcoming ECMAScript 6 harmony specification for JavaScript provides a native HashMap that accepts primitives and objects for keys, as opposed to the string key limited maps which JavaScript provides currently, which was used to implement the HashMap. Node.js can take advantage of this with the harmony option (8) and browsers can use shims until the specification is implemented in modern browsers (9).
+- WeakHashMaps are identical to HashMaps except that the elements contained can be removed can reclaimed by the garbage collector when there are no other strong references to the elements. This is very useful for implementing caches and in particular any sort of DOM node cache like that contained within jQuery. WeakHashMaps are implemented by the upcoming WeakMap in ES6 much like HashMap.
+- LinkedHashMap is identical to HashMap except that the elements added can be accessed in the order that they were put into the map.
+- HashBiMap are identical to HashMaps except that they maintain an inverse HashMap which maps the values to keys.
+- TreeMap stores key-value pairs in a sorted order based on a given comparator in logarithmic time per operation. While slower than HashMaps per operation certain use cases can benefit if there is a need to maintain the keys in a sorted order. The TreeMap is implemented with a RedBlackTree which I will discuss in the next paragraph.
+
+The tree implemented was a RedBlackTree which is a self-balancing binary search tree that provides average logarithmic time per operation. It is useful for implementing tree data structures since it avoids the inefficient worst cases of other self-balancing binary search trees like AVL trees which can degenerate in to LinkedList.
+
+For these data structures an emphasis on the separation between implementation and interface was an important goal. To achieve that all of the data structures were implemented according to abstract generic interfaces. Programmers who use the library are encouraged to use these interfaces when typing their programs rather than the implementations. Implementations are tested with unit tests suites per interface ensuring that implementations which implement the same interface should pass the same tests.
+
+The next steps of the project are to comprehensively document the existing code written and implement the Sets, Queues, and Stacks.
+
+1. [Java collections](http://docs.oracle.com/javase/7/docs/api/java/util/Collections.html)
+2. [Scala collections](http://www.scala-lang.org/api/2.10.3/index.html#scala.collection.package)
+3. [C# collections](http://msdn.microsoft.com/en-us/library/ybcx56wz.aspx)
+4. [Big O Cheatsheet](http://bigocheatsheet.com/#comments)
+5. [Introduction to Algorithms - CLR](http://smile.amazon.com/Introduction-Algorithms-Thomas-H-Cormen/dp/0262033844)
+6. [Apache collections TreeList benchmarks](https://commons.apache.org/proper/commons-collections/javadocs/api-3.2.1/org/apache/commons/collections/list/TreeList.html)
+7. [StackOverflow comparision of lists](https://stackoverflow.com/questions/1713144/list-implementations-does-linkedlist-really-perform-so-poorly-vs-arraylist-and)
+8. [Node.js Harmony Guide by 2ality](http://www.2ality.com/2013/04/nodejs-harmony.html)
+9. [WebReflection/es6-Collections](https://github.com/WebReflection/es6-collections)
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Poster for dstruct]]></title>
+            <link>https://emma.cline.engineer/blog/dstruct-poster</link>
+            <guid>https://emma.cline.engineer/blog/dstruct-poster</guid>
+            <pubDate>Mon, 27 May 2019 00:00:00 GMT</pubDate>
+            <description><![CDATA[A walkthrough of how I created the poster for my capstone dstruct project]]></description>
+            <content:encoded><![CDATA[<div className="flex justify-center content-center text-center">
+	<Image
+		src="/files/blog/dstruct-poster/dstruct-poster.png"
+		alt="Dstruct Poster"
+		width={600}
+		height={300}
+	/>
+</div>
+
+This milestone was designing a poster to represent the project’s efforts so far and print it. I wanted to express the dependency graph of the data structures in the library in a way that would be appealing to a non-technical audience. I ended up using the Coggle.it mind mapping web service since it was a great way to create colorful appealing dependency graphs. The [diagram on the poster is located here](https://coggle.it/diagram/5381714d370cca181d000d0a/faf668ad19902720d816b76fa3a7c46ea1dba0aa929920da23643b6e3abb4dbe). I then created three sections below the diagram to clearly explain the problem, solution, and results. The information included is high level and brief.
+
+In this milestone I learned how to print posters using vector graphics. I have never really done much design work for paper posters before so I was unfamiliar with programs like illustrator and the difference between vector and raster graphics. I ended up using Adobe illustrator to design the poster and Staples to print it.
+
+This advances the project by being able to present the findings at capstone night. I will be working on finishing the library and publishing public modules for the project.
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Sets, MultiSets, and Stacks for dstruct]]></title>
+            <link>https://emma.cline.engineer/blog/dstruct-set-multiset-stack</link>
+            <guid>https://emma.cline.engineer/blog/dstruct-set-multiset-stack</guid>
+            <pubDate>Thu, 16 May 2019 00:00:00 GMT</pubDate>
+            <description><![CDATA[A walkthrough of how sets, multisets, and stacks were implemented for my capstone dstruct project]]></description>
+            <content:encoded><![CDATA[Before I talk about the next set of updates for the [TypeScript data structures & algorithms library](https://github.com/codystebbins/dstruct) I am working on I wanted to discuss some of the setbacks I faced. The first was that I ran into a huge problem with the internal module system as described by [this codeplex issue](https://typescript.codeplex.com/workitem/913). Essentially the dependency resolution only uses file references which can result in in single file output not ordering the TypeScript files by dependencies. This means the single file output will immediately throw an undefined error when loaded into the browser making internal modules useless and the library broken. Other than maintaining a separate list of correct dependency order per build, I would need to switch to external modules. This made me reconsider the use of internal modules and I decided external modules would be more useful for the following reasons.
+
+- Not having to rely on the TypeScript compiler’s dependency resolution, which is less tested and mature than AMD or CommonJS.
+- TypeScript’s internal module system is no longer a part of the [upcoming ES6 module system](http://wiki.ecmascript.org/doku.php?id=harmony:modules) whereas the external module system of typescript mirrors the upcoming proposal. [The TypeScript team has plans to support the ES6 module system](https://typescript.codeplex.com/discussions/446695) with the current external module system. This future proofs the library for the upcoming changes. [1]
+- Since AMD & CommonJS are supported within JavaScript it makes modules within the library easier to use by JavaScript developers.
+
+The other setback I had was that I had failed to realize that ES6 Maps, WeakMaps, and Sets performed key equality based on the built in equals operation. This means that two objects which had identical properties would still be not the same key and would not allow the user to modify how keys are compared. I wanted my data structures to have user definable hashCode and equals methods to determine key equality instead of this. So I went back and made the necessary changes to accomplish this.
+The Sets I chose to implement were HashSet, and TreeSet. Sets are a collection of unique elements. [Sets can be found here](https://github.com/codystebbins/dstruct/tree/master/lib/structures/sets)
+
+- HashSet guarantees O(1) performance for all basic operations. It does not guarantee any key ordering unlike TreeSet. It is implementing using the HashMap I created in the last updates.
+- TreeSet guarantees O(log N) for all basic operations. It also guarantees key ordering based on a user defined compareTo method on the objects added to it.
+
+Similar to a set, I also implemented some MultiSets which are collections of unique elements that allow duplicates. Each unique element is associated with a count integer determining how many of a given unique element has been added to the MultiSet. Elements remove from a MultiSet reduce the count. [The MultiSets can be found here](https://github.com/codystebbins/dstruct/tree/master/lib/structures/multiSets)
+
+- HashMultiSet guarentees O(1) performance for all basic operations. It does not guarantee any key ordering. It is implemented with a HashMap mapping unique elements to counts.
+
+The last update was a Stack which is a linear collection of elements which is last in first out. I chose to implement the ArrayStack. [The stacks can be found here](https://github.com/codystebbins/dstruct/tree/master/lib/structures/stacks).
+
+- ArrayStack guarantees O(1) amortized performance for all basic operations.
+
+This update was filled with setbacks and progress. However the library has come along mostly on schedule and I am happy with the progress.
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Tables and Queues for dstruct]]></title>
+            <link>https://emma.cline.engineer/blog/dstruct-tables-queues</link>
+            <guid>https://emma.cline.engineer/blog/dstruct-tables-queues</guid>
+            <pubDate>Sat, 01 Jun 2019 00:00:00 GMT</pubDate>
+            <description><![CDATA[A walkthrough of how tables and queues were implemented for my capstone dstruct project]]></description>
+            <content:encoded><![CDATA[This week I will be working on the Tables and Queues for the collections project. Tables allow programmers to map a value to two keys. They are similar to maps in their function and interface. Problems like representing coordinates on a Cartesian graph, mapping first and last names to objects representing the person, and any problem that is typically solved by having a map as a value in a map. Queues are first in first out data structure that is a collection of elements. Anytime a programmer does not need the random access of a list they can make their program easier to reason about, and sometimes more efficient, by limiting the collection’s interface to a stack or queue. A queue guarantees that the first element is added is the first element out.
+
+The tables I chose to implement were HashBasedTable, and TreeBasedTable. [The tables are located here](https://github.com/codystebbins/dstruct/tree/master/lib/structures/tables).
+
+- HashBasedTable: This table is implemented using HashMaps. It provides O(1) amortized time for the primary operations. It provides no guarantees about the ordering of keys.
+- TreeBasedTable: This table is implemented using TreeMaps. It provides O(log N) time for the primary operations. It guarantees the keys are in sorted order based on the compareTo method for the keys.
+
+The queue I chose to implement was a DoublyLinkedListQueue. DoublyLinkedLists provide insertion and deletion at both ends in O(1) time so it is a natural choice for a queue. The elements are guaranteed to be in first in first our order. [The queues are located here](https://github.com/codystebbins/dstruct/tree/master/lib/structures/queues).
+
+This will be the last blog post as part of capstone, but I will be continuing on with the project post capstone in my spare time. Up until capstone I will be polishing the documentation, cleaning up the code in known low quality areas, and adding tests where necessary.
+]]></content:encoded>
+        </item>
+    </channel>
+</rss>
