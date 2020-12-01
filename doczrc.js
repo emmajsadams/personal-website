@@ -2,4 +2,6 @@
 // TODO: Change name -> title in blog posts to avoid duplication
 export default {
 	typescript: true,
+	ignore: ['**/blog/**', 'LICENSE.md'],
+	files: '**/*.{md,mdx}',
 }
