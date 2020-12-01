@@ -4,4 +4,5 @@ export default {
 	typescript: true,
 	ignore: ['**/blog/**', 'LICENSE.md'],
 	files: '**/*.{md,mdx}',
+	port: 3001
 }
