@@ -6,7 +6,7 @@
 	"private": false,
 	"scripts": {
 		"dev": "next dev",
-		"build": "yarn run test && yarn run lint && yarn run latex",
+		"build": "yarn run test && yarn run lint && yarn run latex && yarn run docz-build",
 		"build-deploy": "next build",
 		"start": "next start",
 		"format": "eslint * --fix --no-error-on-unmatched-pattern && prettier --write *",
@@ -18,7 +18,7 @@
 		"test": "jest",
 		"test:watch": "jest --watch",
 		"docz-dev": "docz dev",
-		"docz-build": "docz build"
+		"docz-build": "sh ./scripts/docz-build.sh"
 	},
 	"dependencies": {
 		"@mdx-js/loader": "1.6.21",
