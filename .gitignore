@@ -62,4 +62,8 @@ typings/
 
 .mdx-data
 
+# Automatically generated files on deployment, do not check in
 public/sitemap.xml
+public/feed.json
+public/rss.xml
+public/atom.xml
