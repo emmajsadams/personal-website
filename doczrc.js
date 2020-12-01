@@ -5,6 +5,6 @@ export default {
 	ignore: ['**/blog/**', 'LICENSE.md'],
 	files: '**/*.{md,mdx}',
 	port: 3001,
-	dest: '/public/docz',
+	dest: '/public',
 	base: '/docz',
 }
