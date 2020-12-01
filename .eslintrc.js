@@ -20,4 +20,10 @@ module.exports = {
 			version: 'detect',
 		},
 	},
+	overrides: [
+		{
+			files: '*.mdx',
+			extends: 'plugin:mdx/recommended', // ESLint Parser/Plugin for MDX
+		},
+	],
 }
