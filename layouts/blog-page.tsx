@@ -11,11 +11,6 @@ const components = {
 	Image: Image,
 }
 
-interface FrontMatter {
-	title: string
-	date: string
-}
-
 interface BlogPageProps {
 	children: ReactElement
 	frontMatter: FrontMatter
@@ -35,11 +30,11 @@ export default function BlogPage({
 	return (
 		<MDXProvider components={components}>
 			<Head>
-				<title>Emma Cline - {frontMatter.title}</title>
+				<title>Emma Cline - {frontMatter.name}</title>
 			</Head>
 			<div className="content">
 				<Header showResume={true} showBlog={true} showPDFResume={false} />
-				<h1>{frontMatter.title}</h1>
+				<h1>{frontMatter.name}</h1>
 				<h2>{frontMatter.date}</h2>
 				{children}
 			</div>
