@@ -6,4 +6,5 @@ export default {
 	files: '**/*.{md,mdx}',
 	port: 3001,
 	dest: '/public/docz',
+	base: '/docz',
 }
