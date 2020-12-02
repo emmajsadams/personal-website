@@ -18,8 +18,7 @@
 		"test": "jest",
 		"test:watch": "jest --watch",
 		"docz-dev": "docz dev",
-		"docz-build": "sh ./scripts/docz-build.sh",
-		"push": "yarn run build && git push"
+		"docz-build": "sh ./scripts/docz-build.sh"
 	},
 	"dependencies": {
 		"@mdx-js/loader": "1.6.21",
@@ -31,7 +30,6 @@
 		"react-dom": "17.0.1"
 	},
 	"devDependencies": {
-		"@babel/core": "7.9.0",
 		"@mdx-js/mdx": "1.6.21",
 		"@testing-library/jest-dom": "5.11.6",
 		"@testing-library/react": "11.2.2",
@@ -42,7 +40,6 @@
 		"@typescript-eslint/eslint-plugin": "4.4.0",
 		"@typescript-eslint/parser": "4.4.0",
 		"autoprefixer": "10.0.2",
-		"babel-plugin-macros": "2.8.0",
 		"browserslist": "4.14.7",
 		"docz": "2.3.1",
 		"eslint": "7.11.0",
