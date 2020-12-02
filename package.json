@@ -18,7 +18,8 @@
 		"test": "jest",
 		"test:watch": "jest --watch",
 		"docz-dev": "docz dev",
-		"docz-build": "sh ./scripts/docz-build.sh"
+		"docz-build": "sh ./scripts/docz-build.sh",
+		"push": "yarn run build && git push"
 	},
 	"dependencies": {
 		"@mdx-js/loader": "1.6.21",
@@ -53,7 +54,6 @@
 		"feed": "4.2.1",
 		"front-matter": "4.0.2",
 		"globby": "11.0.1",
-		"husky": "4.3.0",
 		"jest": "26.6.3",
 		"postcss": "8.1.7",
 		"postcss-flexbugs-fixes": "5.0.1",
