@@ -6,8 +6,8 @@
 	"private": false,
 	"scripts": {
 		"dev": "next dev",
-		"build": "yarn run test && yarn run lint && yarn run latex && yarn run docz-build",
-		"build-deploy": "next build",
+		"build": "sh ./scripts/build.sh",
+		"build-deploy": "sh /scripts/deploy.sh",
 		"start": "next start",
 		"format": "eslint * --fix --no-error-on-unmatched-pattern && prettier --write *",
 		"lint": "eslint --no-error-on-unmatched-pattern * && prettier --check *",
