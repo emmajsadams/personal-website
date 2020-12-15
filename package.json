@@ -16,7 +16,7 @@
 		"build-latex": "sh ./scripts/latex/build.sh",
 		"latex": "yarn run build-latex && yarn run check-latex",
 		"test": "jest",
-		"test:watch": "jest --watch",
+		"test-watch": "jest --watch",
 		"docz-dev": "docz dev",
 		"docz-build": "sh ./scripts/docz-build.sh"
 	},
