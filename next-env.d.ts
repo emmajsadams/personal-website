@@ -5,7 +5,6 @@ declare interface FrontMatter {
 	name: string
 	description: string
 	date: string
-	shortUrl: string
 	__resourcePath: string
 }
 

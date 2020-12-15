@@ -8,6 +8,12 @@ This resume is replicated on several different resume websites manually.
 - https://hired.com/profile (except projects)
 - https://angel.co/u/EmmaJCline (except projects)
 
+# Setup
+
+- Install node.js and yarn (google this step with your operating system for help)
+- Run this script https://gitlab.com/-/snippets/2044479
+- `yarn run install`
+
 # Choice of Next.JS, TypeScript, and React
 
 TODO
