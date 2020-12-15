@@ -37,13 +37,23 @@ export default function BlogPage({
 			<Head>
 				<title>Emma Cline - {frontMatter.name}</title>
 				<meta name="twitter:card" content="summary" />
-				<meta name="twitter:site" content="@EmmaJCline" />
+				<meta name="twitter:site" content={url} />
 				<meta name="twitter:title" content={frontMatter.name} />
 				<meta name="twitter:description" content={frontMatter.description} />
 				<meta
 					name="twitter:image"
 					content="https://emma.cline.engineer/files/cherry-blossoms.png"
 				/>
+				<meta property="og:title" content="European Travel Destinations"></meta>
+				<meta
+					property="og:description"
+					content={frontMatter.description}
+				></meta>
+				<meta
+					property="og:image"
+					content="https://emma.cline.engineer/files/cherry-blossoms.png"
+				></meta>
+				<meta property="og:url" content={url}></meta>
 			</Head>
 			<div className="content">
 				<Header showResume={true} showBlog={true} showPDFResume={false} />
@@ -53,11 +63,22 @@ export default function BlogPage({
 					Share on:{' '}
 					<a
 						href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
-							frontMatter.name + ' ' + url,
-						)}`}
+							frontMatter.name,
+						)}&url=${encodeURIComponent(url)}`}
 						target="_blank"
+						rel="noreferrer"
 					>
 						Twitter
+					</a>
+					,{' '}
+					<a
+						href={`http://www.facebook.com/sharer.php?u=${encodeURIComponent(
+							url,
+						)}&t=${encodeURIComponent(frontMatter.name)}`}
+						target="_blank"
+						rel="noreferrer"
+					>
+						Facebook
 					</a>
 				</p>
 				<br />
