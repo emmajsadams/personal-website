@@ -44,7 +44,7 @@ export default function BlogPage({
 					name="twitter:image"
 					content="https://emma.cline.engineer/files/cherry-blossoms.png"
 				/>
-				<meta property="og:title" content="European Travel Destinations"></meta>
+				<meta property="og:title" content={frontMatter.name}></meta>
 				<meta
 					property="og:description"
 					content={frontMatter.description}
