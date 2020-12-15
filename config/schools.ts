@@ -12,7 +12,7 @@ export interface School {
 export const UniversityOfWashington: School = {
 	institution: 'University of Washington Seattle',
 	url: 'https://www.washington.edu/',
-	gpa: 3.8,
+	gpa: 3.87,
 	location: 'Seattle, WA',
 	degree: 'Bachelor of Science in Informatics, Minor in Mathematics',
 	startYear: 2011,
