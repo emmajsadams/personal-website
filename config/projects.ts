@@ -18,8 +18,8 @@ export const PersonalWebsite: Project = {
 		'React',
 	],
 	description: [
-		'Next.JS powered blog, resume, and link shortener website powering my portfolio.',
-		'Hybrid static and server rendering model for initial load performance that switches to client side rendering.',
+		'Next.JS powered blog and resume website adhering to modern web development standards.',
+		'High performance and no JavaScript support is enabled due to a hybrid model of server-side and client-side rendering.',
 		'Blog using MDX files for easy maintenance and richly formatted posts.',
 	],
 }
@@ -36,10 +36,9 @@ export const DiscordManagementBot: Project = {
 		'prettier',
 	],
 	description: [
-		'Discord bots written in TypeScript for Node.JS to manage administrative functions of a feature.',
-		'Scales to any size of discord server and can be deployed via Docker on any cloud platform.',
-		'Bots are broken up by function to enable isolated permissions instead of the monolithic administrative function.',
-		'Configured with JSON and allows for separate testing and production discord.',
+		'Discord bots written in TypeScript running on Node.JS for logging, music, GPT-2 chatting, role management, and security monitoring.',
+		'Scales to a discord of any size and can be configured with JSON to support any number of discords.',
+		'Bots are broken up into functions respecting separate of concerns to enable granular permissions for each bot.',
 		'Code is broken up into highly reusable modules that can be pulled into any TypeScript project for customization.',
 	],
 }
@@ -50,14 +49,14 @@ export const NoteDoctor: Project = {
 	technologies: [
 		'TypeScript',
 		'Node.JS',
+		'SendGrid',
+		'Google Cloud',
 		'eslint',
 		'prettier',
-		'SendGrid',
-		'GCP',
 	],
 	description: [
-		'A CLI tool for triaging markdown files with front matter by priority, status, category, and due date.',
-		'Sends a daily email digest of tasks due, and prioritized as urgent using SendGrid and GCP VMs.',
+		'A CLI tool for triaging markdown files using front-matter headers sorted by priority, status, category, and due date.',
+		'Sends a daily email digest of due and urgent tasks using the SendGrid Email API and Google Cloud VMs.',
 	],
 }
 
@@ -66,8 +65,8 @@ export const Dstruct: Project = {
 	url: 'https://gitlab.com/EmmaJCline/dstruct',
 	technologies: ['TypeScript', 'Grunt', 'Docker', 'Bower', 'Karma'],
 	description: [
-		'Data Structures and Algorithms for TypeScript.',
-		'Based on Java and C# Collections, and Google Guava.',
+		'Common data structures and algorithms for TypeScript.',
+		'Based on Java collections, C# collections, and Google Java collections.',
 	],
 }
 
@@ -82,7 +81,9 @@ export const GPT2API: Project = {
 		'Docker',
 		'Kubernetes',
 	],
-	description: ['API that allows requests against any GPT-2 model.'],
+	description: [
+		'An API that allows requests against GPT-2 models to generate meaningful responses to any text prompt.',
+	],
 }
 
 export const ShareTube: Project = {
@@ -97,9 +98,8 @@ export const ShareTube: Project = {
 		'prettier',
 	],
 	description: [
-		'Sharing a redundantly uploaded video across several video services.',
-		'JSON configuration of video that can be loaded via url or as a query param.',
-		'Unique chat rooms for each JSON configuration video.',
+		'Displays a video with multiple sources allowing the user to select which source is used.',
+		'Implements a single shared comments thread across all sources for the video.',
 	],
 }
 
@@ -119,6 +119,7 @@ export const FlightSearcher: Project = {
 	],
 }
 
+// NOTE: No longer used, keeping around just incase I change my mind
 export const CheckOut: Project = {
 	title: 'CheckOut',
 	url: 'https://gitlab.com/EmmaJCline/CheckOut',
@@ -140,8 +141,7 @@ export const AutocompleteComparison: Project = {
 		'Blazor',
 	],
 	description: [
-		'An implementation of a search autocomplete similar Google.',
-		'Comparing React Native, React Redux, and Blazor.',
+		'An implementation of the same search autocomplete similar to Google in React Native, React, and C# Blazor.',
 	],
 }
 
@@ -154,5 +154,4 @@ export default [
 	ShareTube,
 	AutocompleteComparison,
 	FlightSearcher,
-	CheckOut,
 ]
