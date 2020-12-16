@@ -1,3 +1,4 @@
+// TODO: Refactor this to be about technical skills, not technologies
 export interface Technology {
 	category: string
 	technologies: string[]
@@ -98,9 +99,19 @@ export const SoftSkills: Technology = {
 	category: 'Soft Skills',
 	technologies: [
 		'Constructive feedback',
-		'Desire to listen and grow',
-		'Effective concise communication',
+		'desire to listen and grow',
+		'effective concise communication',
 		'problem solving with minimal guidance',
+	],
+}
+
+export const ProfessionalAffiliations: Technology = {
+	category: 'Professional Affiliations',
+	technologies: [
+		'IEEE Computer Society',
+		'IEEE Robotics and Automation Society',
+		'IEEE Communications',
+		'Association for Computing Machinery',
 	],
 }
 
@@ -113,5 +124,6 @@ export default [
 	DeveloperTools,
 	OperatingSystems,
 	OfficeSoftware,
+	ProfessionalAffiliations,
 	SoftSkills,
 ]
