@@ -40,7 +40,6 @@ const globby = require('globby')
 			link: url,
 			description: frontMatter.attributes.description,
 			date: new Date(frontMatter.attributes.date),
-			content: frontMatter.body,
 		})
 	}
 
