@@ -18,9 +18,9 @@ export const PersonalWebsite: Project = {
 		'React',
 	],
 	description: [
-		'Next.JS powered blog, resume, and link shortener website powering my portfolio',
-		'Hybrid static and server rendering model for initial load performance that switches to client side rendering',
-		'Blog using MDX files for easy maintenance and richly formatted posts',
+		'Next.JS powered blog, resume, and link shortener website powering my portfolio.',
+		'Hybrid static and server rendering model for initial load performance that switches to client side rendering.',
+		'Blog using MDX files for easy maintenance and richly formatted posts.',
 	],
 }
 
@@ -36,11 +36,11 @@ export const DiscordManagementBot: Project = {
 		'prettier',
 	],
 	description: [
-		'Discord bots written in TypeScript for Node.JS to manage administrative functions of a feature',
-		'Scales to any size of discord server and can be deployed via Docker on any cloud platform',
-		'Bots are broken up by function to enable isolated permissions instead of the monolithic administrative function',
-		'Configured with JSON and allows for separate testing and production discord',
-		'Code is broken up into highly reusable modules that can be pulled into any TypeScript project for customization',
+		'Discord bots written in TypeScript for Node.JS to manage administrative functions of a feature.',
+		'Scales to any size of discord server and can be deployed via Docker on any cloud platform.',
+		'Bots are broken up by function to enable isolated permissions instead of the monolithic administrative function.',
+		'Configured with JSON and allows for separate testing and production discord.',
+		'Code is broken up into highly reusable modules that can be pulled into any TypeScript project for customization.',
 	],
 }
 
@@ -56,8 +56,8 @@ export const NoteDoctor: Project = {
 		'GCP',
 	],
 	description: [
-		'A CLI tool for triaging markdown files with front matter by priority, status, category, and due date',
-		'Sends a daily email digest of tasks due, and prioritized as urgent using SendGrid and GCP VMs',
+		'A CLI tool for triaging markdown files with front matter by priority, status, category, and due date.',
+		'Sends a daily email digest of tasks due, and prioritized as urgent using SendGrid and GCP VMs.',
 	],
 }
 
@@ -66,8 +66,8 @@ export const Dstruct: Project = {
 	url: 'https://gitlab.com/EmmaJCline/dstruct',
 	technologies: ['TypeScript', 'Grunt', 'Docker', 'Bower', 'Karma'],
 	description: [
-		'Data Structures and Algorithms for TypeScript',
-		'Based on Java and C# Collections, and Google Guava',
+		'Data Structures and Algorithms for TypeScript.',
+		'Based on Java and C# Collections, and Google Guava.',
 	],
 }
 
@@ -82,7 +82,7 @@ export const GPT2API: Project = {
 		'Docker',
 		'Kubernetes',
 	],
-	description: ['API that allows requests against any GPT-2 model'],
+	description: ['API that allows requests against any GPT-2 model.'],
 }
 
 export const ShareTube: Project = {
@@ -97,9 +97,9 @@ export const ShareTube: Project = {
 		'prettier',
 	],
 	description: [
-		'Sharing a redundantly uploaded video across several video services',
-		'JSON configuration of video that can be loaded via url or as a query param',
-		'Unique chat rooms for each JSON configuration video',
+		'Sharing a redundantly uploaded video across several video services.',
+		'JSON configuration of video that can be loaded via url or as a query param.',
+		'Unique chat rooms for each JSON configuration video.',
 	],
 }
 
@@ -115,7 +115,7 @@ export const FlightSearcher: Project = {
 		'Webpack',
 	],
 	description: [
-		'An application to search for flights based on airports and datetimes',
+		'An application to search for flights based on airports and datetimes.',
 	],
 }
 
@@ -124,7 +124,7 @@ export const CheckOut: Project = {
 	url: 'https://gitlab.com/EmmaJCline/CheckOut',
 	technologies: ['C#', 'ASP.NET MVC', 'Docker'],
 	description: [
-		'An API to manage a store inventory and allow customers to checkout items',
+		'An API to manage a store inventory and allow customers to checkout items.',
 	],
 }
 
@@ -140,8 +140,8 @@ export const AutocompleteComparison: Project = {
 		'Blazor',
 	],
 	description: [
-		'An implementation of a search autocomplete similar Google',
-		'Comparing React Native, React Redux, and Blazor',
+		'An implementation of a search autocomplete similar Google.',
+		'Comparing React Native, React Redux, and Blazor.',
 	],
 }
 
