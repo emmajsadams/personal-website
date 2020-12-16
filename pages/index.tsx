@@ -17,6 +17,27 @@ export default function Resume(): ReactElement {
 		<div className="content">
 			<Head>
 				<title>Emma Cline Résumé</title>
+				<meta name="twitter:card" content="summary" />
+				<meta name="twitter:site" content="https://emma.cline.engineer" />
+				<meta name="twitter:title" content="Emma Cline Résumé" />
+				<meta
+					name="twitter:description"
+					content="Happily transgender 🏳️‍⚧️ (she/her ♀️). Senior Software Engineer and Application Researcher 👩🏻‍🔬"
+				/>
+				<meta
+					name="twitter:image"
+					content="https://emma.cline.engineer/files/cherry-blossoms.png"
+				/>
+				<meta property="og:title" content={frontMatter.name}></meta>
+				<meta
+					property="og:description"
+					content="Happily transgender 🏳️‍⚧️ (she/her ♀️). Senior Software Engineer and Application Researcher 👩🏻‍🔬"
+				></meta>
+				<meta
+					property="og:image"
+					content="https://emma.cline.engineer/files/cherry-blossoms.png"
+				></meta>
+				<meta property="og:url" content="https://emma.cline.engineer"></meta>
 			</Head>
 
 			<Header showBlog={true} showResume={false} showPDFResume={true} />
