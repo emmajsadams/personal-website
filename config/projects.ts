@@ -44,21 +44,30 @@ export const DiscordManagementBot: Project = {
 	],
 }
 
-export const ShareTube: Project = {
-	title: 'ShareTube',
-	url: 'https://gitlab.com/EmmaJCline/sharetube',
+export const NoteDoctor: Project = {
+	title: 'Note Doctor',
+	url: 'https://gitlab.com/EmmaJCline/note-doctor',
 	technologies: [
 		'TypeScript',
 		'Node.JS',
-		'Docker',
-		'React',
 		'eslint',
 		'prettier',
+		'SendGrid',
+		'GCP',
 	],
 	description: [
-		'Sharing a redundantly uploaded video across several video services',
-		'JSON configuration of video that can be loaded via url or as a query param',
-		'Unique chat rooms for each JSON configuration video',
+		'A CLI tool for triaging markdown files with front matter by priority, status, category, and due date',
+		'Sends a daily email digest of tasks due, and prioritized as urgent using SendGrid and GCP VMs',
+	],
+}
+
+export const Dstruct: Project = {
+	title: 'dstruct',
+	url: 'https://gitlab.com/EmmaJCline/dstruct',
+	technologies: ['TypeScript', 'Grunt', 'Docker', 'Bower', 'Karma'],
+	description: [
+		'Data Structures and Algorithms for TypeScript',
+		'Based on Java and C# Collections, and Google Guava',
 	],
 }
 
@@ -76,13 +85,21 @@ export const GPT2API: Project = {
 	description: ['API that allows requests against any GPT-2 model'],
 }
 
-export const Dstruct: Project = {
-	title: 'dstruct',
-	url: 'https://gitlab.com/EmmaJCline/dstruct',
-	technologies: ['TypeScript', 'Grunt', 'Docker', 'Bower', 'Karma'],
+export const ShareTube: Project = {
+	title: 'ShareTube',
+	url: 'https://gitlab.com/EmmaJCline/sharetube',
+	technologies: [
+		'TypeScript',
+		'Node.JS',
+		'Docker',
+		'React',
+		'eslint',
+		'prettier',
+	],
 	description: [
-		'Data Structures and Algorithms for TypeScript',
-		'Based on Java and C# Collections, and Google Guava',
+		'Sharing a redundantly uploaded video across several video services',
+		'JSON configuration of video that can be loaded via url or as a query param',
+		'Unique chat rooms for each JSON configuration video',
 	],
 }
 
@@ -130,11 +147,12 @@ export const AutocompleteComparison: Project = {
 
 export default [
 	PersonalWebsite,
+	NoteDoctor,
 	DiscordManagementBot,
-	ShareTube,
 	GPT2API,
-	AutocompleteComparison,
 	Dstruct,
+	ShareTube,
+	AutocompleteComparison,
 	FlightSearcher,
 	CheckOut,
 ]
