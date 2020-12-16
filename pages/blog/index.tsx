@@ -18,6 +18,7 @@ export default function Blogs(): ReactElement {
 							<Link href={post.frontMatter.__resourcePath.replace('.mdx', '')}>
 								{post.frontMatter.name}
 							</Link>
+							{`: ${post.frontMatter.description}`}
 						</li>
 					))}
 				</ul>
