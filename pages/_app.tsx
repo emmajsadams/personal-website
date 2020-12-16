@@ -1,4 +1,4 @@
-import { AppProps } from 'next/app'
+import { AppProps, NextWebVitalsMetric } from 'next/app'
 import { useRouter } from 'next/router'
 import React, { ReactElement, useEffect } from 'react'
 import '../styles/globals.css'
@@ -20,7 +20,12 @@ export default function App({ Component, pageProps }: AppProps): ReactElement {
 	return <Component {...pageProps} />
 }
 
-export function reportWebVitals({ id, name, label, value }) {
+export function reportWebVitals({
+	id,
+	name,
+	label,
+	value,
+}: NextWebVitalsMetric): void {
 	// Use `window.gtag` if you initialized Google Analytics as this example:
 	// https://github.com/vercel/next.js/blob/canary/examples/with-google-analytics/pages/_document.js
 	window.gtag('event', name, {
