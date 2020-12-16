@@ -28,16 +28,16 @@ export default function Resume(): ReactElement {
 					name="twitter:image"
 					content="https://emma.cline.engineer/files/cherry-blossoms.png"
 				/>
-				<meta property="og:title" content={frontMatter.name}></meta>
+				<meta property="og:title" content="Emma Cline Résumé" />
 				<meta
 					property="og:description"
 					content="Happily transgender 🏳️‍⚧️ (she/her ♀️). Senior Software Engineer and Application Researcher 👩🏻‍🔬"
-				></meta>
+				/>
 				<meta
 					property="og:image"
 					content="https://emma.cline.engineer/files/cherry-blossoms.png"
-				></meta>
-				<meta property="og:url" content="https://emma.cline.engineer"></meta>
+				/>
+				<meta property="og:url" content="https://emma.cline.engineer" />
 			</Head>
 
 			<Header showBlog={true} showResume={false} showPDFResume={true} />

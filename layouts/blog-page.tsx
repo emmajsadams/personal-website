@@ -44,16 +44,13 @@ export default function BlogPage({
 					name="twitter:image"
 					content="https://emma.cline.engineer/files/cherry-blossoms.png"
 				/>
-				<meta property="og:title" content={frontMatter.name}></meta>
-				<meta
-					property="og:description"
-					content={frontMatter.description}
-				></meta>
+				<meta property="og:title" content={frontMatter.name} />
+				<meta property="og:description" content={frontMatter.description} />
 				<meta
 					property="og:image"
 					content="https://emma.cline.engineer/files/cherry-blossoms.png"
-				></meta>
-				<meta property="og:url" content={url}></meta>
+				/>
+				<meta property="og:url" content={url} />
 			</Head>
 			<div className="content">
 				<Header showResume={true} showBlog={true} showPDFResume={false} />
