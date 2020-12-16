@@ -60,7 +60,7 @@ export default function BlogPage({
 				<h1>{frontMatter.name}</h1>
 				<h2>{frontMatter.date}</h2>
 				<p>
-					Share on:{' '}
+					Share:{' '}
 					<a
 						href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
 							frontMatter.name,
@@ -79,6 +79,36 @@ export default function BlogPage({
 						rel="noreferrer"
 					>
 						Facebook
+					</a>
+					,{' '}
+					<a
+						href={`https://reddit.com/submit?url=${encodeURIComponent(
+							url,
+						)}&title=${encodeURIComponent(frontMatter.name)}`}
+						target="_blank"
+						rel="noreferrer"
+					>
+						Reddit
+					</a>
+					,{' '}
+					<a
+						href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
+							url,
+						)}`}
+						target="_blank"
+						rel="noreferrer"
+					>
+						LinkedIn
+					</a>
+					,{' '}
+					<a
+						href={`mailto:?subject=${encodeURIComponent(
+							frontMatter.name,
+						)}&body=${encodeURIComponent(url)}`}
+						target="_blank"
+						rel="noreferrer"
+					>
+						Email
 					</a>
 				</p>
 				<br />
