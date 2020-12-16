@@ -13,31 +13,31 @@ export const Freelance: Experience = {
 	institution: 'Self-Employed',
 	institutionUrl: 'https://emma.cline.engineer',
 	location: 'Remote',
-	start: 'Aug 2020',
+	start: 'Aug. 2020',
 	end: 'Present',
 	description: [
-		'TypeScript Discord bots configured by JSON to manage large servers with high performance.',
+		'TypeScript Discord bots configured by JSON to manage large servers with an emphasis high performance.',
 		'Providing proof of concept code for several University of Washington research projects.',
-		'Computer Science tutoring for college students.',
+		'Computer Science tutoring for university students.',
 		'Teaching workshops on modern web development.',
 	],
 }
 
 export const HumbleBundleLead: Experience = {
-	title: 'Lead Senior Software Engineer II',
+	title: 'Lead Senior Software Engineer',
 	institution: 'Humble Bundle',
 	institutionUrl: 'https://www.humblebundle.com',
 	location: 'Remote',
-	start: 'Jul 2018',
-	end: 'Jul 2020',
+	start: 'Jul. 2018',
+	end: 'Jul. 2020',
 	description: [
 		'Promoted from Senior Software Engineer to Lead Senior Software Engineer II over the course of my employment.',
-		'Lead the platform team focused on site reliability engineering.',
-		'Worked with product to define a plan to optimize the user funnel for our monthly product.',
-		'Lead the internationalization project for an 8-year-old application with minimal prior internationalization efforts.',
-		'Integrated an OAuth login system for Facebook and Google into our existing user system.',
-		'Planned a project to migrate all sessions to the newly required email or TOTP two-factor system.',
-		'Helped define standards for representing DateTimes, Money, and Percents in Python and JavaScript.',
+		'Led the platform team focused on site reliability engineering.',
+		'Worked with product to define a plan to optimize the user funnel for the primary product Humble Monthly.',
+		'Led the internationalization project for an 8-year-old application with minimal prior internationalization efforts.',
+		'Integrated an OAuth login system for Facebook and Google into the existing user system.',
+		'Executed a project to migrate all sessions to the newly required email or TOTP two-factor system.',
+		'Helped define standards for representing dates, times, money, and percents in Python and JavaScript.',
 	],
 }
 
@@ -46,12 +46,12 @@ export const CommitteeForChildrenLead: Experience = {
 	institution: 'Committee for Children',
 	institutionUrl: 'https://www.cfchildren.org',
 	location: 'Seattle, WA',
-	start: 'Jan 2018',
-	end: 'Aug 2018',
+	start: 'Jan. 2018',
+	end: 'Aug. 2018',
 	description: [
-		'Lead replacement of a legacy monolithic DNN platform over to using React and .NET Core.',
+		'Led the replacement of a legacy, monolithic DNN platform to a high performance platform utilizing using React and .NET Core.',
 		'Migrated user authentication to the IdentityServer4 OpenID identity provider.',
-		'Incrementally rewrote a series of untested stored procedures into a modern C# WebAPI.',
+		'Incrementally transformed a series of untested stored procedures into a modern C# WebAPI.',
 	],
 }
 
@@ -60,13 +60,13 @@ export const TrovFullStack: Experience = {
 	institution: 'Trov',
 	institutionUrl: 'https://www.trov.com/',
 	location: 'Remote',
-	start: 'Jul 2013',
-	end: 'Dec 2017',
+	start: 'Jul. 2013',
+	end: 'Dec. 2017',
 	description: [
-		'Remote software development team where developers write unit and integration tests.',
-		'Constructed an on demand insurance platform for consumer items with C# and SQL.',
+		'Remote software development team where developers wrote unit and integration tests.',
+		'Constructed an on-demand insurance platform for consumer items with C# and SQL.',
 		'Developed an app for managing claims and insuring items with React and Angular.js.',
-		'Built a business intelligence system for sending information to our partners using Python.',
+		"Built a business intelligence system for sending information to Trov's partners using Python.",
 	],
 }
 
@@ -75,11 +75,11 @@ export const UniversityOfWashingtonResearcher: Experience = {
 	institution: 'University of Washington',
 	institutionUrl: 'https://www.washington.edu/',
 	location: 'Seattle, WA',
-	start: 'Jan 2013',
-	end: 'Nov 2013',
+	start: 'Jan. 2013',
+	end: 'Nov. 2013',
 	description: [
-		'Lead developer for a JavaScript library which abstracted cloud drive APIs like Dropbox and Google Drive.',
-		'Taught staff and students to use and contribute to the library.',
+		'Lead developer for the TypeScript library that abstracted cloud storage services like Dropbox, Google Drive, and AWS.',
+		'Contributed to a research paper on abstracting cloud storage.',
 	],
 }
 
@@ -88,11 +88,11 @@ export const ETradeSoftwareEngineer: Experience = {
 	institution: 'E*Trade',
 	institutionUrl: 'https://etrade.com',
 	location: 'Seattle, WA',
-	start: 'Sept 2012',
+	start: 'Sept. 2012',
 	end: 'May 2013',
 	description: [
-		'Developed Java stock trading apps with an international team.',
-		'Worked on features focused on high-frequency trading and options.',
+		'Worked on an international team to develop high performance stock trading apps implemented in Java',
+		'Developed high-frequency trading features that supported options (contracts to buy a stock at a given price in a span of time).',
 	],
 }
 
@@ -101,11 +101,11 @@ export const UniversityOfWashingtonInstructor: Experience = {
 	institution: 'University of Washington',
 	institutionUrl: 'https://www.washington.edu',
 	location: 'Seattle, WA',
-	start: 'Jan 2012',
-	end: 'Jun 2013',
+	start: 'Jan. 2012',
+	end: 'Jun. 2013',
 	description: [
-		'Taught modern web development standards to UW staff and students.',
-		'Developed Python Django applications to manage courses and support tickets.',
+		'Taught modern web development standards to University of Washington staff and students.',
+		'Developed applications to manage courses and support tickets using Python and Django.',
 	],
 }
 
@@ -114,8 +114,8 @@ export const RakutenSoftwareEngineer: Experience = {
 	institution: 'Rakuten',
 	institutionUrl: 'https://www.rakuten.com/',
 	location: 'Seattle, WA',
-	start: 'Apr 2012',
-	end: 'Nov 2012',
+	start: 'Apr. 2012',
+	end: 'Nov. 2012',
 	description: [
 		'Scraped and normalized product information using Python.',
 		'Worked with Overstock, Amazon, and Walmart APIs to gather product information and update listings.',
@@ -127,11 +127,11 @@ export const SmiteWorksSoftwareEngineer: Experience = {
 	institution: 'SmiteWorks',
 	institutionUrl: 'https://www.fantasygrounds.com',
 	location: 'Bellevue, WA',
-	start: 'Apr 2011',
-	end: 'Nov 2011',
+	start: 'Apr. 2011',
+	end: 'Nov. 2011',
 	description: [
 		'Worked on the FantasyGrounds chat feature using C.',
-		'Lead the development of a C app to import character data from competitors apps.',
+		'Led the development of a C app to import character data from competitors apps.',
 		'Worked with the Steam gaming app store to publish updates and respond to customer feedback.',
 	],
 }
