@@ -7,6 +7,9 @@ This resume is replicated on several different resume websites manually.
 - https://my.indeed.com/p/emmac-5gq2y3z (except projects)
 - https://hired.com/profile (except projects)
 - https://angel.co/u/EmmaJCline (except projects)
+- https://amazon.jobs (just PDF resume)
+- https://www.vettery.com/profile#/
+- UW careers (just profile, no resume)
 
 # Setup
 
