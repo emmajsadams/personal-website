@@ -63,7 +63,7 @@ export default function Resume(): ReactElement {
 			))}
 			<hr />
 
-			<h2>Techincal Skills</h2>
+			<h2>Technical Skills</h2>
 			{TECHNOLOGIES.map((technology) => (
 				<Technology key={technology.category} technology={technology} />
 			))}
