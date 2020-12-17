@@ -27,6 +27,11 @@ export default class MyDocument extends Document {
           `,
 						}}
 					/>
+					<script
+						defer
+						src="https://static.cloudflareinsights.com/beacon.min.js"
+						data-cf-beacon='{"token": "5bea707fee3a4c3bad09c585c8f00fe8"}'
+					/>
 				</Head>
 				<body>
 					<Main />
