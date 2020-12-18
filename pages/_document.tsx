@@ -4,7 +4,7 @@ import React, { ReactElement } from 'react'
 export default class MyDocument extends Document {
 	render(): ReactElement {
 		return (
-			<Html>
+			<Html data-theme="dark">
 				<Head>
 					<meta
 						name="google-site-verification"
@@ -33,7 +33,7 @@ export default class MyDocument extends Document {
 						data-cf-beacon='{"token": "5bea707fee3a4c3bad09c585c8f00fe8"}'
 					/>
 				</Head>
-				<body>
+				<body data-theme="dark">
 					<Main />
 					<NextScript />
 				</body>
