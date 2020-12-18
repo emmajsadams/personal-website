@@ -4,15 +4,22 @@
 body,
 html,
 :root {
+	--header-color: theme('colors.blue.500');
+	--link-color: theme('colors.blue.700');
+	--background-color: #ffffff;
+	--hr-color: rgb(229, 231, 235);
+	--paragraph-color: #000000;
+
 	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
 		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 	font-size: 16px;
+	background-color: var(--background-color);
 }
 
 h1,
 h2,
 h3 {
-	color: theme('colors.blue.500');
+	color: var(--header-color);
 }
 
 h1 {
@@ -34,7 +41,7 @@ hr {
 }
 
 a {
-	color: theme('colors.blue.700');
+	color: var(--link-color);
 	text-decoration: underline;
 	@apply font-bold;
 }
@@ -55,34 +62,22 @@ pre {
 	white-space: pre;
 }
 
-@media (prefers-color-scheme: dark) {
-	body,
-	html,
-	:root {
-		background-color: rgb(24, 26, 27);
-	}
+hr {
+	border-color: var(--hr-color);
+}
 
-	p,
-	li,
-	span {
-		color: rgb(232, 230, 227);
-	}
+p,
+li,
+span {
+	color: var(--paragraph-color);
+}
 
-	hr {
-		border-color: rgb(54, 59, 61);
-	}
-
-	h3 {
-		color: rgb(80, 150, 232);
-	}
-
-	h1 {
-		color: rgb(69, 159, 246);
-	}
-
-	a {
-		color: rgb(80, 150, 232);
-	}
+[data-theme='dark'] {
+	--header-color: rgb(69, 159, 246);
+	--link-color: rgb(80, 150, 232);
+	--background-color: rgb(24, 26, 27);
+	--hr-color: rgb(54, 59, 61);
+	--paragraph-color: rgb(232, 230, 227);
 }
 
 /* Start purging... */
