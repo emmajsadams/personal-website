@@ -36,7 +36,7 @@ export default function DarkMode(): ReactElement {
 	}
 
 	let newlySelectedDarkMode = UserDarkMode.selectedDarkTheme
-	if (userDarkMode === UserDarkMode.selectedDarkTheme) {
+	if (DARK_MODES.includes(userDarkMode)) {
 		newlySelectedDarkMode = UserDarkMode.selectedLightTheme
 	}
 
