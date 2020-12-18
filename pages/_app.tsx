@@ -1,8 +1,10 @@
 import { AppProps, NextWebVitalsMetric } from 'next/app'
 import { useRouter } from 'next/router'
 import React, { ReactElement, useEffect } from 'react'
+import DarkMode from '../components/DarkMode'
 import '../styles/globals.css'
 import * as gtag from '../utils/gtag'
+import isDarkMode from '../utils/isDarkMode'
 
 export default function App({ Component, pageProps }: AppProps): ReactElement {
 	const router = useRouter()
@@ -17,7 +19,13 @@ export default function App({ Component, pageProps }: AppProps): ReactElement {
 		}
 	}, [router.events])
 
-	return <Component {...pageProps} />
+	const darkMode = isDarkMode()
+	return (
+		<div>
+			<DarkMode darkMode={darkMode} />
+			<Component {...pageProps} />
+		</div>
+	)
 }
 
 export function reportWebVitals({
