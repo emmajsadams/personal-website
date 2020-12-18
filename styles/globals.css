@@ -55,6 +55,36 @@ pre {
 	white-space: pre;
 }
 
+@media (prefers-color-scheme: dark) {
+	body,
+	html,
+	:root {
+		background-color: rgb(24, 26, 27);
+	}
+
+	p,
+	li,
+	span {
+		color: rgb(232, 230, 227);
+	}
+
+	hr {
+		border-color: rgb(54, 59, 61);
+	}
+
+	h3 {
+		color: rgb(80, 150, 232);
+	}
+
+	h1 {
+		color: rgb(69, 159, 246);
+	}
+
+	a {
+		color: rgb(80, 150, 232);
+	}
+}
+
 /* Start purging... */
 @tailwind components;
 /* Stop purging. */
