@@ -27,8 +27,10 @@ export default function DarkMode(): ReactElement {
 
 	if (process.browser) {
 		if (DARK_MODES.includes(userDarkMode)) {
+			document.documentElement.setAttribute(THEME_ATTRIBUTE, DARK_THEME)
 			document.body.setAttribute(THEME_ATTRIBUTE, DARK_THEME)
 		} else {
+			document.documentElement.setAttribute(THEME_ATTRIBUTE, LIGHT_THEME)
 			document.body.setAttribute(THEME_ATTRIBUTE, LIGHT_THEME)
 		}
 	}
