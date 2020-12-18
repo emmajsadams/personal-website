@@ -1,0 +1,31 @@
+.hex-icon-sun {
+	width: 42px;
+	height: 50px;
+	margin: 0 10px;
+	display: inline-block;
+	-webkit-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+	transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+	position: absolute;
+	cursor: pointer;
+}
+
+.hex-icon-sun svg {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.hex-icon-sun path:first-of-type {
+	fill: var(--background-color);
+}
+
+.hex-icon-sun circle {
+	stroke: #757579;
+	stroke-width: 2px;
+	fill: none;
+}
+
+.hex-icon-sun circle:last-of-type {
+	stroke-width: 2px;
+	stroke-dasharray: 2, 7.4;
+}
