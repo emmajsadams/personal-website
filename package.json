@@ -17,7 +17,7 @@
 		"latex": "yarn run build-latex && yarn run check-latex",
 		"test": "jest",
 		"test-watch": "jest --watch",
-		"docz-dev": "docz dev",
+		"docz-dev": "rm -rf .docz && docz dev",
 		"docz-build": "sh ./scripts/docz-build.sh"
 	},
 	"dependencies": {
