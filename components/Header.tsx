@@ -34,7 +34,7 @@ export default function Header(): ReactElement {
 			<div className={utilStyles.center}>
 				<p>
 					Currently looking for remote Senior Software Engineer or Application
-					Researcher positions
+					Researcher positions.
 				</p>
 			</div>
 			<div className={utilStyles.center}>
