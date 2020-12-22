@@ -7,4 +7,5 @@ export default {
 	port: 3001,
 	dest: '/public/docz',
 	base: '/docz',
+	plugins: [`gatsby-plugin-postcss`],
 }
