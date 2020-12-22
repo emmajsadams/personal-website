@@ -5,7 +5,7 @@ interface RedditProps {
 	href: string
 }
 
-export default function Reddit({ href }: Reddit): ReactElement {
+export default function Reddit({ href }: RedditProps): ReactElement {
 	return (
 		<a
 			href={href}
