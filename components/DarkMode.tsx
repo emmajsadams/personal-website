@@ -20,7 +20,28 @@ function setTheme(selectedUserDarkMode: UserDarkMode) {
 }
 
 export default function DarkMode(): ReactElement {
+	const [userDarkMode, setDarkMode]: [
+		UserDarkMode,
+		(userDarkMode: UserDarkMode) => void,
+	] = useState(getUserDarkMode())
+
+	let newlySelectedDarkMode = UserDarkMode.selectedDarkTheme
+	if (DARK_MODES.includes(userDarkMode)) {
+		newlySelectedDarkMode = UserDarkMode.selectedLightTheme
+	}
+
 	useEffect(() => {
+		if (DARK_MODES.includes(userDarkMode)) {
+			document.documentElement.setAttribute(THEME_ATTRIBUTE, DARK_THEME)
+			document.body.setAttribute(THEME_ATTRIBUTE, DARK_THEME)
+		} else {
+			document.documentElement.setAttribute(THEME_ATTRIBUTE, LIGHT_THEME)
+			document.body.setAttribute(THEME_ATTRIBUTE, LIGHT_THEME)
+		}
+
+		if (!window.matchMedia) {
+			return
+		}
 		window
 			.matchMedia('(prefers-color-scheme: dark)')
 			.addEventListener('change', () => {
@@ -35,26 +56,6 @@ export default function DarkMode(): ReactElement {
 				}
 			})
 	})
-
-	const [userDarkMode, setDarkMode]: [
-		UserDarkMode,
-		(userDarkMode: UserDarkMode) => void,
-	] = useState(getUserDarkMode())
-
-	if (process.browser) {
-		if (DARK_MODES.includes(userDarkMode)) {
-			document.documentElement.setAttribute(THEME_ATTRIBUTE, DARK_THEME)
-			document.body.setAttribute(THEME_ATTRIBUTE, DARK_THEME)
-		} else {
-			document.documentElement.setAttribute(THEME_ATTRIBUTE, LIGHT_THEME)
-			document.body.setAttribute(THEME_ATTRIBUTE, LIGHT_THEME)
-		}
-	}
-
-	let newlySelectedDarkMode = UserDarkMode.selectedDarkTheme
-	if (DARK_MODES.includes(userDarkMode)) {
-		newlySelectedDarkMode = UserDarkMode.selectedLightTheme
-	}
 
 	return (
 		<>
