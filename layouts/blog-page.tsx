@@ -27,11 +27,6 @@ export default function BlogPage({
 }: BlogPageProps): ReactElement {
 	const router = useRouter()
 
-	// TODO: remove this once fallback is turned off
-	if (router.isFallback) {
-		return <p>Loading...</p>
-	}
-
 	const url = `https://emma.cline.engineer/${frontMatter.__resourcePath.replace(
 		'.mdx',
 		'',
@@ -61,7 +56,7 @@ export default function BlogPage({
 				<Header />
 				<h1>{frontMatter.name}</h1>
 				<h2>{frontMatter.date}</h2>
-				<p>
+				<div style={{ display: 'flex' }}>
 					<Twitter
 						href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
 							frontMatter.name,
@@ -87,7 +82,7 @@ export default function BlogPage({
 							frontMatter.name,
 						)}&body=${encodeURIComponent(url)}`}
 					/>
-				</p>
+				</div>
 				<br />
 				{children}
 			</div>
