@@ -1,4 +1,4 @@
-import React, { ReactElement, useState } from 'react'
+import React, { ReactElement, useEffect, useState } from 'react'
 import styles from '../styles/DarkMode.module.css'
 import UserDarkMode, {
 	DARK_MODES,
@@ -20,6 +20,22 @@ function setTheme(selectedUserDarkMode: UserDarkMode) {
 }
 
 export default function DarkMode(): ReactElement {
+	useEffect(() => {
+		window
+			.matchMedia('(prefers-color-scheme: dark)')
+			.addEventListener('change', () => {
+				const userDarkMode = getUserDarkMode()
+
+				if (DARK_MODES.includes(userDarkMode)) {
+					document.documentElement.setAttribute('data-theme', 'dark')
+					document.body.setAttribute('data-theme', 'dark')
+				} else {
+					document.documentElement.setAttribute('data-theme', 'light')
+					document.body.setAttribute('data-theme', 'light')
+				}
+			})
+	})
+
 	const [userDarkMode, setDarkMode]: [
 		UserDarkMode,
 		(userDarkMode: UserDarkMode) => void,
