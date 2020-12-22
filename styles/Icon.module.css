@@ -1,0 +1,15 @@
+.icon {
+	width: 3em;
+	height: 3em;
+	fill: var(--paragraph-color);
+	cursor: pointer;
+}
+
+.icon-wrapper {
+	margin-left: 1em;
+	display: inline;
+}
+
+.icon-wrapper:first-child {
+	margin-left: 0;
+}
