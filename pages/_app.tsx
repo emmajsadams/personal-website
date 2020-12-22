@@ -1,18 +1,21 @@
 import { AppProps, NextWebVitalsMetric } from 'next/app'
-import { useRouter } from 'next/router'
 import React, { ReactElement, useEffect } from 'react'
+import CookieConsent from 'react-cookie-consent'
 import DarkMode from '../components/DarkMode'
 import '../styles/globals.css'
 import * as gtag from '../utils/gtag'
 
-export default function App({ Component, pageProps }: AppProps): ReactElement {
-	const router = useRouter()
-
+export default function App({
+	Component,
+	pageProps,
+	router,
+}: AppProps): ReactElement {
 	useEffect(() => {
 		const handleRouteChange = (url: URL) => {
 			gtag.pageview(url)
 		}
 		router.events.on('routeChangeComplete', handleRouteChange)
+
 		return () => {
 			router.events.off('routeChangeComplete', handleRouteChange)
 		}
@@ -20,6 +23,16 @@ export default function App({ Component, pageProps }: AppProps): ReactElement {
 
 	return (
 		<div>
+			<CookieConsent
+				buttonText="Enable Analytics"
+				buttonStyle={{ 'background-color': 'green', 'color': 'white' }}
+				onAccept={() => {
+					location.reload()
+				}}
+			>
+				This website uses cookies for Google and Cloudflare anonymized
+				analytics. I would appreciate if you enabled them so I can track usage!
+			</CookieConsent>
 			<DarkMode />
 			<Component {...pageProps} />
 		</div>
