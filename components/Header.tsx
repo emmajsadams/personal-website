@@ -7,62 +7,28 @@ import {
 	NAME,
 	TWITTER,
 } from '../config/personalDetails'
-import styles from '../styles/Header.module.css'
+import Blog from './icons/Blog'
+import Gitlab from './icons/Gitlab'
+import LinkedIn from './icons/LinkedIn'
+import Mail from './icons/Mail'
+import PDF from './icons/PDF'
+import Twitter from './icons/Twitter'
 
-interface HeaderProps {
-	showBlog: boolean
-	showResume: boolean
-	showPDFResume: boolean
-}
-
-export default function Header({
-	showBlog,
-	showResume,
-	showPDFResume,
-}: HeaderProps): ReactElement {
+export default function Header(): ReactElement {
 	return (
 		<>
 			<div className="flex justify-center content-center text-center">
-				<h1>{NAME}</h1>
+				<h1>
+					<Link href="/">{NAME}</Link>
+				</h1>
 			</div>
 			<div className="flex justify-center content-center text-center">
-				<ul className={`inline-flex space-x-4 ${styles['nav-links']}`}>
-					{!showResume ? (
-						<></>
-					) : (
-						<li>
-							<Link href="/">Résumé</Link>
-						</li>
-					)}
-					<li>
-						<a href={`mailto:${EMAIL}`} target="_blank" rel="noreferrer">
-							Email
-						</a>
-						&nbsp;
-					</li>
-					<li>
-						<a href={`https://${LINKEDIN}`} target="_blank" rel="noreferrer">
-							LinkedIn
-						</a>
-					</li>
-					<li>
-						<a href={`https://${GITLAB}`} target="_blank" rel="noreferrer">
-							GitLab
-						</a>
-					</li>
-					<li>
-						<a href={`https://${TWITTER}`} target="_blank" rel="noreferrer">
-							Twitter
-						</a>
-					</li>
-					{!showBlog ? (
-						<></>
-					) : (
-						<li>
-							<Link href="/blog">Blog</Link>
-						</li>
-					)}
-				</ul>
+				<Gitlab href={`https://${GITLAB}`} />
+				<LinkedIn href={`https://${LINKEDIN}`} />
+				<Twitter href={`https://${TWITTER}`} />
+				<Mail href={`mailto:${EMAIL}`} />
+				<PDF href="/files/EmmaJCline-resume.pdf" />
+				<Blog />
 			</div>
 			<div className="flex justify-center content-center text-center">
 				<p>
@@ -73,21 +39,6 @@ export default function Header({
 			<div className="flex justify-center content-center text-center">
 				<p>Happily transgender 🏳️‍🌈 (she/her ♀️)</p>
 			</div>
-			{!showPDFResume ? (
-				<></>
-			) : (
-				<div className="flex justify-center content-center text-center">
-					<p>
-						<a
-							href="/files/EmmaJCline-resume.pdf"
-							target="_blank"
-							rel="noreferrer"
-						>
-							Download a PDF version of this resume
-						</a>
-					</p>
-				</div>
-			)}
 			<hr />
 		</>
 	)
