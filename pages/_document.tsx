@@ -10,6 +10,14 @@ export default class MyDocument extends Document {
 						name="google-site-verification"
 						content="O_dhy7q1Kfwrvh4v9kyyHmHVZWJqzCegjrgNteyU65k"
 					/>
+
+					{/* Cloudflare analytics, like Vercel analytics, is GDPR compliant */}
+					<script
+						defer
+						data-cf-beacon='{"token": "5bea707fee3a4c3bad09c585c8f00fe8"}'
+						src="https://static.cloudflareinsights.com/beacon.min.js"
+					></script>
+
 					{/* Check for GDPR cookie consent before loading analytics */}
 					<script
 						dangerouslySetInnerHTML={{
@@ -35,12 +43,6 @@ export default class MyDocument extends Document {
 								googleTagManager.src = 'https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_TRACKING_ID}';
 								googleTagManager.async = true;
 								document.head.appendChild(googleTagManager);
-
-								var cloudflareAnalytics = document.createElement( 'script' );
-								cloudflareAnalytics.src = 'https://static.cloudflareinsights.com/beacon.min.js';
-								cloudflareAnalytics.defer = true;
-								cloudflareAnalytics.setAttribute('data-cf-beacon', '{"token": "5bea707fee3a4c3bad09c585c8f00fe8"}')
-								document.head.appendChild(cloudflareAnalytics);
 
 								window.dataLayer = window.dataLayer || [];
 								function gtag(){dataLayer.push(arguments);}

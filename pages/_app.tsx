@@ -30,8 +30,8 @@ export default function App({
 					location.reload()
 				}}
 			>
-				This website uses cookies for Google and Cloudflare anonymized
-				analytics.
+				This website uses cookies for Google analytics for an enhanced user
+				experience.
 			</CookieConsent>
 			<DarkMode />
 			<Component {...pageProps} />
