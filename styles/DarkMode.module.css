@@ -16,7 +16,7 @@
 }
 
 .sun path:first-of-type {
-	fill: var(--background-color);
+	fill: transparent;
 }
 
 .sun circle {
