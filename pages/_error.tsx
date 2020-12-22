@@ -1,15 +1,16 @@
 import Image from 'next/image'
 import React, { ReactElement } from 'react'
 import Header from '../components/Header'
+import utilStyles from '../styles/utils.module.css'
 
 export default function Error(): ReactElement {
 	return (
 		<>
 			<Header />
-			<div className="flex justify-center content-center text-center">
+			<div className={utilStyles.center}>
 				<h2>Oh no! Something has gone wrong!</h2>
 			</div>
-			<div className="flex justify-center content-center text-center">
+			<div className={utilStyles.center}>
 				<p>
 					The robots working behind the scenes are unsure what has gone wrong.
 					Please email details of this error to&nbsp;
@@ -19,13 +20,13 @@ export default function Error(): ReactElement {
 					.
 				</p>
 			</div>
-			<div className="flex justify-center content-center text-center">
+			<div className={utilStyles.center}>
 				<p>
 					Navigate to a valid page with the header or relax with this picture of
 					cherry blossoms.
 				</p>
 			</div>
-			<div className="flex justify-center content-center text-center">
+			<div className={utilStyles.center}>
 				<Image
 					src="/files/cherry-blossoms.png"
 					alt="Relaxing cherry blossoms"
