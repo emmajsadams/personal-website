@@ -11,21 +11,16 @@ pids
 *.pid
 *.seed
 *.pid.lock
-
 node_modules
 .mdx-data
 .next
-LICENSE.md
-README.md
-
-# I need to ignore next.config.js in all forms due to vercel's manipulation of the file
-next.config*
 
 # disable js linting
 *.js
 
-# ignore automatically generated feeds
+# ignore automatically generated files
 public/feed.json
 public/rss.xml
 public/atom.xml
 public/sitemap.xml
+next.config*

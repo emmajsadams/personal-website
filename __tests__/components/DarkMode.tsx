@@ -25,12 +25,15 @@ test('renders dark theme by default if no preferred color scheme or localStorage
 test('renders dark theme if preferred color scheme is dark and no localStorage theme', async () => {
 	;(window.process as any).browser = true
 	localStorage.setItem(THEME_KEY, null)
+	const addEventListener: any = () => {
+		return null
+	}
 	window.matchMedia = (prefersColorScheme) => {
 		if (prefersColorScheme === '(prefers-color-scheme: dark)') {
-			return { matches: true, addEventListener: () => {} } as any
+			return { matches: true, addEventListener } as any
 		}
 
-		return { matches: false, addEventListener: () => {} } as any
+		return { matches: false, addEventListener } as any
 	}
 
 	render(<DarkMode />)
@@ -45,12 +48,15 @@ test('renders dark theme if preferred color scheme is dark and no localStorage t
 test('renders light theme if preferred color scheme is dark and no localStorage theme', async () => {
 	;(window.process as any).browser = true
 	localStorage.setItem(THEME_KEY, null)
+	const addEventListener: any = () => {
+		return null
+	}
 	window.matchMedia = (prefersColorScheme) => {
 		if (prefersColorScheme === '(prefers-color-scheme: light)') {
-			return { matches: true, addEventListener: () => {} } as any
+			return { matches: true, addEventListener } as any
 		}
 
-		return { matches: false, addEventListener: () => {} } as any
+		return { matches: false, addEventListener } as any
 	}
 
 	render(<DarkMode />)
@@ -65,12 +71,15 @@ test('renders light theme if preferred color scheme is dark and no localStorage 
 test('renders dark theme ignoring preferred color scheme if localStorage dark theme is set', async () => {
 	;(window.process as any).browser = true
 	localStorage.setItem(THEME_KEY, DARK_THEME)
+	const addEventListener: any = () => {
+		return null
+	}
 	window.matchMedia = (prefersColorScheme) => {
 		if (prefersColorScheme === '(prefers-color-scheme: light)') {
-			return { matches: true, addEventListener: () => {} } as any
+			return { matches: true, addEventListener } as any
 		}
 
-		return { matches: false, addEventListener: () => {} } as any
+		return { matches: false, addEventListener } as any
 	}
 
 	render(<DarkMode />)
@@ -85,12 +94,15 @@ test('renders dark theme ignoring preferred color scheme if localStorage dark th
 test('renders light theme ignoring preferred color scheme if localStorage light theme is set', async () => {
 	;(window.process as any).browser = true
 	localStorage.setItem(THEME_KEY, LIGHT_THEME)
+	const addEventListener: any = () => {
+		return null
+	}
 	window.matchMedia = (prefersColorScheme) => {
 		if (prefersColorScheme === '(prefers-color-scheme: dark)') {
-			return { matches: true, addEventListener: () => {} } as any
+			return { matches: true, addEventListener } as any
 		}
 
-		return { matches: false, addEventListener: () => {} } as any
+		return { matches: false, addEventListener } as any
 	}
 
 	render(<DarkMode />)

@@ -10,10 +10,12 @@ module.exports = {
 		'plugin:prettier/recommended',
 		'plugin:import/errors',
 		'plugin:react/recommended',
+		'plugin:markdown/recommended',
 	],
 	rules: {
 		'import/no-unresolved': 'off',
 		'react/prop-types': 'off',
+		'@typescript-eslint/no-explicit-any': 'off',
 	},
 	settings: {
 		react: {
@@ -23,7 +25,7 @@ module.exports = {
 	overrides: [
 		{
 			files: '*.mdx',
-			extends: 'plugin:mdx/recommended', // ESLint Parser/Plugin for MDX
+			extends: 'plugin:mdx/recommended',
 		},
 	],
 }

@@ -31,7 +31,7 @@ export default function App({
 				}}
 			>
 				This website uses cookies for Google and Cloudflare anonymized
-				analytics. I would appreciate if you enabled them so I can track usage!
+				analytics.
 			</CookieConsent>
 			<DarkMode />
 			<Component {...pageProps} />
