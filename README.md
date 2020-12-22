@@ -1,33 +1,41 @@
 This is the repo for my personal website powered by TypeScript Next.js. It is hosted at emma.cline.engineer using https://vercel.com.
 
-This resume is replicated on several different resume websites manually.
+---
 
-- https://www.linkedin.com/in/emmajcline/
-- https://stackoverflow.com/story/emmajcline (except projects)
-- https://my.indeed.com/p/emmac-5gq2y3z (except projects)
-- https://hired.com/profile (except projects)
-- https://angel.co/u/EmmaJCline (except projects)
-- https://amazon.jobs (just PDF resume)
-- https://www.vettery.com/profile#/
-- UW careers (just profile, no resume)
+# Development
 
-# Setup
+## Setup
 
 - Install node.js and yarn (google this step with your operating system for help)
 - Run this script https://gitlab.com/-/snippets/2044479
 - `yarn run install`
 
-# Documentation
+## Documentation
 
-Docz is used for documenting the props and states of React components https://emma.cline.engineer/docz/
+Docz is used for documenting the props and states of React components https://emma.cline.engineer/docz/. The docz server
 
-Also within the **tests** folder are tests for any sufficiently complicated Component
+Also within the \_\_tests\_\_ folder are tests for any sufficiently complicated Component
 
-# Choice of Next.JS, TypeScript, and React
+## Testing
 
-TODO
+Each component that is complex enough is tested using react-testing-library and Jest. react-testing-library renders components and asserts desired outcomes without relying on implementation details or mocks. This results in robust tests that do not break when components are refactored.
 
-# GitLab
+## Next.JS and React
+
+Next.JS was chosen as a framework because it offers server side rendering for all pages while still enabling the use client-side rendering after the initial server side render. In addition most pages are built at build time unless they require server side data to be fetched which enables a fast initial response time of static html and css.
+
+Next.JS uses React components which is a powerful popular framework for building user interfaces. React encourages developers to break up code into components that are functions with one data flow. Components can have state with useState or handle actions after render with useEffect. Due to the popularity of React is has vast library support for common tasks.
+
+## CSS Design
+
+This project uses TailwindCSS, PostCSS, and CSSModules. This keeps CSS scoped to components and provides a flexible highly customizable base of classes.
+
+In addition I used the following research from Smashing Magazine for my link, header, and paragraph styling.
+
+- Header sizes research: https://www.smashingmagazine.com/2009/08/typographic-design-survey-best-practices-from-the-best-blogs/
+- Link styling research: https://www.smashingmagazine.com/2010/02/the-definitive-guide-to-styling-web-links/
+
+## GitLab
 
 Gitlab is used for git hosting and ci build. .gitlab-ci.yml configures which commands to run. On each push to any branch GitLab will run the build command which does the following
 
@@ -37,7 +45,7 @@ Gitlab is used for git hosting and ci build. .gitlab-ci.yml configures which com
 
 If there are any failures GitLab will notify the project maintainers via email. The build will also be marked as a failure in GitLab.
 
-# Vercel
+## Vercel
 
 This website could be easily hosted on any Kubernetes server with a simple Dockerfile. However https://vercel.com offers free hosting, fast deploy times, integrated analytics, and git based deployment for Next.JS projects. https://vercel.com is run by the same team that maintains Next.JS.
 
@@ -51,41 +59,81 @@ On push to the GitLab main branch Vercel does the following
 
 If there are any failures GitLab and Vercel will notify the project maintainers via email. The build will also be marked as a failure in Vercel and GitLab.
 
-# Design
+---
 
-This project uses tailwindcss, postcss, and cssmodules. This keeps css scoped to components and provides a flexible highly customizable base of classes
+# Content
 
-I did a bit of research via smashingmagazine on ideal styles for readability.
+## Resume
 
-- Header sizes research: https://www.smashingmagazine.com/2009/08/typographic-design-survey-best-practices-from-the-best-blogs/
-- Link styling research: https://www.smashingmagazine.com/2010/02/the-definitive-guide-to-styling-web-links/
+There is a web resume and a PDF resume generated using Latex. They are automatically kept in sync with a single configuration being used to generate both. Git hooks ensure all changes to the PDF resume are checked in before deployment.
 
-This resulted in the following decisions
+This resume is replicated on several different resume websites manually.
 
-- Links: always underlined with hover cursor. New tab for external links, same tab for internal links
+- https://www.linkedin.com/in/emmajcline/
+- https://stackoverflow.com/story/emmajcline (except projects)
+- https://my.indeed.com/p/emmac-5gq2y3z (except projects)
+- https://hired.com/profile (except projects)
+- https://angel.co/u/EmmaJCline (except projects)
+- https://amazon.jobs (just PDF resume)
+- https://www.vettery.com/profile#/
+- UW careers (just profile, no resume)
+
+## Blog
+
+I maintain a blog about software engineering and computer science. All blogs are written in MDX which allows me to pull in React components like Codeblock for a rich experience all while keeping the experience of writing the blog simple by maintaining a single file.
+
+atom2, rss2, and json feeds are generated for blog posts at build time before deploy using code I wrote with help of the feed npm package. Note this means the feeds is not checked into the git repository to avoid cluttering commits with build artifacts.
+
+---
+
+# Analytics
+
+## Google Analytics
+
+Google analytics is integrated into next.js using this blog post as a reference https://medium.com/frontend-digest/using-nextjs-with-google-analytics-and-typescript-620ba2359dea. This method correctly tracks client-side page transitions as new pages and handles the hybrid model well. All web vitals are tracked using Next.JS's built in performance measuring tools.
+
+Google Analytics are only configured if the user agrees to cookies because it is not GDPR compliant.
+
+## Cloudflare Analytics
+
+Cloudflare Analytics is enabled by default. Unlike Google Analytics, Cloudflare is GDPR compliant due to the privacy mechanisms built-in. It collects far less data however thus both are used https://blog.cloudflare.com/free-privacy-first-analytics-for-a-better-web/.
+
+## Vercel Analytics
+
+Vercel, the hosting service, has built-in Analytics enabled by default. These are also GDPR compliant, but mainly focus on performance. Vercel collects even less data than Cloudflare.
+
+---
 
 # SEO
 
-## Google Analytics config
+## Performance
 
-Google analytics is integrated into next.js using this blog post as a reference https://medium.com/frontend-digest/using-nextjs-with-google-analytics-and-typescript-620ba2359dea. This method correctly tracks client-side page transitions as new pages and handles the hybrid model well.
+An overlooked aspect of SEO is performance. Google in particular has started punishing websites that score poorly on their web vitals performance metrics. As mentioned above Web Vitals are tracked with all analytics services used and monitored in development before deploying new changes. https://web.dev/vitals/
+
+## Server side rendering
+
+Although the Google Search crawler has some support for JavaScript rendering not all search engines do. In addition relying on Google Search's crawler to correctly render heavy single pages apps is less reliable strategy than serving HTML and CSS content primarily. Luckily as discussed above Next.JS compiles most of each page at build time into primarily HTML and CSS ensuring content is crawled reliably.
+
+## robots.txt
+
+A robots.txt file is included allowing all pages to be crawled.
 
 ## Sitemaps
 
 The sitemap is generated at build time before deploy using this approach https://leerob.io/blog/nextjs-sitemap-robots. Note this means the sitemap is not checked into the git repository to avoid cluttering commits with build artifacts.
 
-## Feeds
+## Blog on same domain
 
-atom2, rss2, and json feeds are generated for blog posts at build time before deploy using code I wrote with help of the feed npm package. Note this means the feeds is not checked into the git repository to avoid cluttering commits with build artifacts.
+Many websites create a separate or subdomain for blogs. However this is not considered a great practice for search engine ranking. Keeping all related content on the same domain means any ranking gained as a trusted and performant result is consolidated.
 
-# Blog
+## Web of trust
 
-TODO
+At a high level crawlers rely on trusted links linking to unknown links as a way of establishing new trusted links. Think of it a bit like the academic citation process. The more citations a paper has the more likely it is to be a reliable source of research.
 
-# Latex Resume
+Thus on my personal website I link out to all my established social media. On those social media websites I link back to my personal website. This helps to build that web of trust which will boost rankings.
 
-TODO
+## Blog Sharing
 
-# Testing
+On each blog post is a blog post sharing icon for all major social media platforms that encourage long form technical content. These links to not rely on JavaScript or third-party images thus will not be blocked by commonly used adblocking software. These links use web intent APIs to redirect the user to a automatically filled out share prompt for each service. In addition to web intents all the necessary meta tags are included so that expected titles, images, and content are all filled out for each service.
 
-Each component that is complex enough is tested using react-testing-library and Jest. react-testing-library renders components and asserts desired outcomes without relying on implementation details or mocks. This results in robust tests that do not break when components are refactored.
+I referenced this list of web intent APIs during development https://github.com/bradvin/social-share-urls
