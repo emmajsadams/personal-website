@@ -1,7 +1,6 @@
 import { MDXProvider } from '@mdx-js/react'
 import Head from 'next/head'
 import Image from 'next/image'
-import { useRouter } from 'next/router'
 import React, { ReactElement } from 'react'
 import CodeBlock from '../components/CodeBlock'
 import Header from '../components/Header'
@@ -25,8 +24,6 @@ export default function BlogPage({
 	children,
 	frontMatter,
 }: BlogPageProps): ReactElement {
-	const router = useRouter()
-
 	const url = `https://emma.cline.engineer/${frontMatter.__resourcePath.replace(
 		'.mdx',
 		'',
@@ -56,6 +53,7 @@ export default function BlogPage({
 				<Header />
 				<h1>{frontMatter.name}</h1>
 				<h2>{frontMatter.date}</h2>
+				<br />
 				<div style={{ display: 'flex' }}>
 					<Twitter
 						href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
