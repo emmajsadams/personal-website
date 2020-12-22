@@ -5,7 +5,7 @@ import Header from '../components/Header'
 export default function Error(): ReactElement {
 	return (
 		<>
-			<Header showBlog={true} showResume={true} showPDFResume={false} />
+			<Header />
 			<div className="flex justify-center content-center text-center">
 				<h2>Oh no! Something has gone wrong!</h2>
 			</div>
