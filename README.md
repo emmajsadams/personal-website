@@ -17,6 +17,12 @@ This resume is replicated on several different resume websites manually.
 - Run this script https://gitlab.com/-/snippets/2044479
 - `yarn run install`
 
+# Documentation
+
+Docz is used for documenting the props and states of React components https://emma.cline.engineer/docz/
+
+Also within the **tests** folder are tests for any sufficiently complicated Component
+
 # Choice of Next.JS, TypeScript, and React
 
 TODO
@@ -83,7 +89,3 @@ TODO
 # Testing
 
 Each component that is complex enough is tested using react-testing-library and Jest. react-testing-library renders components and asserts desired outcomes without relying on implementation details or mocks. This results in robust tests that do not break when components are refactored.
-
-# Documentation
-
-I use docz for documenting the various states of my react components https://emma.cline.engineer/docz/
