@@ -5,6 +5,11 @@ import { useRouter } from 'next/router'
 import React, { ReactElement } from 'react'
 import CodeBlock from '../components/CodeBlock'
 import Header from '../components/Header'
+import Facebook from '../components/icons/Facebook'
+import LinkedIn from '../components/icons/LinkedIn'
+import Mail from '../components/icons/Mail'
+import Reddit from '../components/icons/Reddit'
+import Twitter from '../components/icons/Twitter'
 
 const components = {
 	code: CodeBlock,
@@ -53,60 +58,35 @@ export default function BlogPage({
 				<meta property="og:url" content={url} />
 			</Head>
 			<div className="content">
-				<Header showResume={true} showBlog={true} showPDFResume={false} />
+				<Header />
 				<h1>{frontMatter.name}</h1>
 				<h2>{frontMatter.date}</h2>
 				<p>
-					Share:{' '}
-					<a
+					<Twitter
 						href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
 							frontMatter.name,
 						)}&url=${encodeURIComponent(url)}`}
-						target="_blank"
-						rel="noreferrer"
-					>
-						Twitter
-					</a>
-					,{' '}
-					<a
+					/>
+					<Facebook
 						href={`http://www.facebook.com/sharer.php?u=${encodeURIComponent(
 							url,
 						)}&t=${encodeURIComponent(frontMatter.name)}`}
-						target="_blank"
-						rel="noreferrer"
-					>
-						Facebook
-					</a>
-					,{' '}
-					<a
+					/>
+					<Reddit
 						href={`https://reddit.com/submit?url=${encodeURIComponent(
 							url,
 						)}&title=${encodeURIComponent(frontMatter.name)}`}
-						target="_blank"
-						rel="noreferrer"
-					>
-						Reddit
-					</a>
-					,{' '}
-					<a
+					/>
+					<LinkedIn
 						href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
 							url,
 						)}`}
-						target="_blank"
-						rel="noreferrer"
-					>
-						LinkedIn
-					</a>
-					,{' '}
-					<a
+					/>
+					<Mail
 						href={`mailto:?subject=${encodeURIComponent(
 							frontMatter.name,
 						)}&body=${encodeURIComponent(url)}`}
-						target="_blank"
-						rel="noreferrer"
-					>
-						Email
-					</a>
+					/>
 				</p>
 				<br />
 				{children}

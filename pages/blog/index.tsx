@@ -11,7 +11,7 @@ export default function Blogs(): ReactElement {
 				<title>Emma Cline&lsquo;s Blog</title>
 			</Head>
 			<div className="content">
-				<Header showBlog={false} showResume={true} showPDFResume={false} />
+				<Header />
 				<ul>
 					{BLOG_POSTS.map((post) => (
 						<li key={post.frontMatter.name}>

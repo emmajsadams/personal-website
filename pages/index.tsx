@@ -10,7 +10,6 @@ import PROJECTS from '../config/projects'
 import SCHOOLS from '../config/schools'
 import TECHNOLOGIES from '../config/technologies'
 
-// TODO: consider a professional affilations section
 // TODO: Create helper function to generate each section using generics
 export default function Resume(): ReactElement {
 	return (
@@ -40,7 +39,7 @@ export default function Resume(): ReactElement {
 				<meta property="og:url" content="https://emma.cline.engineer" />
 			</Head>
 
-			<Header showBlog={true} showResume={false} showPDFResume={true} />
+			<Header />
 
 			<h1>Education</h1>
 			{SCHOOLS.map((school) => (
