@@ -69,13 +69,13 @@ There is a web resume and a PDF resume generated using Latex. They are automatic
 
 This resume is replicated on several different resume websites manually.
 
-- https://www.linkedin.com/in/emmajcline/
-- https://stackoverflow.com/story/emmajcline (except projects)
-- https://my.indeed.com/p/emmac-5gq2y3z (except projects)
-- https://hired.com/profile (except projects)
-- https://angel.co/u/EmmaJCline (except projects)
-- https://amazon.jobs (just PDF resume)
-- https://www.vettery.com/profile#/
+- https://www.linkedin.com/in/emmajcline/ (full profile, linked pdf)
+- https://stackoverflow.com/story/emmajcline (uploaded pdf and photo)
+- https://my.indeed.com/p/emmac-5gq2y3z (linked pdf, no photo)
+- https://hired.com/profile (uploaded pdf and photo)
+- https://angel.co/u/EmmaJCline (linked pdf, uploaded photo)
+- https://amazon.jobs (only uploaded PDF resume)
+- https://www.vettery.com/profile#/ (uploaded pdf and photo)
 - UW careers (just profile, no resume)
 
 ## Blog
