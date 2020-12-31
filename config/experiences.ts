@@ -16,7 +16,7 @@ export const Freelance: Experience = {
 	start: 'Aug. 2020',
 	end: 'Present',
 	description: [
-		'TypeScript Discord bots configured by JSON to manage large servers with an emphasis high performance.',
+		'Contract work building APIs and React web applications for small to mid-sized companies.',
 		'Providing proof of concept code for several University of Washington research projects.',
 		'Computer Science tutoring for university students.',
 		'Teaching workshops on modern web development.',
