@@ -45,10 +45,6 @@ const DOCUMENT_HEADER = `%-------------------------
     ItalicFont = *-Italic,
 BoldItalicFont = *-BoldItalic,
 ]
-\\setmathfont{XITSMath-Regular}
-[    Extension = .otf,
-      BoldFont = XITSMath-Bold,
-]
 
 \\pagestyle{fancy}
 \\fancyhf{}
