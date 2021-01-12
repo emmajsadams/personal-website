@@ -20,11 +20,11 @@ export default function SchoolElement({
 	return (
 		<>
 			<div className="flex flex-row">
-				<h3 className="flex-auto text-left">
+				<h2 className="flex-auto text-left">
 					<a href={url} target="_blank" rel="noreferrer">
 						{institution}
 					</a>
-				</h3>
+				</h2>
 				<span className="flex-auto text-right">{location}</span>
 			</div>
 			<div className="flex flex-row">

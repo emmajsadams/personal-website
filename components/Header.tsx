@@ -17,18 +17,27 @@ import Twitter from './icons/Twitter'
 
 export default function Header(): ReactElement {
 	return (
-		<>
+		<nav>
 			<div className={utilStyles.center}>
 				<h1>
 					<Link href="/">{NAME}</Link>
 				</h1>
 			</div>
 			<div className={utilStyles.center}>
-				<Gitlab href={`https://${GITLAB}`} />
-				<LinkedIn href={`https://${LINKEDIN}`} />
-				<Twitter href={`https://${TWITTER}`} />
-				<Mail href={`mailto:${EMAIL}`} />
-				<PDF href="/files/EmmaJCline-resume.pdf" />
+				<Gitlab href={`https://${GITLAB}`} label="GitLab for Emma Jane Cline" />
+				<LinkedIn
+					href={`https://${LINKEDIN}`}
+					label="LinkedIn for Emma Jane Cline"
+				/>
+				<Twitter
+					href={`https://${TWITTER}`}
+					label="Twitter for Emma Jane Cline"
+				/>
+				<Mail href={`mailto:${EMAIL}`} label="Email for Emma Jane Cline" />
+				<PDF
+					href="/files/EmmaJCline-resume.pdf"
+					label="PDF Résumé for Emma Jane Cline"
+				/>
 				<Blog />
 			</div>
 			<div className={utilStyles.center}>
@@ -38,9 +47,19 @@ export default function Header(): ReactElement {
 				</p>
 			</div>
 			<div className={utilStyles.center}>
-				<p>Happily transgender 🏳️‍🌈 (she/her ♀️)</p>
+				<p>
+					Happily transgender{' '}
+					<span role="img" aria-label="Transgender Flag">
+						🏳️‍🌈
+					</span>{' '}
+					(she/her{' '}
+					<span role="img" aria-label="she/her pronouns">
+						♀️
+					</span>
+					)
+				</p>
 			</div>
 			<hr />
-		</>
+		</nav>
 	)
 }

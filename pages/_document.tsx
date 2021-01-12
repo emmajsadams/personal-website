@@ -4,7 +4,7 @@ import React, { ReactElement } from 'react'
 export default class MyDocument extends Document {
 	render(): ReactElement {
 		return (
-			<Html data-theme="dark">
+			<Html data-theme="dark" lang="en">
 				<Head>
 					<meta
 						name="google-site-verification"

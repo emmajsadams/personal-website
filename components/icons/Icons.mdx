@@ -27,18 +27,18 @@ All icons accept these properties
 
 <Props of={Gitlab} />
 
-Except blog because it uses the Next.js Link thus must refer to the integrated blog
+Except Blog because it uses the Next.js Link thus must refer to the integrated blog
 
 <Props of={Blog} />
 
 ## Basic usage
 
 <Playground>
-	<Gitlab href={`https://${GITLAB}`} />
-	<LinkedIn href={`https://${LINKEDIN}`} />
-	<Twitter href={`https://${TWITTER}`} />
-	<Mail href={`mailto:${EMAIL}`} />
-	<PDF href="/files/EmmaJCline-resume.pdf" />
-	<Reddit href="https://www.reddit.com/user/EmmaJCline" />
+	<Gitlab href={`https://${GITLAB}`} label="GitLab" />
+	<LinkedIn href={`https://${LINKEDIN}`} label="LinkedIn" />
+	<Twitter href={`https://${TWITTER}`} label="Twitter" />
+	<Mail href={`mailto:${EMAIL}`} label="Mail" />
+	<PDF href="/files/EmmaJCline-resume.pdf" label="PDF" />
+	<Reddit href="https://www.reddit.com/user/EmmaJCline" label="Reddit" />
 	<Blog />
 </Playground>

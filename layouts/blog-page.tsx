@@ -49,7 +49,7 @@ export default function BlogPage({
 				/>
 				<meta property="og:url" content={url} />
 			</Head>
-			<div className="content">
+			<main className="content">
 				<Header />
 				<h1>{frontMatter.name}</h1>
 				<h2>{frontMatter.date}</h2>
@@ -59,31 +59,36 @@ export default function BlogPage({
 						href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
 							frontMatter.name,
 						)}&url=${encodeURIComponent(url)}`}
+						label="Share this blog post on Twitter"
 					/>
 					<Facebook
 						href={`http://www.facebook.com/sharer.php?u=${encodeURIComponent(
 							url,
 						)}&t=${encodeURIComponent(frontMatter.name)}`}
+						label="Share this blog post on Facebook"
 					/>
 					<Reddit
 						href={`https://reddit.com/submit?url=${encodeURIComponent(
 							url,
 						)}&title=${encodeURIComponent(frontMatter.name)}`}
+						label="Share this blog post on Reddit"
 					/>
 					<LinkedIn
 						href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
 							url,
 						)}`}
+						label="Share this blog post on LinkedIn"
 					/>
 					<Mail
 						href={`mailto:?subject=${encodeURIComponent(
 							frontMatter.name,
 						)}&body=${encodeURIComponent(url)}`}
+						label="Share this blog post via Email"
 					/>
 				</div>
 				<br />
 				{children}
-			</div>
+			</main>
 		</MDXProvider>
 	)
 }

@@ -5,6 +5,12 @@ import DarkMode from '../components/DarkMode'
 import '../styles/globals.css'
 import * as gtag from '../utils/gtag'
 
+if (process.env.NODE_ENV !== 'production' && process.browser) {
+	const ReactDOM = require('react-dom')
+	const axe = require('react-axe')
+	axe(React, ReactDOM, 1000)
+}
+
 export default function App({
 	Component,
 	pageProps,
@@ -25,7 +31,7 @@ export default function App({
 		<div>
 			<CookieConsent
 				buttonText="Enable Analytics"
-				buttonStyle={{ 'background-color': 'green', 'color': 'white' }}
+				buttonStyle={{ backgroundColor: 'green', color: 'white' }}
 				onAccept={() => {
 					location.reload()
 				}}

@@ -3,15 +3,17 @@ import styles from '../../styles/Icon.module.css'
 
 interface PDFProps {
 	href: string
+	label: string
 }
 
-export default function PDF({ href }: PDFProps): ReactElement {
+export default function PDF({ href, label }: PDFProps): ReactElement {
 	return (
 		<a
 			href={href}
 			target="_blank"
 			rel="noreferrer"
 			className={styles['icon-wrapper']}
+			aria-label={label}
 		>
 			<svg
 				version="1.1"
@@ -19,7 +21,7 @@ export default function PDF({ href }: PDFProps): ReactElement {
 				xmlns="http://www.w3.org/2000/svg"
 				className={styles.icon}
 			>
-				<title>PDF Résumé</title>
+				<title>{label}</title>
 				<g>
 					<path
 						d="M142.024,310.194c0-8.007-5.556-12.782-15.359-12.782c-4.003,0-6.714,0.395-8.132,0.773v25.69

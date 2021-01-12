@@ -10,7 +10,7 @@ export default function Blogs(): ReactElement {
 			<Head>
 				<title>Emma Cline&lsquo;s Blog</title>
 			</Head>
-			<div className="content">
+			<main className="content">
 				<Header />
 				<ul>
 					{BLOG_POSTS.map((post) => (
@@ -23,7 +23,7 @@ export default function Blogs(): ReactElement {
 						</li>
 					))}
 				</ul>
-			</div>
+			</main>
 		</>
 	)
 }

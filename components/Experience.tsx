@@ -19,13 +19,13 @@ export default function ExperienceElement({
 }: ExperienceProps): ReactElement {
 	return (
 		<>
-			<h3>
+			<h2>
 				{title},&nbsp;
 				<a href={institutionUrl} target="_blank" rel="noreferrer">
 					{institution}
 				</a>{' '}
 				&mdash; {location} &mdash; {start} - {end}
-			</h3>
+			</h2>
 			<ul>
 				{description.map((descriptionBulletPoint) => (
 					<li key={descriptionBulletPoint}>{descriptionBulletPoint}</li>

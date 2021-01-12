@@ -59,6 +59,15 @@ On push to the GitLab main branch Vercel does the following
 
 If there are any failures GitLab and Vercel will notify the project maintainers via email. The build will also be marked as a failure in Vercel and GitLab.
 
+## Accessibility
+
+eslint jsx-ally handles accessibility linting for most common errors. However some errors can only be detected at runtime. I use react-axe for this. This does not hook into the build process so please manually inspect the console before any major changes.
+
+The following react-axe errors can be ignored
+
+- "All page content must be contained by landmarks" can be ignored for CookieConsent and DarkMode components because they are not content that must be contained.
+- "Elements must have sufficient color contrast" can be ignored for code blocks because the color contrast is not necessary.
+
 ---
 
 # Content

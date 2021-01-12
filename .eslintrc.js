@@ -11,6 +11,7 @@ module.exports = {
 		'plugin:import/errors',
 		'plugin:react/recommended',
 		'plugin:markdown/recommended',
+		'plugin:jsx-a11y/strict',
 	],
 	rules: {
 		'import/no-unresolved': 'off',

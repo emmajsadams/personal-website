@@ -13,7 +13,7 @@ import TECHNOLOGIES from '../config/technologies'
 // TODO: Create helper function to generate each section using generics
 export default function Resume(): ReactElement {
 	return (
-		<div className="content">
+		<main className="content">
 			<Head>
 				<title>Emma Cline Résumé</title>
 				<meta name="twitter:card" content="summary" />
@@ -66,6 +66,6 @@ export default function Resume(): ReactElement {
 			{TECHNOLOGIES.map((technology) => (
 				<Technology key={technology.category} technology={technology} />
 			))}
-		</div>
+		</main>
 	)
 }

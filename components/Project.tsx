@@ -10,11 +10,11 @@ export default function ProjectElement({
 }: ProjectProps): ReactElement {
 	return (
 		<>
-			<h3>
+			<h2>
 				<a href={url} target="_blank" rel="noreferrer">
 					{title}
 				</a>
-			</h3>
+			</h2>
 			<p>
 				<span className="font-bold">Technologies: </span>
 				{technologies.join(', ')}
