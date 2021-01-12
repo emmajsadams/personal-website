@@ -56,13 +56,13 @@ export default function Resume(): ReactElement {
 			))}
 			<hr />
 
-			<h2>Projects</h2>
+			<h1>Projects</h1>
 			{PROJECTS.map((project) => (
 				<Project key={project.title} project={project} />
 			))}
 			<hr />
 
-			<h2>Technical Skills</h2>
+			<h1>Technical Skills</h1>
 			{TECHNOLOGIES.map((technology) => (
 				<Technology key={technology.category} technology={technology} />
 			))}
