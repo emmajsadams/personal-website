@@ -31,7 +31,7 @@ export default function SchoolElement({
 				<span className="flex-auto text-left">
 					{degree}, {gpa.toFixed(2)} GPA
 				</span>
-				<span className="flex-auto text-right">
+				<span className="flex-none text-right">
 					{startYear} — {endYear}
 				</span>
 			</div>
