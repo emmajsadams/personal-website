@@ -5,11 +5,13 @@ import DarkMode from '../components/DarkMode'
 import '../styles/globals.css'
 import * as gtag from '../utils/gtag'
 
+/* eslint-disable @typescript-eslint/no-var-requires */
 if (process.env.NODE_ENV !== 'production' && process.browser) {
 	const ReactDOM = require('react-dom')
 	const axe = require('react-axe')
 	axe(React, ReactDOM, 1000)
 }
+/* eslint-enable @typescript-eslint/no-var-requires */
 
 export default function App({
 	Component,
@@ -46,7 +48,9 @@ export default function App({
 }
 
 export function reportWebVitals({
+	/* eslint-disable @typescript-eslint/no-unused-vars */
 	id,
+	/* eslint-disable @typescript-eslint/no-unused-vars */
 	name,
 	label,
 	value,
