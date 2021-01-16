@@ -68,6 +68,12 @@ The following react-axe errors can be ignored
 - "All page content must be contained by landmarks" can be ignored for CookieConsent and DarkMode components because they are not content that must be contained.
 - "Elements must have sufficient color contrast" can be ignored for code blocks because the color contrast is not necessary.
 
+## Key Decisions
+
+- Using git source control: Git is a popular decentralized source control that lets developers work on local offline copies of a code repository. All changes are pushed up to the server when ready. I intentionally broke up my commits into small logical chunks that could be easily reverted and reviewed if necessary. However if I was working on a team I would be sure to work on a separate branch from main named after the feature I am working on. Once that feature was ready I would submit it for code review then squash merge it into the main branch.
+- Using eslint and prettier for code formatting: Both these tools have robust automatically fixable style rules that keep code in a consistent readable manner regardless of who writes it, while avoiding the need for developers to internalize styleguides.
+- Testing by behavior: Rather than breaking up tests by specific methods, I prefer to test by behaviors instead. Often times unit tests involve several methods such as get and set in order to test a behavior. This makes trying to break up tests by method somewhat confusing. Focusing on all the unique behaviors of a system under test avoids the need to specify which method is being tested.
+
 ---
 
 # Content
