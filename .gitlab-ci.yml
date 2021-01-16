@@ -4,4 +4,4 @@ default:
 build-job:
   stage: build
   script:
-    - npm install && npm run build
+    - npm install && npm run ci-test

@@ -19,6 +19,9 @@ node_modules
 .mdx-data
 .next
 
+# Test coverage
+coverage
+
 # I need to ignore next.config.js in all forms due to vercel's manipulation of the file
 next.config*
 public/feed.json

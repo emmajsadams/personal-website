@@ -18,6 +18,9 @@ node_modules
 # disable js linting
 *.js
 
+# Test coverage
+coverage
+
 # ignore automatically generated files
 public/feed.json
 public/rss.xml

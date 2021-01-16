@@ -9,11 +9,12 @@
 	},
 	"scripts": {
 		"dev": "next dev",
-		"build": "sh ./scripts/build.sh",
-		"build-deploy": "sh ./scripts/deploy.sh",
+		"deploy": "next build && npm run docz-build",
 		"start": "next start",
-		"format": "eslint * --fix --no-error-on-unmatched-pattern && prettier --write *",
-		"lint": "eslint --no-error-on-unmatched-pattern * && prettier --check *",
+		"format": "prettier --check *",
+		"format-fix": "prettier --write *",
+		"lint": "eslint * --fix --no-error-on-unmatched-pattern",
+		"lint-fix": "eslint --no-error-on-unmatched-pattern *",
 		"generate-latex": "ts-node scripts/latex > ./public/files/EmmaJCline-resume.tex",
 		"check-latex": "sh ./scripts/latex/check.sh",
 		"build-latex": "sh ./scripts/latex/build.sh",
@@ -22,7 +23,8 @@
 		"test-watch": "jest --watch",
 		"test-coverage": "jest --coverage",
 		"docz-dev": "rm -rf .docz && docz dev",
-		"docz-build": "sh ./scripts/docz-build.sh"
+		"docz-build": "rm -rf public/docz && docz build && rm -rf public/docz/public",
+		"ci-test": "npm run lint && npm run format && npm run test-coverage"
 	},
 	"dependencies": {
 		"@mdx-js/loader": "1.6.21",
@@ -59,6 +61,7 @@
 		"front-matter": "4.0.2",
 		"gatsby-plugin-postcss": "3.4.0",
 		"globby": "11.0.1",
+		"husky": "^4.3.8",
 		"jest": "26.6.3",
 		"postcss": "8.1.7",
 		"postcss-cli": "8.3.1",
