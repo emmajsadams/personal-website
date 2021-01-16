@@ -9,7 +9,7 @@
 	},
 	"scripts": {
 		"dev": "next dev",
-		"deploy": "next build && npm run docz-build",
+		"build": "next build && npm run docz-build",
 		"start": "next start",
 		"format": "prettier --check *",
 		"format-fix": "prettier --write *",
