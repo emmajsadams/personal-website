@@ -5,7 +5,7 @@
 	"author": "Emma Cline <emma@cline.engineer>",
 	"private": false,
 	"engines": {
-		"node": "14.15.4"
+		"node": "12.x"
 	},
 	"scripts": {
 		"dev": "next dev",
