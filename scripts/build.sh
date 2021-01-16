@@ -1,4 +1,4 @@
 #!/bin/sh
 
-yarn run test
-yarn run lint
+npm run test
+npm run lint

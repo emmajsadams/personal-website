@@ -75,7 +75,6 @@ export const DeveloperTools: Technology = {
 		'Visual Studio',
 		'VSCode',
 		'webpack',
-		'yarn',
 	],
 }
 

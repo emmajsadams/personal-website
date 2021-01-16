@@ -1,4 +1,4 @@
-This is the repo for my personal website powered by TypeScript Next.js. It is hosted at emma.cline.engineer using https://vercel.com.
+This is the repo for my personal website powered by TypeScript Next.js. It is hosted at emma.cline.engineer using <https://vercel.com>.
 
 ---
 
@@ -6,13 +6,13 @@ This is the repo for my personal website powered by TypeScript Next.js. It is ho
 
 ## Setup
 
-- Install node.js and yarn (google this step with your operating system for help)
-- Run this script https://gitlab.com/-/snippets/2044479
-- `yarn run install`
+- Install Node.js (google this step with your operating system for help)
+- Run this script to setup latex <https://gitlab.com/-/snippets/2044479>
+- `npm install`
 
 ## Documentation
 
-Docz is used for documenting the props and states of React components https://emma.cline.engineer/docz/. The docz server
+Docz is used for documenting the props and states of React components <https://emma.cline.engineer/docz/>. The docz server
 
 Also within the \_\_tests\_\_ folder are tests for any sufficiently complicated Component
 
@@ -32,8 +32,8 @@ This project uses TailwindCSS, PostCSS, and CSSModules. This keeps CSS scoped to
 
 In addition I used the following research from Smashing Magazine for my link, header, and paragraph styling.
 
-- Header sizes research: https://www.smashingmagazine.com/2009/08/typographic-design-survey-best-practices-from-the-best-blogs/
-- Link styling research: https://www.smashingmagazine.com/2010/02/the-definitive-guide-to-styling-web-links/
+- Header sizes research: <https://www.smashingmagazine.com/2009/08/typographic-design-survey-best-practices-from-the-best-blogs/>
+- Link styling research: <https://www.smashingmagazine.com/2010/02/the-definitive-guide-to-styling-web-links/>
 
 ## GitLab
 
@@ -47,7 +47,7 @@ If there are any failures GitLab will notify the project maintainers via email. 
 
 ## Vercel
 
-This website could be easily hosted on any Kubernetes server with a simple Dockerfile. However https://vercel.com offers free hosting, fast deploy times, integrated analytics, and git based deployment for Next.JS projects. https://vercel.com is run by the same team that maintains Next.JS.
+This website could be easily hosted on any Kubernetes server with a simple Dockerfile. However <https://vercel.com> offers free hosting, fast deploy times, integrated analytics, and git based deployment for Next.JS projects. <https://vercel.com> is run by the same team that maintains Next.JS.
 
 On push to the GitLab main branch Vercel does the following
 
@@ -78,11 +78,11 @@ There is a web resume and a PDF resume generated using Latex. They are automatic
 
 This resume is replicated on several different resume websites manually.
 
-- https://www.linkedin.com/in/emmajcline/ (full profile, linked pdf)
-- https://stackoverflow.com/story/emmajcline (uploaded pdf and photo)
-- https://my.indeed.com/p/emmac-5gq2y3z (linked pdf, no photo)
-- https://hired.com/profile (uploaded pdf and photo)
-- https://angel.co/u/EmmaJCline (linked pdf, uploaded photo)
+- <https://www.linkedin.com/in/emmajcline/> (full profile, linked pdf)
+- <https://stackoverflow.com/story/emmajcline> (uploaded pdf and photo)
+- <https://my.indeed.com/p/emmac-5gq2y3z> (linked pdf, no photo)
+- <https://hired.com/profile> (uploaded pdf and photo)
+- <https://angel.co/u/EmmaJCline> (linked pdf, uploaded photo)
 - UW careers (just profile, no resume)
 
 ## Blog
@@ -97,13 +97,13 @@ atom2, rss2, and json feeds are generated for blog posts at build time before de
 
 ## Google Analytics
 
-Google analytics is integrated into next.js using this blog post as a reference https://medium.com/frontend-digest/using-nextjs-with-google-analytics-and-typescript-620ba2359dea. This method correctly tracks client-side page transitions as new pages and handles the hybrid model well. All web vitals are tracked using Next.JS's built in performance measuring tools.
+Google analytics is integrated into next.js using this blog post as a reference <https://medium.com/frontend-digest/using-nextjs-with-google-analytics-and-typescript-620ba2359dea>. This method correctly tracks client-side page transitions as new pages and handles the hybrid model well. All web vitals are tracked using Next.JS's built in performance measuring tools.
 
 Google Analytics are only configured if the user agrees to cookies because it is not GDPR compliant.
 
 ## Cloudflare Analytics
 
-Cloudflare Analytics is enabled by default. Unlike Google Analytics, Cloudflare is GDPR compliant due to the privacy mechanisms built-in. It collects far less data however thus both are used https://blog.cloudflare.com/free-privacy-first-analytics-for-a-better-web/.
+Cloudflare Analytics is enabled by default. Unlike Google Analytics, Cloudflare is GDPR compliant due to the privacy mechanisms built-in. It collects far less data however thus both are used <https://blog.cloudflare.com/free-privacy-first-analytics-for-a-better-web/>.
 
 ## Vercel Analytics
 
@@ -115,7 +115,7 @@ Vercel, the hosting service, has built-in Analytics enabled by default. These ar
 
 ## Performance
 
-An overlooked aspect of SEO is performance. Google in particular has started punishing websites that score poorly on their web vitals performance metrics. As mentioned above Web Vitals are tracked with all analytics services used and monitored in development before deploying new changes. https://web.dev/vitals/
+An overlooked aspect of SEO is performance. Google in particular has started punishing websites that score poorly on their web vitals performance metrics. As mentioned above Web Vitals are tracked with all analytics services used and monitored in development before deploying new changes. <https://web.dev/vitals/>
 
 ## Server side rendering
 
@@ -127,7 +127,7 @@ A robots.txt file is included allowing all pages to be crawled.
 
 ## Sitemaps
 
-The sitemap is generated at build time before deploy using this approach https://leerob.io/blog/nextjs-sitemap-robots. Note this means the sitemap is not checked into the git repository to avoid cluttering commits with build artifacts.
+The sitemap is generated at build time before deploy using this approach <https://leerob.io/blog/nextjs-sitemap-robots>. Note this means the sitemap is not checked into the git repository to avoid cluttering commits with build artifacts.
 
 ## Blog on same domain
 
@@ -143,4 +143,4 @@ Thus on my personal website I link out to all my established social media. On th
 
 On each blog post is a blog post sharing icon for all major social media platforms that encourage long form technical content. These links to not rely on JavaScript or third-party images thus will not be blocked by commonly used adblocking software. These links use web intent APIs to redirect the user to a automatically filled out share prompt for each service. In addition to web intents all the necessary meta tags are included so that expected titles, images, and content are all filled out for each service.
 
-I referenced this list of web intent APIs during development https://github.com/bradvin/social-share-urls
+I referenced this list of web intent APIs during development <https://github.com/bradvin/social-share-urls>

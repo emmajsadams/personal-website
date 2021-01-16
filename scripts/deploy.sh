@@ -1,4 +1,4 @@
 #!/bin/sh
 
 next build
-yarn run docz-build
+npm run docz-build

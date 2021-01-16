@@ -22,4 +22,6 @@ module.exports = {
 			tsconfig: 'tsconfig.test.json',
 		},
 	},
+
+	collectCoverageFrom: ['components/**/*.{ts,tsx}'],
 }

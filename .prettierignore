@@ -2,8 +2,9 @@
 logs
 *.log
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+
+# NPM package lock file
+package-lock.json
 
 # Runtime data
 pids
@@ -11,10 +12,12 @@ pids
 *.seed
 *.pid.lock
 
+# dependencies
 node_modules
+
+# next.js
 .mdx-data
 .next
-yarn.lock
 
 # I need to ignore next.config.js in all forms due to vercel's manipulation of the file
 next.config*

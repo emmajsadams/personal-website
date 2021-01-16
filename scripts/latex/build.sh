@@ -2,7 +2,7 @@
 
 rm -f public/files/EmmaJCline-resume.tex
 rm -f public/files/EmmaJCline-resume.pdf
-yarn run generate-latex
+npm run generate-latex
 xelatex ./public/files/EmmaJCline-resume.tex
 mv EmmaJCline-resume.pdf ./public/files/EmmaJCline-resume.pdf
 rm -f EmmaJCline-resume.log

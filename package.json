@@ -4,6 +4,9 @@
 	"repository": "https://gitlab.com/EmmaJCline/personal-website",
 	"author": "Emma Cline <emma@cline.engineer>",
 	"private": false,
+	"engines": {
+		"node": "14.15.4"
+	},
 	"scripts": {
 		"dev": "next dev",
 		"build": "sh ./scripts/build.sh",
@@ -14,9 +17,10 @@
 		"generate-latex": "ts-node scripts/latex > ./public/files/EmmaJCline-resume.tex",
 		"check-latex": "sh ./scripts/latex/check.sh",
 		"build-latex": "sh ./scripts/latex/build.sh",
-		"latex": "yarn run build-latex && yarn run check-latex",
+		"latex": "npm run build-latex && npm run check-latex",
 		"test": "jest",
 		"test-watch": "jest --watch",
+		"test-coverage": "jest --coverage",
 		"docz-dev": "rm -rf .docz && docz dev",
 		"docz-build": "sh ./scripts/docz-build.sh"
 	},
