@@ -24,22 +24,13 @@ export const PersonalWebsite: Project = {
 	],
 }
 
-export const DiscordManagementBot: Project = {
-	title: 'Discord Management Bot',
-	url: 'https://gitlab.com/EmmaJCline/discord-mgmt-bot',
-	technologies: [
-		'TypeScript',
-		'Node.JS',
-		'Docker',
-		'Discord.js',
-		'eslint',
-		'prettier',
-	],
+export const TypeScriptDatabase: Project = {
+	title: 'TypeScript Database',
+	url: 'https://gitlab.com/EmmaJCline/ts-database',
+	technologies: ['TypeScript', 'Node.js', 'mocha', 'nyc', 'eslint', 'prettier'],
 	description: [
-		'Discord bots written in TypeScript running on Node.JS for logging, music, GPT-2 chatting, role management, and security monitoring.',
-		'Scales to a discord of any size and can be configured with JSON to support any number of discords.',
-		'Bots are broken up into functions respecting separate of concerns to enable granular permissions for each bot.',
-		'Code is broken up into highly reusable modules that can be pulled into any TypeScript project for customization.',
+		'A generic key/value transactional in-memory database that can be included in any TypeScript project via npm.',
+		'CLI REPL string key and string value program included for simple tests.',
 	],
 }
 
@@ -57,6 +48,24 @@ export const NoteDoctor: Project = {
 	description: [
 		'A CLI tool for triaging markdown files using front-matter headers sorted by priority, status, category, and due date.',
 		'Sends a daily email digest of due and urgent tasks using the SendGrid Email API and Google Cloud VMs.',
+	],
+}
+
+export const DiscordManagementBot: Project = {
+	title: 'Discord Management Bot',
+	url: 'https://gitlab.com/EmmaJCline/discord-mgmt-bot',
+	technologies: [
+		'TypeScript',
+		'Node.JS',
+		'Docker',
+		'Discord.js',
+		'eslint',
+		'prettier',
+	],
+	description: [
+		'Discord bots written in TypeScript running on Node.JS for logging, music, GPT-2 chatting, role management, and security monitoring.',
+		'Scales to a discord of any size and can be configured with JSON to support any number of discords.',
+		'Code is broken up into highly reusable modules that can be pulled into any TypeScript project for customization.',
 	],
 }
 
@@ -103,6 +112,7 @@ export const ShareTube: Project = {
 	],
 }
 
+// NOTE: No longer used, keeping around just incase I change my mind
 export const FlightSearcher: Project = {
 	title: 'FlightSearcher',
 	url: 'https://gitlab.com/EmmaJCline/FlightSearcher',
@@ -147,11 +157,11 @@ export const AutocompleteComparison: Project = {
 
 export default [
 	PersonalWebsite,
+	TypeScriptDatabase,
 	NoteDoctor,
 	DiscordManagementBot,
 	GPT2API,
 	Dstruct,
 	ShareTube,
 	AutocompleteComparison,
-	FlightSearcher,
 ]
