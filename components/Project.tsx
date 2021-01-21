@@ -1,11 +1,11 @@
 import React, { ReactElement } from 'react'
-import { Project } from '../config/projects'
+import { Project as ProjectConfig } from '../config/projects'
 
 interface ProjectProps {
-	project: Project
+	project: ProjectConfig
 }
 
-export default function ProjectElement({
+export default function Project({
 	project: { title, url, technologies, description },
 }: ProjectProps): ReactElement {
 	return (

@@ -1,12 +1,11 @@
 import React, { ReactElement } from 'react'
-import { Experience } from '../config/experiences'
+import { Experience as ExperienceConfig } from '../config/experiences'
 
 interface ExperienceProps {
-	experience: Experience
+	experience: ExperienceConfig
 }
 
-// TODO: format this like latex resume
-export default function ExperienceElement({
+export default function Experience({
 	experience: {
 		title,
 		institution,

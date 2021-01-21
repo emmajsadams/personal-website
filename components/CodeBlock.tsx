@@ -7,7 +7,7 @@ interface CodeBlockProps {
 	className: string
 }
 
-export function CodeBlock({
+export default function CodeBlock({
 	children,
 	className,
 }: CodeBlockProps): ReactElement {

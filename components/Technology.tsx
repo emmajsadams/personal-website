@@ -1,11 +1,11 @@
 import React, { ReactElement } from 'react'
-import { Technology } from '../config/technologies'
+import { Technology as TechnologyConfig } from '../config/technologies'
 
 interface TechnologyProps {
-	technology: Technology
+	technology: TechnologyConfig
 }
 
-export default function TechnologyElement({
+export default function Technology({
 	technology: { category, technologies },
 }: TechnologyProps): ReactElement {
 	return (

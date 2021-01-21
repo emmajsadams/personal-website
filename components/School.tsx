@@ -1,11 +1,11 @@
 import React, { ReactElement } from 'react'
-import { School } from '../config/schools'
+import { School as SchoolConfig } from '../config/schools'
 
 interface SchoolProps {
-	school: School
+	school: SchoolConfig
 }
 
-export default function SchoolElement({
+export default function School({
 	school: {
 		institution,
 		url,
