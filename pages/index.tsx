@@ -10,7 +10,6 @@ import PROJECTS from '../config/projects'
 import SCHOOLS from '../config/schools'
 import TECHNOLOGIES from '../config/technologies'
 
-// TODO: Create helper function to generate each section using generics
 export default function Resume(): ReactElement {
 	return (
 		<main className="content">
