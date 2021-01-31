@@ -18,7 +18,7 @@ export const UniversityOfWashington: School = {
 	startYear: 2011,
 	endYear: 2014,
 	description: [
-		'Informatics as my major taught an interdisciplinary approach to technology covering topics a range of topics including software engineering, business, design, user experience, and project management. It encouraged a broad foundation, but deep specialization within a given field. Within this major, I specialized in software engineering.',
+		'Informatics as my major taught an interdisciplinary approach to technology covering topics a range of topics including computer science, business, design, user experience, and project management. It encouraged a broad foundation, but deep specialization within a given field. Within this major, I specialized in computer science.',
 		'Mathematics as my minor taught me a broad overview of important topics that apply to computer science and many other fields such as calculus, linear algebra, complex analysis, markov chains, monte-carlo methods, and probability theory.',
 	],
 }

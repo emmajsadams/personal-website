@@ -82,7 +82,7 @@ The following react-axe errors can be ignored
 
 There is a web resume and a PDF resume generated using Latex. They are automatically kept in sync with a single configuration being used to generate both. Git hooks ensure all changes to the PDF resume are checked in before deployment.
 
-This resume is replicated on several different resume websites manually.
+This resume is replicated on several different resume websites manually, however since I am currently not looking for positions it may be out of date as if 1/31/2021. All websites listed here note I am not actively looking for positions.
 
 - <https://www.linkedin.com/in/emmajcline/> (full profile, linked pdf)
 - <https://stackoverflow.com/story/emmajcline> (uploaded pdf and photo)

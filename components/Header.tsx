@@ -41,10 +41,7 @@ export default function Header(): ReactElement {
 				<Blog />
 			</div>
 			<div className={utilStyles.center}>
-				<p>
-					Currently looking for remote Senior Software Engineer or Application
-					Researcher positions.
-				</p>
+				<p>Senior Software Engineer and Application Researcher.</p>
 			</div>
 			<div className={utilStyles.center}>
 				<p>
