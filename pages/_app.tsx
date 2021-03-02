@@ -1,6 +1,5 @@
 import { AppProps, NextWebVitalsMetric } from 'next/app'
 import React, { ReactElement, useEffect } from 'react'
-import CookieConsent from 'react-cookie-consent'
 import DarkMode from '../components/DarkMode'
 import '../styles/globals.css'
 import * as gtag from '../utils/gtag'
@@ -31,7 +30,9 @@ export default function App({
 
 	return (
 		<div>
-			<CookieConsent
+			{
+				// NOTE: CookieConsent seems to be broken on ios safari thus I am temporarily disabling it.
+				/* <CookieConsent
 				buttonText="Enable Analytics"
 				buttonStyle={{ backgroundColor: 'green', color: 'white' }}
 				onAccept={() => {
@@ -40,7 +41,8 @@ export default function App({
 			>
 				This website uses cookies for Google analytics for an enhanced user
 				experience.
-			</CookieConsent>
+			</CookieConsent> */
+			}
 			<DarkMode />
 			<Component {...pageProps} />
 		</div>

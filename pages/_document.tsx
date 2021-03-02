@@ -38,7 +38,8 @@ export default class MyDocument extends Document {
 								return "";
 							}
 
-							if (getCookie('CookieConsent') || getCookie('CookieConsent-legacy')) {
+							// NOTE: Cookie consent seems to be broken, disabled for now.
+							// if (getCookie('CookieConsent') || getCookie('CookieConsent-legacy')) {
 								var googleTagManager = document.createElement( 'script' );
 								googleTagManager.src = 'https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_TRACKING_ID}';
 								googleTagManager.async = true;
@@ -50,7 +51,7 @@ export default class MyDocument extends Document {
 								gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_TRACKING_ID}', {
 									page_path: window.location.pathname,
 								});
-							}
+							// }
           `,
 						}}
 					/>

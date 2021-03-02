@@ -24,15 +24,16 @@ export const PersonalWebsite: Project = {
 	],
 }
 
-export const TypeScriptDatabase: Project = {
-	title: 'TypeScript Database',
-	url: 'https://gitlab.com/EmmaJCline/ts-database',
-	technologies: ['TypeScript', 'Node.js', 'mocha', 'nyc', 'eslint', 'prettier'],
-	description: [
-		'A generic key/value transactional in-memory database that can be included in any TypeScript project via npm.',
-		'CLI REPL string key and string value program included for simple tests.',
-	],
-}
+// NOTE: commented out because this should not be public
+// export const TypeScriptDatabase: Project = {
+// 	title: 'TypeScript Database',
+// 	url: 'https://gitlab.com/EmmaJCline/ts-database',
+// 	technologies: ['TypeScript', 'Node.js', 'mocha', 'nyc', 'eslint', 'prettier'],
+// 	description: [
+// 		'A generic key/value transactional in-memory database that can be included in any TypeScript project via npm.',
+// 		'CLI REPL string key and string value program included for simple tests.',
+// 	],
+// }
 
 export const NoteDoctor: Project = {
 	title: 'Note Doctor',
@@ -157,7 +158,8 @@ export const AutocompleteComparison: Project = {
 
 export default [
 	PersonalWebsite,
-	TypeScriptDatabase,
+	// NOTE: commented out because this should not be public
+	// TypeScriptDatabase,
 	NoteDoctor,
 	DiscordManagementBot,
 	GPT2API,
