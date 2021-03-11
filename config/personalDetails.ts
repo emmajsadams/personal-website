@@ -1,4 +1,4 @@
-export const NAME = 'Emma Cline'
+export const NAME = 'Emma Adams'
 export const PHONE_NUMBER = '+1-669-666-4508'
 export const EMAIL = 'emma@adams.engineer'
 export const PERSONAL_WEBSITE = 'emma.adams.engineer'
