@@ -10,6 +10,7 @@ import {
 } from '../config/personalDetails'
 import utilStyles from '../styles/utils.module.css'
 import Blog from './Blog'
+import Github from './icons/Github'
 import LinkedIn from './icons/LinkedIn'
 import Mail from './icons/Mail'
 import PDF from './icons/PDF'
@@ -24,7 +25,7 @@ export default function Header(): ReactElement {
 				</h1>
 			</div>
 			<div className={utilStyles.center}>
-				<Gitlab href={`https://${GITHUB}`} label={`GitHub for ${NAME}`} />
+				<Github href={`https://${GITHUB}`} label={`GitHub for ${NAME}`} />
 				<LinkedIn href={`https://${LINKEDIN}`} label={`LinkedIn for ${NAME}`} />
 				<Twitter href={`https://${TWITTER}`} label={`Twitter for ${NAME}`} />
 				<Mail href={`mailto:${EMAIL}`} label={`Email for ${NAME}`} />

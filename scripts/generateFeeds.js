@@ -4,7 +4,7 @@ const fm = require('front-matter')
 const globby = require('globby')
 
 // TODO: consider some way of importing config/personalDetails into this file
-// TODO: Fix blog dates so that they are a specific JS date parseable time with timezone - https://gitlab.com/emmajsadams/personal-website/-/issues/48
+// TODO: Fix blog dates so that they are a specific JS date parseable time with timezone - gitlab.com/issues/48
 ;(async () => {
 	const feed = new Feed({
 		title: "Emma Adams' Blog",
