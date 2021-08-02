@@ -12,7 +12,7 @@ This is the repo for my personal website powered by TypeScript Next.js. It is ho
 
 ## Documentation
 
-Docz is used for documenting the props and states of React components </docz>. The docz server
+Docz is used for documenting the props and states of React components. The docz server
 
 Also within the \_\_tests\_\_ folder are tests for any sufficiently complicated Component
 

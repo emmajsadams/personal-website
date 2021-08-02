@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React, { ReactElement } from 'react'
-import styles from '../../styles/Icon.module.css'
 import { NAME } from '../config/personalDetails'
+import styles from '../styles/Icon.module.css'
 
 const LABEL = `Blog for ${NAME}`
 

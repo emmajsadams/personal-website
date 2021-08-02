@@ -3,6 +3,7 @@ name: Project
 menu: Components
 ---
 
+import projects from '../config/projects.ts'
 import { Playground, Props } from 'docz'
 import Project from './Project.tsx'
 
@@ -15,24 +16,5 @@ import Project from './Project.tsx'
 ## Basic usage
 
 <Playground>
-	<Project
-		project={{
-			title: 'Personal Website',
-			url: 'https://github.com/fake/fake-project',
-			technologies: [
-				'TypeScript',
-				'Next.JS',
-				'TailwindCSS',
-				'Docker',
-				'Node.js',
-				'MDX',
-				'React',
-			],
-			description: [
-				'Next.JS powered blog, resume, and link shortener website powering my portfolio',
-				'Hybrid static and server rendering model for initial load performance that switches to client side rendering',
-				'Blog using MDX files for easy maintenance and richly formatted posts',
-			],
-		}}
-	/>
+	<Project project={projects[0]} />
 </Playground>
