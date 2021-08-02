@@ -8,8 +8,7 @@ const globby = require('globby')
 ;(async () => {
 	const feed = new Feed({
 		title: "Emma Adams' Blog",
-		description:
-			'Blog feed for the Software Engineer and Application Researcher Emma Adams',
+		description: 'Blog feed for the Software Engineer Emma Adams',
 		id: 'https://emma.adams.engineer/blog',
 		link: 'https://emma.adams.engineer/blog',
 		language: 'en',
