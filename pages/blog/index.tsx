@@ -3,12 +3,13 @@ import Link from 'next/link'
 import React, { ReactElement } from 'react'
 import Header from '../../components/Header'
 import BLOG_POSTS from '../../config/blogs'
+import { NAME } from '../../config/personalDetails'
 
 export default function Blogs(): ReactElement {
 	return (
 		<>
 			<Head>
-				<title>Emma Cline&lsquo;s Blog</title>
+				<title>{NAME}s&lsquo; Blog</title>
 			</Head>
 			<main className="content">
 				<Header />

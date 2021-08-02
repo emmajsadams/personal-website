@@ -2,14 +2,14 @@ import Link from 'next/link'
 import React, { ReactElement } from 'react'
 import {
 	EMAIL,
-	GITLAB,
+	GITHUB,
 	LINKEDIN,
 	NAME,
+	PDF_RESUME_NAME,
 	TWITTER,
 } from '../config/personalDetails'
 import utilStyles from '../styles/utils.module.css'
-import Blog from './icons/Blog'
-import Gitlab from './icons/Gitlab'
+import Blog from './Blog'
 import LinkedIn from './icons/LinkedIn'
 import Mail from './icons/Mail'
 import PDF from './icons/PDF'
@@ -24,24 +24,18 @@ export default function Header(): ReactElement {
 				</h1>
 			</div>
 			<div className={utilStyles.center}>
-				<Gitlab href={`https://${GITLAB}`} label="GitLab for Emma Jane Cline" />
-				<LinkedIn
-					href={`https://${LINKEDIN}`}
-					label="LinkedIn for Emma Jane Cline"
-				/>
-				<Twitter
-					href={`https://${TWITTER}`}
-					label="Twitter for Emma Jane Cline"
-				/>
-				<Mail href={`mailto:${EMAIL}`} label="Email for Emma Jane Cline" />
+				<Gitlab href={`https://${GITHUB}`} label={`GitHub for ${NAME}`} />
+				<LinkedIn href={`https://${LINKEDIN}`} label={`LinkedIn for ${NAME}`} />
+				<Twitter href={`https://${TWITTER}`} label={`Twitter for ${NAME}`} />
+				<Mail href={`mailto:${EMAIL}`} label={`Email for ${NAME}`} />
 				<PDF
-					href="/files/EmmaJCline-resume.pdf"
-					label="PDF Résumé for Emma Jane Cline"
+					href={`/files/${PDF_RESUME_NAME}.pdf`}
+					label={`PDF Résumé for ${NAME}`}
 				/>
 				<Blog />
 			</div>
 			<div className={utilStyles.center}>
-				<p>Senior Software Engineer and Application Researcher.</p>
+				<p></p>
 			</div>
 			<div className={utilStyles.center}>
 				<p>

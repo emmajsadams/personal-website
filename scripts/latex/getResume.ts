@@ -1,11 +1,11 @@
 import EXPERIENCES, { Experience } from '../../config/experiences'
 import {
 	EMAIL,
-	GITLAB,
+	GITHUB,
 	LINKEDIN,
 	NAME,
-	PERSONAL_WEBSITE,
 	PHONE_NUMBER,
+	URL,
 } from '../../config/personalDetails'
 import PROJECTS, { Project } from '../../config/projects'
 import SCHOOLS, { School } from '../../config/schools'
@@ -111,9 +111,9 @@ BoldItalicFont = *-BoldItalic,
     \\textbf{\\Huge \\scshape ${NAME}} \\\\ \\vspace{1pt}
     \\href{tel:${PHONE_NUMBER}}{\\underline{${PHONE_NUMBER}}} $|$
     \\href{mailto:${EMAIL}}{\\underline{${EMAIL}}} \\\\ \\vspace{1pt}
-    \\href{https://${PERSONAL_WEBSITE}}{\\underline{${PERSONAL_WEBSITE}}} $|$
+    \\href{https://${URL}}{\\underline{${URL}}} $|$
     \\href{https://${LINKEDIN}}{\\underline{${LINKEDIN}}} $|$
-    \\href{https://${GITLAB}}{\\underline{${GITLAB}}}
+    \\href{https://${GITHUB}}{\\underline{${GITHUB}}}
 \\end{center}
 `
 

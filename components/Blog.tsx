@@ -1,8 +1,9 @@
 import Link from 'next/link'
 import React, { ReactElement } from 'react'
 import styles from '../../styles/Icon.module.css'
+import { NAME } from '../config/personalDetails'
 
-const LABEL = 'Blog for Emma Jane Cline'
+const LABEL = `Blog for ${NAME}`
 
 export default function Blog(): ReactElement {
 	return (

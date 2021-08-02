@@ -6,36 +6,33 @@ import Project from '../components/Project'
 import School from '../components/School'
 import Technology from '../components/Technology'
 import EXPERIENCES from '../config/experiences'
+import { DESCRIPTION, NAME, URL } from '../config/personalDetails'
 import PROJECTS from '../config/projects'
 import SCHOOLS from '../config/schools'
 import TECHNOLOGIES from '../config/technologies'
 
 export default function Resume(): ReactElement {
+	const resumeTitle = `${NAME} Résumé`
+
 	return (
 		<main className="content">
 			<Head>
-				<title>Emma Cline Résumé</title>
+				<title>{resumeTitle}</title>
 				<meta name="twitter:card" content="summary" />
-				<meta name="twitter:site" content="https://emma.cline.engineer" />
-				<meta name="twitter:title" content="Emma Cline Résumé" />
-				<meta
-					name="twitter:description"
-					content="Happily transgender 🏳️‍⚧️ (she/her ♀️). Senior Software Engineer and Application Researcher 👩🏻‍🔬"
-				/>
+				<meta name="twitter:site" content={URL} />
+				<meta name="twitter:title" content={resumeTitle} />
+				<meta name="twitter:description" content={DESCRIPTION} />
 				<meta
 					name="twitter:image"
-					content="https://emma.cline.engineer/files/cherry-blossoms.png"
+					content={`${URL}/files/cherry-blossoms.png`}
 				/>
-				<meta property="og:title" content="Emma Cline Résumé" />
-				<meta
-					property="og:description"
-					content="Happily transgender 🏳️‍⚧️ (she/her ♀️). Senior Software Engineer and Application Researcher 👩🏻‍🔬"
-				/>
+				<meta property="og:title" content={resumeTitle} />
+				<meta property="og:description" content={DESCRIPTION} />
 				<meta
 					property="og:image"
-					content="https://emma.cline.engineer/files/cherry-blossoms.png"
+					content={`${URL}/files/cherry-blossoms.png`}
 				/>
-				<meta property="og:url" content="https://emma.cline.engineer" />
+				<meta property="og:url" content={URL} />
 			</Head>
 
 			<Header />

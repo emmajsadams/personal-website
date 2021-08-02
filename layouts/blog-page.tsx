@@ -9,6 +9,7 @@ import LinkedIn from '../components/icons/LinkedIn'
 import Mail from '../components/icons/Mail'
 import Reddit from '../components/icons/Reddit'
 import Twitter from '../components/icons/Twitter'
+import { NAME, URL } from '../config/personalDetails'
 
 const components = {
 	code: CodeBlock,
@@ -24,28 +25,27 @@ export default function BlogPage({
 	children,
 	frontMatter,
 }: BlogPageProps): ReactElement {
-	const url = `https://emma.cline.engineer/${frontMatter.__resourcePath.replace(
-		'.mdx',
-		'',
-	)}`
+	const url = `${URL}/${frontMatter.__resourcePath.replace('.mdx', '')}`
 
 	return (
 		<MDXProvider components={components}>
 			<Head>
-				<title>Emma Cline - {frontMatter.name}</title>
+				<title>
+					{NAME} - {frontMatter.name}
+				</title>
 				<meta name="twitter:card" content="summary" />
 				<meta name="twitter:site" content={url} />
 				<meta name="twitter:title" content={frontMatter.name} />
 				<meta name="twitter:description" content={frontMatter.description} />
 				<meta
 					name="twitter:image"
-					content="https://emma.cline.engineer/files/cherry-blossoms.png"
+					content={`${URL}/files/cherry-blossoms.png`}
 				/>
 				<meta property="og:title" content={frontMatter.name} />
 				<meta property="og:description" content={frontMatter.description} />
 				<meta
 					property="og:image"
-					content="https://emma.cline.engineer/files/cherry-blossoms.png"
+					content={`${URL}/files/cherry-blossoms.png`}
 				/>
 				<meta property="og:url" content={url} />
 			</Head>

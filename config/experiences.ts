@@ -1,3 +1,5 @@
+import { URL } from './personalDetails'
+
 export interface Experience {
 	title: string
 	institution: string
@@ -8,13 +10,23 @@ export interface Experience {
 	description: string[]
 }
 
+export const DevotedHealth: Experience = {
+	title: 'Senior Software Engineer',
+	institution: 'Devoted Health',
+	institutionUrl: 'https://www.devoted.com/',
+	location: 'Remote',
+	start: 'Feb. 2021',
+	end: 'Present',
+	description: ['More details coming soon!'],
+}
+
 export const Freelance: Experience = {
 	title: 'Freelance Software Engineer',
 	institution: 'Self-Employed',
-	institutionUrl: 'https://emma.cline.engineer',
+	institutionUrl: URL,
 	location: 'Remote',
 	start: 'Aug. 2020',
-	end: 'Present',
+	end: 'Jan. 2021',
 	description: [
 		'Contract work building APIs and React web applications for small to mid-sized companies.',
 		'Providing proof of concept code for several University of Washington research projects.',
@@ -137,6 +149,7 @@ export const SmiteWorksSoftwareEngineer: Experience = {
 }
 
 export default [
+	DevotedHealth,
 	Freelance,
 	HumbleBundleLead,
 	CommitteeForChildrenLead,

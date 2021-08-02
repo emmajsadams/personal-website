@@ -1,4 +1,4 @@
-This is the repo for my personal website powered by TypeScript Next.js. It is hosted at emma.cline.engineer using <https://vercel.com>.
+This is the repo for my personal website powered by TypeScript Next.js. It is hosted at `import { WEBSITE } from './config/personalDetails.ts` using <https://vercel.com>.
 
 ---
 
@@ -7,12 +7,12 @@ This is the repo for my personal website powered by TypeScript Next.js. It is ho
 ## Setup
 
 - Install Node.js (google this step with your operating system for help)
-- Run this script to setup latex <https://gitlab.com/-/snippets/2044479>
+- `sh ./scripts/latex_install.sh`
 - `npm install`
 
 ## Documentation
 
-Docz is used for documenting the props and states of React components <https://emma.cline.engineer/docz/>. The docz server
+Docz is used for documenting the props and states of React components </docz>. The docz server
 
 Also within the \_\_tests\_\_ folder are tests for any sufficiently complicated Component
 
@@ -30,7 +30,7 @@ Next.JS uses React components which is a powerful popular framework for building
 
 This project uses TailwindCSS, PostCSS, and CSSModules. This keeps CSS scoped to components and provides a flexible highly customizable base of classes.
 
-In addition I used the following research from Smashing Magazine for my link, header, and paragraph styling.
+In addition I used the followinwg research from Smashing Magazine for my link, header, and paragraph styling.
 
 - Header sizes research: <https://www.smashingmagazine.com/2009/08/typographic-design-survey-best-practices-from-the-best-blogs/>
 - Link styling research: <https://www.smashingmagazine.com/2010/02/the-definitive-guide-to-styling-web-links/>
@@ -82,14 +82,13 @@ The following react-axe errors can be ignored
 
 There is a web resume and a PDF resume generated using Latex. They are automatically kept in sync with a single configuration being used to generate both. Git hooks ensure all changes to the PDF resume are checked in before deployment.
 
-This resume is replicated on several different resume websites manually, however since I am currently not looking for positions it may be out of date as if 1/31/2021. All websites listed here note I am not actively looking for positions.
+This resume is replicated on several different resume websites manually. Resume content was last synced between all sources on 8/2/2021.
 
-- <https://www.linkedin.com/in/emmajcline/> (full profile, linked pdf)
-- <https://stackoverflow.com/story/emmajcline> (uploaded pdf and photo)
-- <https://my.indeed.com/p/emmac-5gq2y3z> (linked pdf, no photo)
-- <https://hired.com/profile> (uploaded pdf and photo)
-- <https://angel.co/u/EmmaJCline> (linked pdf, uploaded photo)
-- UW careers (just profile, no resume)
+- LinkedIn
+- StackOverflow
+- Indeed
+- Hired
+- Angel
 
 ## Blog
 

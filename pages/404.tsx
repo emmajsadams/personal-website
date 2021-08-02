@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React, { ReactElement } from 'react'
 import Header from '../components/Header'
+import { EMAIL } from '../config/personalDetails'
 import utilStyles from '../styles/utils.module.css'
 
 export default function Error(): ReactElement {
@@ -14,8 +15,8 @@ export default function Error(): ReactElement {
 				<p>
 					The robots working behind the scenes cannot find the content you
 					requested. If you think this is an error email me at&nbsp;
-					<a href="mailto:emma@cline.engineer" target="_blank" rel="noreferrer">
-						emma@cline.engineer
+					<a href={`mailto:${EMAIL}`} target="_blank" rel="noreferrer">
+						{EMAIL}
 					</a>
 					.
 				</p>

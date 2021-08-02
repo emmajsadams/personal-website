@@ -1,8 +1,8 @@
 {
-	"name": "emma.cline.engineer",
+	"name": "emma.adams.engineer",
 	"version": "1.0.0",
-	"repository": "https://gitlab.com/EmmaJCline/personal-website",
-	"author": "Emma Cline <emma@cline.engineer>",
+	"repository": "https://github.com/emmajsadams/personal-website",
+	"author": "Emma Adams <emma@adams.engineer>",
 	"private": false,
 	"engines": {
 		"node": ">=12.x"
@@ -15,7 +15,7 @@
 		"format-fix": "prettier --write *",
 		"lint": "eslint * --fix --no-error-on-unmatched-pattern",
 		"lint-fix": "eslint --no-error-on-unmatched-pattern *",
-		"generate-latex": "ts-node scripts/latex > ./public/files/EmmaJCline-resume.tex",
+		"generate-latex": "ts-node scripts/latex > ./public/files/EmmaAdams_Resume.tex",
 		"check-latex": "sh ./scripts/latex/check.sh",
 		"build-latex": "sh ./scripts/latex/build.sh",
 		"latex": "npm run build-latex && npm run check-latex",

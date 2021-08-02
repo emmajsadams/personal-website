@@ -4,14 +4,19 @@ menu: Components
 ---
 
 import { Playground, Props } from 'docz'
-import { EMAIL, GITLAB, LINKEDIN, TWITTER } from '../../config/personalDetails'
+import {
+	EMAIL,
+	GITLAB,
+	LINKEDIN,
+	TWITTER,
+	PDF_RESUME_NAME,
+} from '../../config/personalDetails'
 import Blog from './Blog'
-import Gitlab from './Gitlab'
+import Github from './Github'
 import LinkedIn from './LinkedIn'
 import Mail from './Mail'
 import PDF from './PDF'
 import Twitter from './Twitter'
-import Reddit from './Reddit'
 
 # Icons
 
@@ -19,7 +24,7 @@ import Reddit from './Reddit'
 
 All icons accept these properties
 
-<Props of={Gitlab} />
+<Props of={Github} />
 
 Except Blog because it uses the Next.js Link thus must refer to the integrated blog
 
@@ -28,11 +33,10 @@ Except Blog because it uses the Next.js Link thus must refer to the integrated b
 ## Basic usage
 
 <Playground>
-	<Gitlab href={`https://${GITLAB}`} label="GitLab" />
+	<Gitlab href={`https://${GITLAB}`} label="GitHub" />
 	<LinkedIn href={`https://${LINKEDIN}`} label="LinkedIn" />
 	<Twitter href={`https://${TWITTER}`} label="Twitter" />
 	<Mail href={`mailto:${EMAIL}`} label="Mail" />
-	<PDF href="/files/EmmaJCline-resume.pdf" label="PDF" />
-	<Reddit href="https://www.reddit.com/user/EmmaJCline" label="Reddit" />
+	<PDF href={`/files/${PDF_RESUME_NAME}.pdf`} label="PDF" />
 	<Blog />
 </Playground>

@@ -1,3 +1,7 @@
+import { GITLAB } from '../config/personalDetails'
+
+const PROJECT_URL = `https://${GITLAB}`
+
 export interface Project {
 	title: string
 	url: string
@@ -7,7 +11,7 @@ export interface Project {
 
 export const PersonalWebsite: Project = {
 	title: 'Personal Website',
-	url: 'https://gitlab.com/EmmaJCline/personal-website',
+	url: `${PROJECT_URL}/personal-website`,
 	technologies: [
 		'TypeScript',
 		'Next.JS',
@@ -24,20 +28,9 @@ export const PersonalWebsite: Project = {
 	],
 }
 
-// NOTE: commented out because this should not be public
-// export const TypeScriptDatabase: Project = {
-// 	title: 'TypeScript Database',
-// 	url: 'https://gitlab.com/EmmaJCline/ts-database',
-// 	technologies: ['TypeScript', 'Node.js', 'mocha', 'nyc', 'eslint', 'prettier'],
-// 	description: [
-// 		'A generic key/value transactional in-memory database that can be included in any TypeScript project via npm.',
-// 		'CLI REPL string key and string value program included for simple tests.',
-// 	],
-// }
-
 export const NoteDoctor: Project = {
 	title: 'Note Doctor',
-	url: 'https://gitlab.com/EmmaJCline/note-doctor',
+	url: `${PROJECT_URL}/note-doctor`,
 	technologies: [
 		'TypeScript',
 		'Node.JS',
@@ -54,7 +47,7 @@ export const NoteDoctor: Project = {
 
 export const DiscordManagementBot: Project = {
 	title: 'Discord Management Bot',
-	url: 'https://gitlab.com/EmmaJCline/discord-mgmt-bot',
+	url: `${PROJECT_URL}/discord-mgmt-bot`,
 	technologies: [
 		'TypeScript',
 		'Node.JS',
@@ -72,7 +65,7 @@ export const DiscordManagementBot: Project = {
 
 export const Dstruct: Project = {
 	title: 'dstruct',
-	url: 'https://gitlab.com/EmmaJCline/dstruct',
+	url: `${PROJECT_URL}/dstruct`,
 	technologies: ['TypeScript', 'Grunt', 'Docker', 'Bower', 'Karma'],
 	description: [
 		'Common data structures and algorithms for TypeScript.',
@@ -82,7 +75,7 @@ export const Dstruct: Project = {
 
 export const GPT2API: Project = {
 	title: 'GPT-2 API',
-	url: 'https://gitlab.com/EmmaJCline/gpt2-api',
+	url: `${PROJECT_URL}/gpt2-api`,
 	technologies: [
 		'Python',
 		'Starlette',
@@ -98,7 +91,7 @@ export const GPT2API: Project = {
 
 export const ShareTube: Project = {
 	title: 'ShareTube',
-	url: 'https://gitlab.com/EmmaJCline/sharetube',
+	url: `${PROJECT_URL}/sharetube`,
 	technologies: [
 		'TypeScript',
 		'Node.JS',
@@ -113,36 +106,9 @@ export const ShareTube: Project = {
 	],
 }
 
-// NOTE: No longer used, keeping around just incase I change my mind
-export const FlightSearcher: Project = {
-	title: 'FlightSearcher',
-	url: 'https://gitlab.com/EmmaJCline/FlightSearcher',
-	technologies: [
-		'C#',
-		'ASP.NET MVC',
-		'TypeScript',
-		'React',
-		'Redux',
-		'Webpack',
-	],
-	description: [
-		'An application to search for flights based on airports and datetimes.',
-	],
-}
-
-// NOTE: No longer used, keeping around just incase I change my mind
-export const CheckOut: Project = {
-	title: 'CheckOut',
-	url: 'https://gitlab.com/EmmaJCline/CheckOut',
-	technologies: ['C#', 'ASP.NET MVC', 'Docker'],
-	description: [
-		'An API to manage a store inventory and allow customers to checkout items.',
-	],
-}
-
 export const AutocompleteComparison: Project = {
 	title: 'Autocomplete Comparison',
-	url: 'https://gitlab.com/EmmaJCline/autocomplete-compare-web',
+	url: `${PROJECT_URL}/autocomplete-compare-web`,
 	technologies: [
 		'TypeScript',
 		'React',
@@ -156,10 +122,9 @@ export const AutocompleteComparison: Project = {
 	],
 }
 
+// TODO: Consider Database, FlightSearcher, Checkout? See past commits for deleted projets
 export default [
 	PersonalWebsite,
-	// NOTE: commented out because this should not be public
-	// TypeScriptDatabase,
 	NoteDoctor,
 	DiscordManagementBot,
 	GPT2API,

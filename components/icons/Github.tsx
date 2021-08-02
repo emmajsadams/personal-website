@@ -1,12 +1,13 @@
 import React, { ReactElement } from 'react'
 import styles from '../../styles/Icon.module.css'
 
-interface GitlabProps {
+interface GithubProps {
 	href: string
 	label: string
 }
 
-export default function Gitlab({ href, label }: GitlabProps): ReactElement {
+// TODO: Update this to use a GitHub svg instead of GitLab
+export default function Github({ href, label }: GithubProps): ReactElement {
 	return (
 		<a
 			href={href}
