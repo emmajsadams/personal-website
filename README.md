@@ -16,6 +16,8 @@ Docz is used for documenting the props and states of React components. The docz 
 
 Also within the \_\_tests\_\_ folder are tests for any sufficiently complicated Component
 
+TODO: Reenable docz. had to delay it to restart buidl
+
 ## Testing
 
 Each component that is complex enough is tested using react-testing-library and Jest. react-testing-library renders components and asserts desired outcomes without relying on implementation details or mocks. This results in robust tests that do not break when components are refactored.

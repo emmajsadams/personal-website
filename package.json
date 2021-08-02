@@ -1,6 +1,6 @@
 {
 	"name": "emma.adams.engineer",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"repository": "https://github.com/emmajsadams/personal-website",
 	"author": "Emma Adams <emma@adams.engineer>",
 	"private": false,
@@ -9,7 +9,7 @@
 	},
 	"scripts": {
 		"dev": "next dev",
-		"build": "npm run lint && npm run format && npm run test-coverage && next build && npm run docz-build",
+		"build": "npm run lint && npm run format && npm run test-coverage && next build",
 		"start": "next start",
 		"format": "prettier --check *",
 		"format-fix": "prettier --write *",
@@ -23,8 +23,7 @@
 		"test-watch": "jest --watch",
 		"test-coverage": "jest --coverage",
 		"docz-dev": "rm -rf .docz && docz dev",
-		"docz-build": "rm -rf public/docz && docz build && rm -rf public/docz/public",
-		"ci-test": ""
+		"docz-build": "rm -rf public/docz && docz build && rm -rf public/docz/public"
 	},
 	"dependencies": {
 		"@mdx-js/loader": "1.6.21",
