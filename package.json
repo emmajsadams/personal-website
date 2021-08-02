@@ -5,11 +5,11 @@
 	"author": "Emma Adams <emma@adams.engineer>",
 	"private": false,
 	"engines": {
-		"node": "12.13.0"
+		"node": "12.20.1"
 	},
 	"scripts": {
 		"dev": "next dev",
-		"build": "next build && npm run docz-build",
+		"build": "npm run lint && npm run format && npm run test-coverage && next build && npm run docz-build",
 		"start": "next start",
 		"format": "prettier --check *",
 		"format-fix": "prettier --write *",
@@ -24,7 +24,7 @@
 		"test-coverage": "jest --coverage",
 		"docz-dev": "rm -rf .docz && docz dev",
 		"docz-build": "rm -rf public/docz && docz build && rm -rf public/docz/public",
-		"ci-test": "npm run lint && npm run format && npm run test-coverage"
+		"ci-test": ""
 	},
 	"dependencies": {
 		"@mdx-js/loader": "1.6.21",

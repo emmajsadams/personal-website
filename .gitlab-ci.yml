@@ -1,7 +1,0 @@
-default:
-  image: node:12.20.1
-
-build-job:
-  stage: build
-  script:
-    - npm install && npm run ci-test
