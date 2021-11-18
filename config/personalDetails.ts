@@ -14,7 +14,7 @@ export const PHONE_NUMBER = '+1-669-666-4508'
 export const ROOT_URL = `engineer`
 export const TITLE = 'Senior Software Engineer'
 export const DESCRIPTION =
-	'Senior Software Engineer 👩‍💻. Trans Woman (she/her) ♀️🏳️‍⚧️'
+	'Senior Software Engineer 👩‍💻. Happily Trans (she/her) ♀️🏳️‍⚧️'
 
 // Generated
 export const NAME = `${FIRST_NAME} ${LAST_NAME}`
