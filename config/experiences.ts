@@ -11,7 +11,7 @@ export interface Experience {
 }
 
 export const DevotedHealth: Experience = {
-	title: 'Senior Software Engineer',
+	title: 'Principal Software Engineer',
 	institution: 'Devoted Health',
 	institutionUrl: 'https://www.devoted.com/',
 	location: 'Remote',
