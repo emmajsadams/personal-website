@@ -36,19 +36,14 @@ export default function Header(): ReactElement {
 				<Blog />
 			</div>
 			<div className={utilStyles.center}>
-				<p></p>
+				<p>Principal Software Engineer 👩‍💻</p>
 			</div>
 			<div className={utilStyles.center}>
 				<p>
-					Happily transgender{' '}
+					Trans Woman (she/her){' '}
 					<span role="img" aria-label="Transgender Flag">
-						🏳️‍🌈
+						♀️🏳️‍⚧️
 					</span>{' '}
-					(she/her{' '}
-					<span role="img" aria-label="she/her pronouns">
-						♀️
-					</span>
-					)
 				</p>
 			</div>
 			<hr />
