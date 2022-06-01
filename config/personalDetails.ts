@@ -24,6 +24,3 @@ export const GITHUB = `github.com/${USERNAME}`
 export const TWITTER = `twitter.com/${USERNAME}`
 export const EMAIL = `${FIRST_NAME.toLowerCase()}@${LAST_NAME.toLowerCase()}.${ROOT_URL}`
 export const URL = `${FIRST_NAME.toLowerCase()}.${LAST_NAME.toLowerCase()}.${ROOT_URL}`
-
-// TODO: Migrate GITLAB TO GITHUB once projects have been moved over
-export const GITLAB = `gitlab.com/${USERNAME}`

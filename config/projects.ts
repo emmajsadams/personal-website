@@ -1,6 +1,6 @@
-import { GITLAB } from '../config/personalDetails'
+import { GITHUB } from '../config/personalDetails'
 
-const PROJECT_URL = `https://${GITLAB}`
+const PROJECT_URL = `https://${GITHUB}`
 
 export interface Project {
 	title: string
