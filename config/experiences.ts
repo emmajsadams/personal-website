@@ -10,6 +10,7 @@ export interface Experience {
 	description: string[]
 }
 
+// TODO: Expand on this
 export const DevotedHealth: Experience = {
 	title: 'Principal Software Engineer',
 	institution: 'Devoted Health',
@@ -17,7 +18,11 @@ export const DevotedHealth: Experience = {
 	location: 'Remote',
 	start: 'Feb. 2021',
 	end: 'Present',
-	description: ['More details coming soon!'],
+	description: [
+		'Remote software development team working with Go on the backend and TypeScript React on the frontend.',
+		'Modeled legal compliance workflows impacting all company departments.',
+		'Scaled integrations with external vendors that dealt with all member information.',
+	],
 }
 
 export const Freelance: Experience = {
