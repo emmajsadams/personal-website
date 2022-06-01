@@ -17,4 +17,4 @@ export const LINKEDIN = `linkedin.com/in/${USERNAME}`
 export const GITHUB = `github.com/${USERNAME}`
 export const TWITTER = `twitter.com/${USERNAME}`
 export const EMAIL = `emma@adams.engineer`
-export const URL = `https://emma.adams.engineer`
+export const URL = `emma.adams.engineer`
