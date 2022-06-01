@@ -22,6 +22,7 @@ export const DevotedHealth: Experience = {
 		'Remote software development team working with Go on the backend and TypeScript React on the frontend.',
 		'Modeled legal compliance workflows impacting all company departments.',
 		'Scaled integrations with external vendors that dealt with all member information.',
+		'More details coming soon!',
 	],
 }
 
