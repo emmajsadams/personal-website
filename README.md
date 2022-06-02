@@ -4,9 +4,13 @@ This is the repo for my personal website powered by TypeScript Next.js. It is ho
 
 # Development
 
+## Setup Node (skip this step if you hae your own process for installing the node version used in .nvmrc)
+
+- Install https://github.com/nvm-sh/nvm
+- Run `nvm use` to match the node version defined in .nvmrc
+
 ## Setup
 
-- Install Node.js (google this step with your operating system for help)
 - `sh ./scripts/latex_install.sh`
 - `npm install`
 
