@@ -6,6 +6,8 @@ import {
 	LINKEDIN,
 	NAME,
 	PDF_RESUME_NAME,
+	PRONOUNS,
+	TITLE,
 	TWITTER,
 } from '../config/personalDetails'
 import utilStyles from '../styles/utils.module.css'
@@ -36,11 +38,11 @@ export default function Header(): ReactElement {
 				<Blog />
 			</div>
 			<div className={utilStyles.center}>
-				<p>Principal Software Engineer 👩‍💻</p>
+				<p>{TITLE} 👩‍💻</p>
 			</div>
 			<div className={utilStyles.center}>
 				<p>
-					Trans Woman (she/her){' '}
+					Trans Woman ({PRONOUNS}){' '}
 					<span role="img" aria-label="Transgender Flag">
 						♀️🏳️‍⚧️
 					</span>{' '}
