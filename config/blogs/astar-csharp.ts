@@ -1,6 +1,7 @@
----
+// TODO: actually load this dynamically from an mdx file instead of declaring it as a string in TS
+export default `---
 name: A* for C#
-layout: blog-page
+slug: astar-csharp
 date: '2019-02-25'
 description: Implementing the A* pathfinding algorithm in C# for my game development project at DigiPen
 ---
@@ -22,7 +23,7 @@ A node is an object that holds the following data.
 
 The C# implementation of a node object is as follows.
 
-```csharp
+\`\`\`csharp
 class Node : IComparable<Node>
 {
     public int H
@@ -96,7 +97,7 @@ class Node : IComparable<Node>
         return !n1.Equals(n2);
     }
 }
-```
+\`\`\`
 
 Now time to explain the actual algorithm. The algorithm begins with a starting node, a target node, a open list, a closed list, and a collision map. The starting node contains the initial position the algorithm should begin searching from. It is added to the open list to start the algorithm. The target node contains the position of the destination of the algorithm. The open list is a list of all of the nodes that represent a potential path to be taken and is sorted by F score of the node (lowest first). The closed list is a list of all nodes that have already been cast aside as potential paths. The map is just a simple representation of the overall world wherein a boolean value, true representing passable and false representing impassable, corresponds with each node location on the map.
 
@@ -104,7 +105,7 @@ The real work of the algorithm comes in the while loop. The loop continues on th
 
 The C# implementation of A\* is as follows.
 
-```csharp
+\`\`\`csharp
 class AStar
 {
     private static bool InBounds(int x, int y, bool[,] map)
@@ -203,4 +204,5 @@ class AStar
         return path;
     }
 }
-```
+\`\`\`
+`

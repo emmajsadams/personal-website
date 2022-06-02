@@ -1,6 +1,7 @@
----
+// TODO: actually load this dynamically from an mdx file instead of declaring it as a string in TS
+export default `---
 name: Error Handling, Lists, Maps, and Trees for dstruct
-layout: blog-page
+slug: dstruct-error-list-map-tree
 date: '2019-04-29'
 description: A walkthrough of how errors, lists, maps, and trees were implemented for my capstone dstruct project
 ---
@@ -39,3 +40,4 @@ The next steps of the project are to comprehensively document the existing code 
 7. [StackOverflow comparision of lists](https://stackoverflow.com/questions/1713144/list-implementations-does-linkedlist-really-perform-so-poorly-vs-arraylist-and)
 8. [Node.js Harmony Guide by 2ality](http://www.2ality.com/2013/04/nodejs-harmony.html)
 9. [WebReflection/es6-Collections](https://github.com/WebReflection/es6-collections)
+`

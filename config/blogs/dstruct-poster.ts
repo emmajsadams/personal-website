@@ -1,6 +1,7 @@
----
+// TODO: actually load this dynamically from an mdx file instead of declaring it as a string in TS
+export default `---
 name: Poster for dstruct
-layout: blog-page
+slug: dstruct-poster
 date: '2019-05-27'
 description: A walkthrough of how I created the poster for my capstone dstruct project
 ---
@@ -19,3 +20,4 @@ This milestone was designing a poster to represent the project’s efforts so fa
 In this milestone I learned how to print posters using vector graphics. I have never really done much design work for paper posters before so I was unfamiliar with programs like illustrator and the difference between vector and raster graphics. I ended up using Adobe illustrator to design the poster and Staples to print it.
 
 This advances the project by being able to present the findings at capstone night. I will be working on finishing the library and publishing public modules for the project.
+`

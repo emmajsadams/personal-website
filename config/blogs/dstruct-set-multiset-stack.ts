@@ -1,6 +1,7 @@
----
+// TODO: actually load this dynamically from an mdx file instead of declaring it as a string in TS
+export default `---
 name: Sets, MultiSets, and Stacks for dstruct
-layout: blog-page
+slug: dstruct-set-multiset-stack
 date: '2019-05-16'
 description: A walkthrough of how sets, multisets, and stacks were implemented for my capstone dstruct project
 ---
@@ -26,3 +27,4 @@ The last update was a Stack which is a linear collection of elements which is la
 - ArrayStack guarantees O(1) amortized performance for all basic operations.
 
 This update was filled with setbacks and progress. However the library has come along mostly on schedule and I am happy with the progress.
+`

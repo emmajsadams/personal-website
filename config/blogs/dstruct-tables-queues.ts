@@ -1,6 +1,6 @@
----
+export default `---
 name: Tables and Queues for dstruct
-layout: blog-page
+slug: dstruct-tables-queues
 date: '2019-06-01'
 description: A walkthrough of how tables and queues were implemented for my capstone dstruct project
 ---
@@ -15,3 +15,4 @@ The tables I chose to implement were HashBasedTable, and TreeBasedTable. [The ta
 The queue I chose to implement was a DoublyLinkedListQueue. DoublyLinkedLists provide insertion and deletion at both ends in O(1) time so it is a natural choice for a queue. The elements are guaranteed to be in first in first our order. [The queues are located here](https://github.com/codystebbins/dstruct/tree/master/lib/structures/queues).
 
 This will be the last blog post as part of capstone, but I will be continuing on with the project post capstone in my spare time. Up until capstone I will be polishing the documentation, cleaning up the code in known low quality areas, and adding tests where necessary.
+`
