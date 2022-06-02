@@ -1,7 +1,22 @@
-import * as astar from '../pages/blog/astar-csharp.mdx'
-import * as dstructError from '../pages/blog/dstruct-error-list-map-tree.mdx'
-import * as dstructPoster from '../pages/blog/dstruct-poster.mdx'
-import * as dstructSet from '../pages/blog/dstruct-set-multiset-stack.mdx'
-import * as dstructTables from '../pages/blog/dstruct-tables-queues.mdx'
+import astarCsharp from './blogs/astar-csharp'
+import dstructErrorListMapTree from './blogs/dstruct-error-list-map-tree'
+import dstructPoster from './blogs/dstruct-poster'
+import dstructSetMultisetStack from './blogs/dstruct-set-multiset-stack'
+import dstructTablesQueues from './blogs/dstruct-tables-queues'
+import { Blog, parse } from './blogs/parse'
 
-export default [astar, dstructError, dstructPoster, dstructSet, dstructTables]
+const blogs = [
+	astarCsharp,
+	dstructErrorListMapTree,
+	dstructSetMultisetStack,
+	dstructTablesQueues,
+	dstructPoster,
+]
+
+const parsedBlogs: Blog[] = []
+for (const blog of blogs) {
+	parsedBlogs.push(parse(blog))
+}
+
+// TODO: actually load these blogs dynamically from an mdx file instead of declaring it as a string in TS
+export default parsedBlogs
