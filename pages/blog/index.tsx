@@ -5,7 +5,8 @@ import Header from '../../components/Header'
 import BLOG_POSTS from '../../config/blogs'
 import { NAME } from '../../config/personalDetails'
 
-export default function Blogs(): ReactElement {
+// TODO: consider sorting posts by date, currently just uses order of blogs array
+export default function Blogs({ blogPosts }): ReactElement {
 	return (
 		<>
 			<Head>
@@ -14,17 +15,23 @@ export default function Blogs(): ReactElement {
 			<main className="content">
 				<Header />
 				<ul>
-					{BLOG_POSTS.map((post) => (
-						<li key={post.frontMatter.name}>
-							<Link href={post.frontMatter.__resourcePath.replace('.mdx', '')}>
-								{post.frontMatter.name}
-							</Link>
+					{blogPosts.map((post) => (
+						<li key={post.matter.slug}>
+							<Link href={`blog/${post.matter.slug}`}>{post.matter.name}</Link>
 							<br />
-							{post.frontMatter.description}
+							{post.matter.description}
 						</li>
 					))}
 				</ul>
 			</main>
 		</>
 	)
+}
+
+export async function getStaticProps() {
+	return {
+		props: {
+			blogPosts: BLOG_POSTS,
+		},
+	}
 }
