@@ -59,6 +59,7 @@
 		"globby": "11.0.1",
 		"husky": "4.3.8",
 		"jest": "28.1.0",
+		"jest-environment-jsdom": "^28.1.0",
 		"postcss": "8.4.14",
 		"postcss-cli": "9.1.0",
 		"postcss-flexbugs-fixes": "5.0.2",

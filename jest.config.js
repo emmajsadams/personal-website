@@ -24,4 +24,6 @@ module.exports = {
 	},
 
 	collectCoverageFrom: ['components/**/*.{ts,tsx}'],
+
+	testEnvironment: 'jsdom',
 }
