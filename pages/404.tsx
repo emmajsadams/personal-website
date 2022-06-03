@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import React, { ReactElement } from 'react'
+import { ReactElement } from 'react'
 import Header from '../components/Header'
 import { EMAIL } from '../config/personalDetails'
 import utilStyles from '../styles/utils.module.css'

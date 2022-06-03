@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import React, { ReactElement } from 'react'
+import { ReactElement } from 'react'
 import Header from '../../components/Header'
 import BLOG_POSTS from '../../config/blogs'
 import { NAME } from '../../config/personalDetails'

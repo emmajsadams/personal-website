@@ -1,7 +1,7 @@
 import { MDXRemote } from 'next-mdx-remote'
 import { serialize } from 'next-mdx-remote/serialize'
 import Head from 'next/head'
-import React, { ReactElement } from 'react'
+import { ReactElement } from 'react'
 import Header from '../../components/Header'
 import Facebook from '../../components/icons/Facebook'
 import LinkedIn from '../../components/icons/LinkedIn'

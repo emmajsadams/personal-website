@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react'
+import { ReactElement } from 'react'
 import { School as SchoolConfig } from '../config/schools'
 
 interface SchoolProps {

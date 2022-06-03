@@ -1,5 +1,5 @@
 import Highlight, { defaultProps, Language } from 'prism-react-renderer'
-import React, { ReactElement } from 'react'
+import { ReactElement } from 'react'
 import '../utils/setupPrism'
 
 interface CodeBlockProps {

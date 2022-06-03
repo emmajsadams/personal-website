@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react'
+import { ReactElement } from 'react'
 import { Project as ProjectConfig } from '../config/projects'
 
 interface ProjectProps {

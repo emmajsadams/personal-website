@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import React, { ReactElement } from 'react'
+import { ReactElement } from 'react'
 import Experience from '../components/Experience'
 import Header from '../components/Header'
 import Project from '../components/Project'
