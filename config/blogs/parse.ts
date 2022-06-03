@@ -10,6 +10,7 @@ export interface Blog {
 	}
 }
 
+// TODO: just use next-mdx-remote here https://github.com/hashicorp/next-mdx-remote#additional-examples
 export function parse(source: string): Blog {
 	const matter = frontMatter(source as any)
 

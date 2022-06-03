@@ -1,12 +1,11 @@
-
 module.exports = {
-	webpack: (config, { isServer }) => {
+  webpack: (config, { isServer }) => {
     if (isServer) {
-			require('./scripts/generateSitemap');
-			require('./scripts/generateFeeds');
+      require('./scripts/generateSitemap');
+      require('./scripts/generateFeeds');
     }
 
     return config;
-	},
+  },
   reactStrictMode: true,
-}
+};

@@ -4,7 +4,7 @@ import Header from '../components/Header'
 import { EMAIL } from '../config/personalDetails'
 import utilStyles from '../styles/utils.module.css'
 
-export default function Error(): ReactElement {
+export default function Page(): ReactElement {
 	return (
 		<>
 			<Header />

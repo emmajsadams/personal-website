@@ -30,19 +30,6 @@ export default function App({
 
 	return (
 		<div>
-			{
-				// NOTE: CookieConsent seems to be broken on ios safari thus I am temporarily disabling it.
-				/* <CookieConsent
-				buttonText="Enable Analytics"
-				buttonStyle={{ backgroundColor: 'green', color: 'white' }}
-				onAccept={() => {
-					location.reload()
-				}}
-			>
-				This website uses cookies for Google analytics for an enhanced user
-				experience.
-			</CookieConsent> */
-			}
 			<DarkMode />
 			<Component {...pageProps} />
 		</div>
