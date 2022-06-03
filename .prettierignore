@@ -28,3 +28,5 @@ public/feed.json
 public/rss.xml
 public/atom.xml
 public/sitemap.xml
+
+utils/setupPrism.js
