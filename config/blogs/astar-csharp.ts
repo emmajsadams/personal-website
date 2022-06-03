@@ -103,7 +103,7 @@ Now time to explain the actual algorithm. The algorithm begins with a starting n
 
 The real work of the algorithm comes in the while loop. The loop continues on the grounds that there are any nodes left in the open list. In every iteration of the loop the open list is sorted and the node with the lowest F value is selected as the current node. Then the nodes surrounding the current node that are passable are added to the open list. This loop continues until the current node is the target node or if all paths to the target node have been exhausted without reaching the target node. If successful the path is then reconstructed and returned.
 
-The C# implementation of A\* is as follows.
+The C# implementation of A* is as follows.
 
 \`\`\`csharp
 class AStar

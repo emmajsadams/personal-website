@@ -27,3 +27,6 @@ public/rss.xml
 public/atom.xml
 public/sitemap.xml
 next.config*
+
+# TODO: reenable markdown linting
+*.md
