@@ -16,7 +16,7 @@ export const DevotedHealth: Experience = {
 	institutionUrl: 'https://www.devoted.com/',
 	location: 'Remote',
 	start: 'Feb. 2021',
-	end: 'Present',
+	end: 'Apr. 2023',
 	description: [
 		'Remote software development team working with Go on the backend and TypeScript React on the frontend.',
 		'Modeled legal compliance workflows impacting all company departments.',
