@@ -19,9 +19,9 @@ export const DevotedHealth: Experience = {
 	end: 'Apr. 2023',
 	description: [
 		'Remote software development team working with Go on the backend and TypeScript React on the frontend.',
-		'Modeled legal compliance workflows impacting all company departments.',
-		'Scaled integrations with external vendors that dealt with all member information.',
-		'Lead project redesigning the RISK engine which submits claims to the government for reimbursement enabling the business.',
+		'Drafted stories for a React customer service app by participating product design meetings and developed them until release.',
+		'Scaled ETL pipelines that had to meet the demands of fast user growth.',
+		'Lead project redesigning the RISK engine which is the primary revenue stream enabling claim reimbursement by the US government.',
 	],
 }
 
@@ -34,9 +34,7 @@ export const Freelance: Experience = {
 	end: 'Jan. 2021',
 	description: [
 		'Contract work building APIs and React web applications for small to mid-sized companies.',
-		'Providing proof of concept code for several University of Washington research projects.',
-		'Computer Science tutoring for university students.',
-		'Teaching workshops on modern web development.',
+		'Computer Science tutoring and classes for teaching university students web development.',
 	],
 }
 
@@ -48,13 +46,11 @@ export const HumbleBundleLead: Experience = {
 	start: 'Jul. 2018',
 	end: 'Jul. 2020',
 	description: [
-		'Promoted from Senior Software Engineer to Lead Senior Software Engineer II over the course of my employment.',
-		'Led the platform team focused on site reliability engineering.',
-		'Worked with product to define a plan to optimize the user funnel for the primary product Humble Monthly.',
-		'Led the internationalization project for an 8-year-old application with minimal prior internationalization efforts.',
-		'Integrated an OAuth login system for Facebook and Google into the existing user system.',
-		'Executed a project to migrate all sessions to the newly required email or TOTP two-factor system.',
-		'Helped define standards for representing dates, times, money, and percents in Python and JavaScript.',
+		'Promoted from Senior Software Engineer to Lead Senior Software Engineer II of the Platform team.',
+		'Developed features for a Python and React e-commerce website that averages 26 million views per month.',
+		'Executed a project to migrate all sessions to the newly required TOTP two-factor system with OAuth Google login.',
+		'Led the internationalization project for an 8-year-old application and educated other developers on how to use these tools.',
+		'Managed 5 direct reports including regular one-on-one meetings, code reviews, and pair programming.',
 	],
 }
 
@@ -69,6 +65,7 @@ export const CommitteeForChildrenLead: Experience = {
 		'Led the replacement of a legacy, monolithic DNN platform to a high performance platform utilizing using React and .NET Core.',
 		'Migrated user authentication to the IdentityServer4 OpenID identity provider.',
 		'Incrementally transformed a series of untested stored procedures into a modern C# WebAPI.',
+		'Developed a TypeScript React frontend powered by an ASP.NET Core C# backend to track the delivery of coursework to students.',
 	],
 }
 
@@ -81,8 +78,8 @@ export const TrovFullStack: Experience = {
 	end: 'Dec. 2017',
 	description: [
 		'Remote software development team where developers wrote unit and integration tests.',
-		'Constructed an on-demand insurance platform for consumer items with C# and SQL.',
-		'Developed an app for managing claims and insuring items with React and Angular.js.',
+		'Constructed an on-demand insurance platform for consumer items with ASP.NET C# and SQL.',
+		'Developed an app for managing claims and insuring items with a Typescript React frontend and ASP.NET C# backend.',
 		"Built a business intelligence system for sending information to Trov's partners using Python.",
 	],
 }
