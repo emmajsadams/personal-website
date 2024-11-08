@@ -10,6 +10,22 @@ export interface Experience {
 	description: string[]
 }
 
+export const HPE: Experience = {
+	title: 'Senior Software Engineer',
+	institution: 'Hewlett Packard Enterprise',
+	institutionUrl: 'https://www.hpe.com',
+	location: 'Remote',
+	start: 'Jan. 2024',
+	end: 'Nov. 2024',
+	description: [
+		'Worked across the stack on a greenfield RAG evaluation and deployment service which primarily used Go, Python, and TypeScript React.',
+		'Lead the RAG evaluation React frontend project. Evaluation streamed DeepEval results in real-time with WebSockets to help compare RAG output to what was expected.',
+		'Helped define the frontend architecture into core components reused across the app with tools like vite, eslint, axe, storybook, orval, zod, msw, jest, and playwright.',
+		'Implemented performance critical features in a JupyterLab extension for managing large data-driven pipelines training LLMs.',
+		'Worked closely with product managers and designers to deliver stories sometimes requiring presentations to stakeholders and technical design documents.',
+	],
+}
+
 export const DevotedHealth: Experience = {
 	title: 'Principal Software Engineer',
 	institution: 'Devoted Health',
@@ -18,7 +34,7 @@ export const DevotedHealth: Experience = {
 	start: 'Feb. 2021',
 	end: 'Apr. 2023',
 	description: [
-		'Remote software development team working with Go on the backend and TypeScript React on the frontend.',
+		'Remote role working with Go on the backend and TypeScript React on the frontend.',
 		'Drafted stories for a React customer service app by participating product design meetings and developed them until release.',
 		'Scaled ETL pipelines that had to meet the demands of fast user growth.',
 		'Lead project redesigning the RISK engine which is the primary revenue stream enabling claim reimbursement by the US government.',
@@ -151,6 +167,7 @@ export const SmiteWorksSoftwareEngineer: Experience = {
 }
 
 export default [
+	HPE,
 	DevotedHealth,
 	Freelance,
 	HumbleBundleLead,
