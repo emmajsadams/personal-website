@@ -160,6 +160,12 @@ export default function getResume(): string {
 	resume += createSection<School>(getSchool, SCHOOLS, 'Education')
 	resume += createSection<Experience>(getExperience, EXPERIENCES, 'Experience')
 	resume += createSection<Project>(getProject, PROJECTS, 'Projects')
+	// NOTE: Removed technologies section to keep resume to two pages.
+	// resume += createItemizedSection<Technology>(
+	// 	getTechnology,
+	// 	TECHNOLOGIES,
+	// 	'Technical Skills',
+	// )
 	resume += '\n \\end{document}'
 	resume = resume.replace(/C#/g, 'C\\#')
 
