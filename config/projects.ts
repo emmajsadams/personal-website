@@ -28,6 +28,25 @@ export const PersonalWebsite: Project = {
 	],
 }
 
+export const Grimoire: Project = {
+	title: 'Grimoire',
+	url: `${PROJECT_URL}/grimoire`,
+	technologies: [
+		'TypeScript',
+		'Next.JS',
+		'Docker',
+		'React',
+		'GraphQL (Apollo)',
+		'Postgres (Prisma)',
+		'Material UI',
+		'Css (Emotion)',
+	],
+	description: [
+		'Next.JS powered notes and calendar app with a Material UI composed of small reusable components.',
+		'GraphQL backend with access control for separate users that uses Prisma to persist data with Postgres.',
+	],
+}
+
 export const NoteDoctor: Project = {
 	title: 'Note Doctor',
 	url: `${PROJECT_URL}/note-doctor`,
@@ -122,12 +141,12 @@ export const AutocompleteComparison: Project = {
 	],
 }
 
-// TODO: Consider Database, FlightSearcher, Checkout? See past commits for deleted projets
+// TODO: Consider GPT2API, Database, FlightSearcher, Checkout? See past commits for deleted projets
 export default [
 	PersonalWebsite,
+	Grimoire,
 	NoteDoctor,
 	DiscordManagementBot,
-	GPT2API,
 	Dstruct,
 	ShareTube,
 	AutocompleteComparison,
