@@ -9,11 +9,9 @@ import {
 } from '../../config/personalDetails'
 import PROJECTS, { Project } from '../../config/projects'
 import SCHOOLS, { School } from '../../config/schools'
-import TECHNOLOGIES, { Technology } from '../../config/technologies'
 import getExperience from './getExperience'
 import getProject from './getProject'
 import getSchool from './getSchool'
-import getTechnology from './getTechnology'
 
 const DOCUMENT_HEADER = `%-------------------------
 % Resume
@@ -162,11 +160,6 @@ export default function getResume(): string {
 	resume += createSection<School>(getSchool, SCHOOLS, 'Education')
 	resume += createSection<Experience>(getExperience, EXPERIENCES, 'Experience')
 	resume += createSection<Project>(getProject, PROJECTS, 'Projects')
-	resume += createItemizedSection<Technology>(
-		getTechnology,
-		TECHNOLOGIES,
-		'Technical Skills',
-	)
 	resume += '\n \\end{document}'
 	resume = resume.replace(/C#/g, 'C\\#')
 
