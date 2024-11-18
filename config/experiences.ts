@@ -18,7 +18,7 @@ export const HPE: Experience = {
 	start: 'Jan. 2024',
 	end: 'Nov. 2024',
 	description: [
-		'Worked full stack on a greenfield RAG evaluation and deployment service which primarily used Go, Python, TypeScript, React, Kubernetes, Postgres, Milvus, and Redis.',
+		'Worked full stack on a greenfield RAG evaluation and deployment service which primarily used Go, Python, TypeScript, React, Kubernetes, Postgres, Milvus, and RabbitMQ.',
 		'Lead the RAG evaluation React frontend project. Evaluation streamed DeepEval results with WebSockets to evaluate RAG applications using metrics like groundedness, context relevancy, and answer relevancy when compared against expected output.',
 		'Helped define the frontend architecture into core components reused across the app with tools like Vite, Eslint, Prettier, Storybook, Jest, Playwright, Orval, Zod, and Msw',
 		'Implemented performance critical features in a JupyterLab extension for managing large data-driven pipelines training LLMs.',
