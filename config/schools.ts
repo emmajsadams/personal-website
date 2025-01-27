@@ -35,4 +35,4 @@ export const DigiPen: School = {
 	],
 }
 
-export default [UniversityOfWashington, DigiPen]
+export default [UniversityOfWashington]

@@ -141,13 +141,27 @@ export const AutocompleteComparison: Project = {
 	],
 }
 
-// TODO: Consider GPT2API, Database, FlightSearcher, Checkout? See past commits for deleted projets
+export const TypeScriptDatabase: Project = {
+	title: 'TypeScript Database',
+	url: `${PROJECT_URL}/ts-database`,
+	technologies: [
+		'TypeScript',
+		'Node.JS',
+		'eslint',
+		'prettier',
+		'mocha',
+		'sinon',
+	],
+	description: [
+		'A transactional in-memory database for TypeScript with a string key/value REPL.',
+	],
+}
+
+// TODO: Consider FlightSearcher, Checkout?
 export default [
 	PersonalWebsite,
+	TypeScriptDatabase,
 	Grimoire,
-	NoteDoctor,
 	DiscordManagementBot,
 	Dstruct,
-	ShareTube,
-	AutocompleteComparison,
 ]

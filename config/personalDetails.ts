@@ -16,5 +16,5 @@ export const PDF_RESUME_NAME = `${FIRST_NAME}${LAST_NAME}_Resume`
 export const LINKEDIN = `linkedin.com/in/${USERNAME}`
 export const GITHUB = `github.com/${USERNAME}`
 export const TWITTER = `twitter.com/${USERNAME}`
-export const EMAIL = `emma@adams.engineer`
+export const EMAIL = `emmajsadams@gmail.com`
 export const URL = `emma.adams.engineer`

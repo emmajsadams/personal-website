@@ -98,19 +98,9 @@ export const SoftSkills: Technology = {
 	category: 'Soft Skills',
 	technologies: [
 		'Constructive feedback',
-		'desire to listen and grow',
-		'effective concise communication',
-		'problem solving with minimal guidance',
-	],
-}
-
-export const ProfessionalAffiliations: Technology = {
-	category: 'Professional Affiliations',
-	technologies: [
-		'IEEE Computer Society',
-		'IEEE Robotics and Automation Society',
-		'IEEE Communications',
-		'Association for Computing Machinery',
+		'Desire to listen and grow',
+		'Effective concise communication',
+		'Problem solving with minimal guidance',
 	],
 }
 
@@ -123,6 +113,5 @@ export default [
 	DeveloperTools,
 	OperatingSystems,
 	OfficeSoftware,
-	ProfessionalAffiliations,
 	SoftSkills,
 ]
